@@ -34,6 +34,7 @@ public class SpringBeans {
 	public EntityManagerFactory getEntityManagerFactorySpringWay() {
 		Map<String, String> jpaProperties = new HashMap<String, String>(){{
 			put("datanucleus.NontransactionalRead", "true");
+			put("datanucleus.appengine.datastoreEnableXGTransactions", "true");
 			put("datanucleus.NontransactionalWrite", "true");
 			put("datanucleus.ConnectionURL", "appengine");
 			put("datanucleus.singletonEMFForName", "true");
