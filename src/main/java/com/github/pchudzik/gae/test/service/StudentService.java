@@ -88,6 +88,7 @@ public class StudentService {
 		Grade grade=new Grade();
 		grade.setCourseName("Tatar tele2");
 		gradeRepository.save(grade);
+
 		//Grade grade_=new Grade();
 		//grade_.setCourseName("Rus tele");
 		//gradeRepository.save(grade_);
@@ -99,10 +100,14 @@ public class StudentService {
 		nosence.setCountry("Walhalla");
 		nosenceRepository.save(nosence);
 		student.setAddress(address1);
+
 		switch (accessMethod) {
-			case RAW_EM: return studentDao.save(student);
-			case SPRING_REPO: return studentRepository.save(student);
-			default: throw new IllegalArgumentException();
-		}
+			case RAW_EM: student= studentDao.save(student);
+			case SPRING_REPO: student=studentRepository.save(student);
+			//default: throw new IllegalArgumentException();
+		};
+		grade1.getStudents().add(student);
+		grade2.getStudents().add(student);
+		return student;
 	}
 }

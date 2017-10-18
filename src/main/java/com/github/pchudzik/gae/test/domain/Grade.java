@@ -2,10 +2,8 @@ package com.github.pchudzik.gae.test.domain;
 
 import com.google.appengine.datanucleus.annotations.Unowned;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Entity;
-import javax.persistence.ManyToOne;
-import javax.persistence.Transient;
+import javax.persistence.*;
+import java.util.List;
 
 /**
  * User: pawel
@@ -18,8 +16,19 @@ public class Grade extends BaseEntity {
 	private int grade;
 
 	@Unowned
-	@ManyToOne(cascade = CascadeType.ALL)
+	//@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER, orphanRemoval = true, mappedBy = "student")
+	private List<Student> students;
+
+	@Unowned
 	private Student student;
+
+	public List<Student> getStudents() {
+		return students;
+	}
+
+	public void setStudents(List<Student> students) {
+		this.students = students;
+	}
 
 	@Transient
 	private boolean removed;
