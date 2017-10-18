@@ -6,6 +6,7 @@ import com.github.pchudzik.gae.test.domain.Grade;
 import com.github.pchudzik.gae.test.domain.Nosence;
 import com.github.pchudzik.gae.test.domain.Student;
 import com.github.pchudzik.gae.test.repository.AddressRepository;
+import com.github.pchudzik.gae.test.repository.GradeRepository;
 import com.github.pchudzik.gae.test.repository.NosenceRepository;
 import com.github.pchudzik.gae.test.repository.StudentRepository;
 import com.google.appengine.api.datastore.Key;
@@ -36,6 +37,7 @@ public class StudentService {
 	@Autowired private StudentRepository studentRepository;
 	@Autowired private AddressRepository addressRepository;
 	@Autowired private NosenceRepository nosenceRepository;
+	@Autowired private GradeRepository gradeRepository;
 
 	public Student findOne(Key id, AccessMethod accessMethod) {
 		switch (accessMethod) {
@@ -83,6 +85,16 @@ public class StudentService {
 		address.setCountry("Tatarstan2");
 		addressRepository.save(address);
 		Address address1=addressRepository.findTop1ByCountry("Tatarstan").get(0);
+		Grade grade=new Grade();
+		grade.setCourseName("Tatar tele2");
+		gradeRepository.save(grade);
+		//Grade grade_=new Grade();
+		//grade_.setCourseName("Rus tele");
+		//gradeRepository.save(grade_);
+		Grade grade1=gradeRepository.findTop1ByCourseName("Tatar tele2").get(0);
+		Grade grade2=gradeRepository.findTop1ByCourseName("Rus tele").get(0);
+		student.getGrades().add(grade1);
+		student.getGrades().add(grade2);
 		Nosence nosence=new Nosence();
 		nosence.setCountry("Walhalla");
 		nosenceRepository.save(nosence);

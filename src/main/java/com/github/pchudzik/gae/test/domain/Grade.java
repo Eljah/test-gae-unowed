@@ -1,5 +1,7 @@
 package com.github.pchudzik.gae.test.domain;
 
+import com.google.appengine.datanucleus.annotations.Unowned;
+
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
@@ -15,6 +17,7 @@ public class Grade extends BaseEntity {
 	private String courseName;
 	private int grade;
 
+	@Unowned
 	@ManyToOne(cascade = CascadeType.ALL)
 	private Student student;
 

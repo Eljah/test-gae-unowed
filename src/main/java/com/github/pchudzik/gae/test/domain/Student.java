@@ -23,6 +23,7 @@ public class Student extends BaseEntity {
 	@OneToOne(cascade = CascadeType.ALL)
 	private Address address = new Address();
 
+	@Unowned
 	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER, orphanRemoval = true, mappedBy = "student")
 	private List<Grade> grades = Lists.newArrayList();
 
