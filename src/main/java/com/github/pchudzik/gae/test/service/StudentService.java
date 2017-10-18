@@ -1,8 +1,12 @@
 package com.github.pchudzik.gae.test.service;
 
 import com.github.pchudzik.gae.test.dao.StudentDao;
+import com.github.pchudzik.gae.test.domain.Address;
 import com.github.pchudzik.gae.test.domain.Grade;
+import com.github.pchudzik.gae.test.domain.Nosence;
 import com.github.pchudzik.gae.test.domain.Student;
+import com.github.pchudzik.gae.test.repository.AddressRepository;
+import com.github.pchudzik.gae.test.repository.NosenceRepository;
 import com.github.pchudzik.gae.test.repository.StudentRepository;
 import com.google.appengine.api.datastore.Key;
 import com.google.appengine.repackaged.com.google.common.collect.Lists;
@@ -30,6 +34,8 @@ public class StudentService {
 
 	@Autowired private StudentDao studentDao;
 	@Autowired private StudentRepository studentRepository;
+	@Autowired private AddressRepository addressRepository;
+	@Autowired private NosenceRepository nosenceRepository;
 
 	public Student findOne(Key id, AccessMethod accessMethod) {
 		switch (accessMethod) {
@@ -72,6 +78,15 @@ public class StudentService {
 	}
 
 	private Student saveStudentInternal(Student student, AccessMethod accessMethod) {
+		Address address=new Address();
+		address.setCity("Kazan2");
+		address.setCountry("Tatarstan2");
+		addressRepository.save(address);
+		Address address1=addressRepository.findTop1ByCountry("Tatarstan").get(0);
+		Nosence nosence=new Nosence();
+		nosence.setCountry("Walhalla");
+		nosenceRepository.save(nosence);
+		student.setAddress(address1);
 		switch (accessMethod) {
 			case RAW_EM: return studentDao.save(student);
 			case SPRING_REPO: return studentRepository.save(student);

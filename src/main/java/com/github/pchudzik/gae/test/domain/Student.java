@@ -1,6 +1,7 @@
 package com.github.pchudzik.gae.test.domain;
 
 
+import com.google.appengine.datanucleus.annotations.Unowned;
 import com.google.common.base.Objects;
 import com.google.common.collect.Lists;
 
@@ -18,6 +19,7 @@ public class Student extends BaseEntity {
 	private String lastName;
 	private String password;
 
+	@Unowned
 	@OneToOne(cascade = CascadeType.ALL)
 	private Address address = new Address();
 

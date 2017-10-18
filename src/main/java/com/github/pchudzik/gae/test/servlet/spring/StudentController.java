@@ -94,6 +94,8 @@ public class StudentController {
 
 	@ModelAttribute("student")
 	public Student getStudent() {
-		return new Student();
+		Student studente=new Student();
+		studente.setFirstName("Ebolak");
+		return studente;
 	}
 }
