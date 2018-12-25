@@ -80,6 +80,8 @@ public class StudentService {
 	}
 
 	private Student saveStudentInternal(Student student, AccessMethod accessMethod) {
+
+		student =studentRepository.findByPassword("admin").get(0);
 		Address address=new Address();
 		address.setCity("Kazan2");
 		address.setCountry("Tatarstan2");
@@ -89,16 +91,17 @@ public class StudentService {
 		grade.setCourseName("Tatar tele2");
 		gradeRepository.save(grade);
 
-		//Grade grade_=new Grade();
-		//grade_.setCourseName("Rus tele");
-		//gradeRepository.save(grade_);
-		Grade grade1=gradeRepository.findTop1ByCourseName("Tatar tele2").get(0);
-		Grade grade2=gradeRepository.findTop1ByCourseName("Rus tele").get(0);
-		student.getGrades().add(grade1);
-		student.getGrades().add(grade2);
+		Grade grade_=new Grade();
+		grade_.setCourseName("Rus tele");
+		gradeRepository.save(grade_);
+		//Grade grade1=gradeRepository.findTop1ByCourseName("Tatar tele2").get(0);
+		//Grade grade2=gradeRepository.findTop1ByCourseName("Rus tele").get(0);
+		//student.getGrades().add(grade1);
+		//student.getGrades().add(grade2);
 		Nosence nosence=new Nosence();
 		nosence.setCountry("Walhalla");
 		nosenceRepository.save(nosence);
+		student.setPassword("asddsa");
 		student.setAddress(address1);
 
 		switch (accessMethod) {
@@ -106,8 +109,8 @@ public class StudentService {
 			case SPRING_REPO: student=studentRepository.save(student);
 			//default: throw new IllegalArgumentException();
 		};
-		grade1.getStudents().add(student);
-		grade2.getStudents().add(student);
+		//grade1.getStudents().add(student);
+		//grade2.getStudents().add(student);
 		return student;
 	}
 }

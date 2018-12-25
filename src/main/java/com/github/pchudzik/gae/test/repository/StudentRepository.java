@@ -1,7 +1,10 @@
 package com.github.pchudzik.gae.test.repository;
 
+import com.github.pchudzik.gae.test.domain.Grade;
 import com.github.pchudzik.gae.test.domain.Student;
 import com.google.appengine.api.datastore.Key;
+
+import java.util.List;
 
 /**
 * User: pawel
@@ -9,4 +12,6 @@ import com.google.appengine.api.datastore.Key;
 * Time: 13:17
 */
 public interface StudentRepository extends CustomRepository<Student, Key> {
+    Student findOneByPassword(String country);
+    List<Student> findByPassword(String country);
 }
