@@ -263,29 +263,29 @@
                     </webResources>
                 </configuration>
             </plugin>
-            <!--<plugin>-->
-                <!--<groupId>org.apache.axis2</groupId>-->
-                <!--<artifactId>axis2-wsdl2code-maven-plugin</artifactId>-->
-                <!--<version>1.7.9</version>-->
-                <!--<executions>-->
-                    <!--<execution>-->
-                        <!--<id>TheirsWs</id>-->
-                        <!--<goals>-->
-                            <!--<goal>wsdl2code</goal>-->
-                        <!--</goals>-->
-                        <!--<phase>generate-sources</phase>-->
-                        <!--<configuration>-->
-                            <!--<packageName>merchant.sberbank</packageName>-->
+            <plugin>
+                <groupId>org.apache.axis2</groupId>
+                <artifactId>axis2-wsdl2code-maven-plugin</artifactId>
+                <version>1.7.9</version>
+                <executions>
+                    <execution>
+                        <id>TheirsWs</id>
+                        <goals>
+                            <goal>wsdl2code</goal>
+                        </goals>
+                        <phase>generate-sources</phase>
+                        <configuration>
+                            <packageName>merchant.sberbank</packageName>
                             <!--<wsdlFile>https://web.rbsuat.com/ab/webservices/merchant-ws?wsdl</wsdlFile>-->
-                            <!--&lt;!&ndash;<wsdlFile>https://3dsec.sberbank.ru/payment/webservices/merchant-ws?wsdl</wsdlFile>&ndash;&gt;-->
-                            <!--<unpackClasses>true</unpackClasses>-->
-                            <!--<generateServerSide>false</generateServerSide>-->
-                            <!--<generateAllClasses>true</generateAllClasses>-->
-                            <!--<generateTestcase>true</generateTestcase>-->
-                        <!--</configuration>-->
-                    <!--</execution>-->
-                <!--</executions>-->
-            <!--</plugin>-->
+                            <wsdlFile>https://3dsec.sberbank.ru/payment/webservices/merchant-ws?wsdl</wsdlFile>
+                            <unpackClasses>true</unpackClasses>
+                            <generateServerSide>false</generateServerSide>
+                            <generateAllClasses>true</generateAllClasses>
+                            <generateTestcase>true</generateTestcase>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
 
             <plugin>
                 <groupId>com.google.appengine</groupId>
