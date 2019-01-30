@@ -23,7 +23,7 @@ public class RecurrentPaymentRequest implements org.apache.axis2.databinding.ADB
     /**
      * field for OrderNumber
      */
-    protected java.lang.String localOrderNumber;
+    protected String localOrderNumber;
 
     /*  This tracker boolean wil be used to detect whether the user called the set method
      *   for this attribute. It will be used to determine whether to include this field
@@ -34,7 +34,7 @@ public class RecurrentPaymentRequest implements org.apache.axis2.databinding.ADB
     /**
      * field for Language
      */
-    protected java.lang.String localLanguage;
+    protected String localLanguage;
 
     /*  This tracker boolean wil be used to detect whether the user called the set method
      *   for this attribute. It will be used to determine whether to include this field
@@ -45,7 +45,7 @@ public class RecurrentPaymentRequest implements org.apache.axis2.databinding.ADB
     /**
      * field for BindingId
      */
-    protected java.lang.String localBindingId;
+    protected String localBindingId;
 
     /*  This tracker boolean wil be used to detect whether the user called the set method
      *   for this attribute. It will be used to determine whether to include this field
@@ -61,7 +61,7 @@ public class RecurrentPaymentRequest implements org.apache.axis2.databinding.ADB
     /**
      * field for Currency
      */
-    protected java.lang.String localCurrency;
+    protected String localCurrency;
 
     /*  This tracker boolean wil be used to detect whether the user called the set method
      *   for this attribute. It will be used to determine whether to include this field
@@ -72,7 +72,7 @@ public class RecurrentPaymentRequest implements org.apache.axis2.databinding.ADB
     /**
      * field for Description
      */
-    protected java.lang.String localDescription;
+    protected String localDescription;
 
     /*  This tracker boolean wil be used to detect whether the user called the set method
      *   for this attribute. It will be used to determine whether to include this field
@@ -88,7 +88,7 @@ public class RecurrentPaymentRequest implements org.apache.axis2.databinding.ADB
     /**
      * field for AdditionalParameters
      */
-    protected merchant.AdditionalParameters_type2 localAdditionalParameters;
+    protected AdditionalParameters_type2 localAdditionalParameters;
 
     public boolean isOrderNumberSpecified() {
         return localOrderNumberTracker;
@@ -98,7 +98,7 @@ public class RecurrentPaymentRequest implements org.apache.axis2.databinding.ADB
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getOrderNumber() {
+    public String getOrderNumber() {
         return localOrderNumber;
     }
 
@@ -106,7 +106,7 @@ public class RecurrentPaymentRequest implements org.apache.axis2.databinding.ADB
      * Auto generated setter method
      * @param param OrderNumber
      */
-    public void setOrderNumber(java.lang.String param) {
+    public void setOrderNumber(String param) {
         localOrderNumberTracker = param != null;
 
         this.localOrderNumber = param;
@@ -120,7 +120,7 @@ public class RecurrentPaymentRequest implements org.apache.axis2.databinding.ADB
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getLanguage() {
+    public String getLanguage() {
         return localLanguage;
     }
 
@@ -128,7 +128,7 @@ public class RecurrentPaymentRequest implements org.apache.axis2.databinding.ADB
      * Auto generated setter method
      * @param param Language
      */
-    public void setLanguage(java.lang.String param) {
+    public void setLanguage(String param) {
         localLanguageTracker = param != null;
 
         this.localLanguage = param;
@@ -142,7 +142,7 @@ public class RecurrentPaymentRequest implements org.apache.axis2.databinding.ADB
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getBindingId() {
+    public String getBindingId() {
         return localBindingId;
     }
 
@@ -150,7 +150,7 @@ public class RecurrentPaymentRequest implements org.apache.axis2.databinding.ADB
      * Auto generated setter method
      * @param param BindingId
      */
-    public void setBindingId(java.lang.String param) {
+    public void setBindingId(String param) {
         localBindingIdTracker = param != null;
 
         this.localBindingId = param;
@@ -180,7 +180,7 @@ public class RecurrentPaymentRequest implements org.apache.axis2.databinding.ADB
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getCurrency() {
+    public String getCurrency() {
         return localCurrency;
     }
 
@@ -188,7 +188,7 @@ public class RecurrentPaymentRequest implements org.apache.axis2.databinding.ADB
      * Auto generated setter method
      * @param param Currency
      */
-    public void setCurrency(java.lang.String param) {
+    public void setCurrency(String param) {
         localCurrencyTracker = param != null;
 
         this.localCurrency = param;
@@ -202,7 +202,7 @@ public class RecurrentPaymentRequest implements org.apache.axis2.databinding.ADB
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getDescription() {
+    public String getDescription() {
         return localDescription;
     }
 
@@ -210,7 +210,7 @@ public class RecurrentPaymentRequest implements org.apache.axis2.databinding.ADB
      * Auto generated setter method
      * @param param Description
      */
-    public void setDescription(java.lang.String param) {
+    public void setDescription(String param) {
         localDescriptionTracker = param != null;
 
         this.localDescription = param;
@@ -234,9 +234,9 @@ public class RecurrentPaymentRequest implements org.apache.axis2.databinding.ADB
 
     /**
      * Auto generated getter method
-     * @return merchant.AdditionalParameters_type2
+     * @return ru.paymentgate.engine.webservices.merchant.AdditionalParameters_type2
      */
-    public merchant.AdditionalParameters_type2 getAdditionalParameters() {
+    public AdditionalParameters_type2 getAdditionalParameters() {
         return localAdditionalParameters;
     }
 
@@ -245,7 +245,7 @@ public class RecurrentPaymentRequest implements org.apache.axis2.databinding.ADB
      * @param param AdditionalParameters
      */
     public void setAdditionalParameters(
-        merchant.AdditionalParameters_type2 param) {
+        AdditionalParameters_type2 param) {
         this.localAdditionalParameters = param;
     }
 
@@ -274,8 +274,8 @@ public class RecurrentPaymentRequest implements org.apache.axis2.databinding.ADB
         javax.xml.stream.XMLStreamWriter xmlWriter, boolean serializeType)
         throws javax.xml.stream.XMLStreamException,
             org.apache.axis2.databinding.ADBException {
-        java.lang.String prefix = null;
-        java.lang.String namespace = null;
+        String prefix = null;
+        String namespace = null;
 
         prefix = parentQName.getPrefix();
         namespace = parentQName.getNamespaceURI();
@@ -283,7 +283,7 @@ public class RecurrentPaymentRequest implements org.apache.axis2.databinding.ADB
             xmlWriter);
 
         if (serializeType) {
-            java.lang.String namespacePrefix = registerPrefix(xmlWriter,
+            String namespacePrefix = registerPrefix(xmlWriter,
                     "http://engine.paymentgate.ru/webservices/merchant");
 
             if ((namespacePrefix != null) &&
@@ -346,7 +346,7 @@ public class RecurrentPaymentRequest implements org.apache.axis2.databinding.ADB
         namespace = "";
         writeStartElement(null, namespace, "amount", xmlWriter);
 
-        if (localAmount == java.lang.Long.MIN_VALUE) {
+        if (localAmount == Long.MIN_VALUE) {
             throw new org.apache.axis2.databinding.ADBException(
                 "amount cannot be null!!");
         } else {
@@ -410,7 +410,7 @@ public class RecurrentPaymentRequest implements org.apache.axis2.databinding.ADB
         xmlWriter.writeEndElement();
     }
 
-    private static java.lang.String generatePrefix(java.lang.String namespace) {
+    private static String generatePrefix(String namespace) {
         if (namespace.equals(
                     "http://engine.paymentgate.ru/webservices/merchant")) {
             return "ns1";
@@ -422,11 +422,11 @@ public class RecurrentPaymentRequest implements org.apache.axis2.databinding.ADB
     /**
      * Utility method to write an element start tag.
      */
-    private void writeStartElement(java.lang.String prefix,
-        java.lang.String namespace, java.lang.String localPart,
+    private void writeStartElement(String prefix,
+        String namespace, String localPart,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String writerPrefix = xmlWriter.getPrefix(namespace);
+        String writerPrefix = xmlWriter.getPrefix(namespace);
 
         if (writerPrefix != null) {
             xmlWriter.writeStartElement(writerPrefix, localPart, namespace);
@@ -446,11 +446,11 @@ public class RecurrentPaymentRequest implements org.apache.axis2.databinding.ADB
     /**
      * Util method to write an attribute with the ns prefix
      */
-    private void writeAttribute(java.lang.String prefix,
-        java.lang.String namespace, java.lang.String attName,
-        java.lang.String attValue, javax.xml.stream.XMLStreamWriter xmlWriter)
+    private void writeAttribute(String prefix,
+        String namespace, String attName,
+        String attValue, javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String writerPrefix = xmlWriter.getPrefix(namespace);
+        String writerPrefix = xmlWriter.getPrefix(namespace);
 
         if (writerPrefix != null) {
             xmlWriter.writeAttribute(writerPrefix, namespace, attName, attValue);
@@ -464,8 +464,8 @@ public class RecurrentPaymentRequest implements org.apache.axis2.databinding.ADB
     /**
      * Util method to write an attribute without the ns prefix
      */
-    private void writeAttribute(java.lang.String namespace,
-        java.lang.String attName, java.lang.String attValue,
+    private void writeAttribute(String namespace,
+        String attName, String attValue,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
         if (namespace.equals("")) {
@@ -479,18 +479,18 @@ public class RecurrentPaymentRequest implements org.apache.axis2.databinding.ADB
     /**
      * Util method to write an attribute without the ns prefix
      */
-    private void writeQNameAttribute(java.lang.String namespace,
-        java.lang.String attName, javax.xml.namespace.QName qname,
+    private void writeQNameAttribute(String namespace,
+        String attName, javax.xml.namespace.QName qname,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String attributeNamespace = qname.getNamespaceURI();
-        java.lang.String attributePrefix = xmlWriter.getPrefix(attributeNamespace);
+        String attributeNamespace = qname.getNamespaceURI();
+        String attributePrefix = xmlWriter.getPrefix(attributeNamespace);
 
         if (attributePrefix == null) {
             attributePrefix = registerPrefix(xmlWriter, attributeNamespace);
         }
 
-        java.lang.String attributeValue;
+        String attributeValue;
 
         if (attributePrefix.trim().length() > 0) {
             attributeValue = attributePrefix + ":" + qname.getLocalPart();
@@ -513,10 +513,10 @@ public class RecurrentPaymentRequest implements org.apache.axis2.databinding.ADB
     private void writeQName(javax.xml.namespace.QName qname,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String namespaceURI = qname.getNamespaceURI();
+        String namespaceURI = qname.getNamespaceURI();
 
         if (namespaceURI != null) {
-            java.lang.String prefix = xmlWriter.getPrefix(namespaceURI);
+            String prefix = xmlWriter.getPrefix(namespaceURI);
 
             if (prefix == null) {
                 prefix = generatePrefix(namespaceURI);
@@ -545,9 +545,9 @@ public class RecurrentPaymentRequest implements org.apache.axis2.databinding.ADB
         if (qnames != null) {
             // we have to store this data until last moment since it is not possible to write any
             // namespace data after writing the charactor data
-            java.lang.StringBuffer stringToWrite = new java.lang.StringBuffer();
-            java.lang.String namespaceURI = null;
-            java.lang.String prefix = null;
+            StringBuffer stringToWrite = new StringBuffer();
+            String namespaceURI = null;
+            String prefix = null;
 
             for (int i = 0; i < qnames.length; i++) {
                 if (i > 0) {
@@ -586,10 +586,10 @@ public class RecurrentPaymentRequest implements org.apache.axis2.databinding.ADB
     /**
      * Register a namespace prefix
      */
-    private java.lang.String registerPrefix(
-        javax.xml.stream.XMLStreamWriter xmlWriter, java.lang.String namespace)
+    private String registerPrefix(
+        javax.xml.stream.XMLStreamWriter xmlWriter, String namespace)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String prefix = xmlWriter.getPrefix(namespace);
+        String prefix = xmlWriter.getPrefix(namespace);
 
         if (prefix == null) {
             prefix = generatePrefix(namespace);
@@ -597,7 +597,7 @@ public class RecurrentPaymentRequest implements org.apache.axis2.databinding.ADB
             javax.xml.namespace.NamespaceContext nsContext = xmlWriter.getNamespaceContext();
 
             while (true) {
-                java.lang.String uri = nsContext.getNamespaceURI(prefix);
+                String uri = nsContext.getNamespaceURI(prefix);
 
                 if ((uri == null) || (uri.length() == 0)) {
                     break;
@@ -627,14 +627,14 @@ public class RecurrentPaymentRequest implements org.apache.axis2.databinding.ADB
          *                If this object is a complex type, the reader is positioned at the end element of its outer element
          */
         public static RecurrentPaymentRequest parse(
-            javax.xml.stream.XMLStreamReader reader) throws java.lang.Exception {
+            javax.xml.stream.XMLStreamReader reader) throws Exception {
             RecurrentPaymentRequest object = new RecurrentPaymentRequest();
 
             int event;
             javax.xml.namespace.QName currentQName = null;
-            java.lang.String nillableValue = null;
-            java.lang.String prefix = "";
-            java.lang.String namespaceuri = "";
+            String nillableValue = null;
+            String prefix = "";
+            String namespaceuri = "";
 
             try {
                 while (!reader.isStartElement() && !reader.isEndElement())
@@ -644,11 +644,11 @@ public class RecurrentPaymentRequest implements org.apache.axis2.databinding.ADB
 
                 if (reader.getAttributeValue(
                             "http://www.w3.org/2001/XMLSchema-instance", "type") != null) {
-                    java.lang.String fullTypeName = reader.getAttributeValue("http://www.w3.org/2001/XMLSchema-instance",
+                    String fullTypeName = reader.getAttributeValue("http://www.w3.org/2001/XMLSchema-instance",
                             "type");
 
                     if (fullTypeName != null) {
-                        java.lang.String nsPrefix = null;
+                        String nsPrefix = null;
 
                         if (fullTypeName.indexOf(":") > -1) {
                             nsPrefix = fullTypeName.substring(0,
@@ -657,15 +657,15 @@ public class RecurrentPaymentRequest implements org.apache.axis2.databinding.ADB
 
                         nsPrefix = (nsPrefix == null) ? "" : nsPrefix;
 
-                        java.lang.String type = fullTypeName.substring(fullTypeName.indexOf(
+                        String type = fullTypeName.substring(fullTypeName.indexOf(
                                     ":") + 1);
 
                         if (!"recurrentPaymentRequest".equals(type)) {
                             //find namespace for the prefix
-                            java.lang.String nsUri = reader.getNamespaceContext()
+                            String nsUri = reader.getNamespaceContext()
                                                            .getNamespaceURI(nsPrefix);
 
-                            return (RecurrentPaymentRequest) merchant.ExtensionMapper.getTypeObject(nsUri,
+                            return (RecurrentPaymentRequest) ExtensionMapper.getTypeObject(nsUri,
                                 type, reader);
                         }
                     }
@@ -693,7 +693,7 @@ public class RecurrentPaymentRequest implements org.apache.axis2.databinding.ADB
                             "  cannot be null");
                     }
 
-                    java.lang.String content = reader.getElementText();
+                    String content = reader.getElementText();
 
                     object.setOrderNumber(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             content));
@@ -719,7 +719,7 @@ public class RecurrentPaymentRequest implements org.apache.axis2.databinding.ADB
                             "The element: " + "language" + "  cannot be null");
                     }
 
-                    java.lang.String content = reader.getElementText();
+                    String content = reader.getElementText();
 
                     object.setLanguage(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             content));
@@ -745,7 +745,7 @@ public class RecurrentPaymentRequest implements org.apache.axis2.databinding.ADB
                             "The element: " + "bindingId" + "  cannot be null");
                     }
 
-                    java.lang.String content = reader.getElementText();
+                    String content = reader.getElementText();
 
                     object.setBindingId(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             content));
@@ -771,7 +771,7 @@ public class RecurrentPaymentRequest implements org.apache.axis2.databinding.ADB
                             "The element: " + "amount" + "  cannot be null");
                     }
 
-                    java.lang.String content = reader.getElementText();
+                    String content = reader.getElementText();
 
                     object.setAmount(org.apache.axis2.databinding.utils.ConverterUtil.convertToLong(
                             content));
@@ -800,7 +800,7 @@ public class RecurrentPaymentRequest implements org.apache.axis2.databinding.ADB
                             "The element: " + "currency" + "  cannot be null");
                     }
 
-                    java.lang.String content = reader.getElementText();
+                    String content = reader.getElementText();
 
                     object.setCurrency(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             content));
@@ -827,7 +827,7 @@ public class RecurrentPaymentRequest implements org.apache.axis2.databinding.ADB
                             "  cannot be null");
                     }
 
-                    java.lang.String content = reader.getElementText();
+                    String content = reader.getElementText();
 
                     object.setDescription(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             content));
@@ -853,7 +853,7 @@ public class RecurrentPaymentRequest implements org.apache.axis2.databinding.ADB
                             "The element: " + "preAuth" + "  cannot be null");
                     }
 
-                    java.lang.String content = reader.getElementText();
+                    String content = reader.getElementText();
 
                     object.setPreAuth(org.apache.axis2.databinding.utils.ConverterUtil.convertToBoolean(
                             content));
@@ -873,7 +873,7 @@ public class RecurrentPaymentRequest implements org.apache.axis2.databinding.ADB
                 if (reader.isStartElement() &&
                         new javax.xml.namespace.QName("", "additionalParameters").equals(
                             reader.getName())) {
-                    object.setAdditionalParameters(merchant.AdditionalParameters_type2.Factory.parse(
+                    object.setAdditionalParameters(AdditionalParameters_type2.Factory.parse(
                             reader));
 
                     reader.next();
@@ -894,7 +894,7 @@ public class RecurrentPaymentRequest implements org.apache.axis2.databinding.ADB
                         "Unexpected subelement " + reader.getName());
                 }
             } catch (javax.xml.stream.XMLStreamException e) {
-                throw new java.lang.Exception(e);
+                throw new Exception(e);
             }
 
             return object;

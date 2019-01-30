@@ -23,12 +23,12 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
     /**
      * field for Name
      */
-    protected java.lang.String localName;
+    protected String localName;
 
     /**
      * field for ItemDetails
      */
-    protected merchant.ItemDetails localItemDetails;
+    protected ItemDetails localItemDetails;
 
     /*  This tracker boolean wil be used to detect whether the user called the set method
      *   for this attribute. It will be used to determine whether to include this field
@@ -39,7 +39,7 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
     /**
      * field for Quantity
      */
-    protected merchant.Quantity localQuantity;
+    protected Quantity localQuantity;
 
     /**
      * field for ItemAmount
@@ -71,12 +71,12 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
     /**
      * field for ItemCode
      */
-    protected java.lang.String localItemCode;
+    protected String localItemCode;
 
     /**
      * field for Discount
      */
-    protected merchant.Discount localDiscount;
+    protected Discount localDiscount;
 
     /*  This tracker boolean wil be used to detect whether the user called the set method
      *   for this attribute. It will be used to determine whether to include this field
@@ -87,7 +87,7 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
     /**
      * field for AgentInterest
      */
-    protected merchant.AgentInterest localAgentInterest;
+    protected AgentInterest localAgentInterest;
 
     /*  This tracker boolean wil be used to detect whether the user called the set method
      *   for this attribute. It will be used to determine whether to include this field
@@ -98,7 +98,7 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
     /**
      * field for Tax
      */
-    protected merchant.Tax localTax;
+    protected Tax localTax;
 
     /*  This tracker boolean wil be used to detect whether the user called the set method
      *   for this attribute. It will be used to determine whether to include this field
@@ -120,7 +120,7 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
     /**
      * field for ItemAttributes
      */
-    protected merchant.ItemAttributes localItemAttributes;
+    protected ItemAttributes localItemAttributes;
 
     /*  This tracker boolean wil be used to detect whether the user called the set method
      *   for this attribute. It will be used to determine whether to include this field
@@ -132,13 +132,13 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
      * field for PositionId
      * This was an Attribute!
      */
-    protected java.lang.String localPositionId;
+    protected String localPositionId;
 
     /**
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getName() {
+    public String getName() {
         return localName;
     }
 
@@ -146,7 +146,7 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
      * Auto generated setter method
      * @param param Name
      */
-    public void setName(java.lang.String param) {
+    public void setName(String param) {
         this.localName = param;
     }
 
@@ -156,9 +156,9 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
 
     /**
      * Auto generated getter method
-     * @return merchant.ItemDetails
+     * @return ru.paymentgate.engine.webservices.merchant.ItemDetails
      */
-    public merchant.ItemDetails getItemDetails() {
+    public ItemDetails getItemDetails() {
         return localItemDetails;
     }
 
@@ -167,7 +167,7 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
      * @param param ItemDetails
      */
     public void setItemDetails(
-        merchant.ItemDetails param) {
+        ItemDetails param) {
         localItemDetailsTracker = param != null;
 
         this.localItemDetails = param;
@@ -175,9 +175,9 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
 
     /**
      * Auto generated getter method
-     * @return merchant.Quantity
+     * @return ru.paymentgate.engine.webservices.merchant.Quantity
      */
-    public merchant.Quantity getQuantity() {
+    public Quantity getQuantity() {
         return localQuantity;
     }
 
@@ -186,7 +186,7 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
      * @param param Quantity
      */
     public void setQuantity(
-        merchant.Quantity param) {
+        Quantity param) {
         this.localQuantity = param;
     }
 
@@ -224,7 +224,7 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
      */
     public void setDepositedItemAmount(long param) {
         // setting primitive attribute tracker to true
-        localDepositedItemAmountTracker = param != java.lang.Long.MIN_VALUE;
+        localDepositedItemAmountTracker = param != Long.MIN_VALUE;
 
         this.localDepositedItemAmount = param;
     }
@@ -247,7 +247,7 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
      */
     public void setItemCurrency(int param) {
         // setting primitive attribute tracker to true
-        localItemCurrencyTracker = param != java.lang.Integer.MIN_VALUE;
+        localItemCurrencyTracker = param != Integer.MIN_VALUE;
 
         this.localItemCurrency = param;
     }
@@ -256,7 +256,7 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getItemCode() {
+    public String getItemCode() {
         return localItemCode;
     }
 
@@ -264,7 +264,7 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
      * Auto generated setter method
      * @param param ItemCode
      */
-    public void setItemCode(java.lang.String param) {
+    public void setItemCode(String param) {
         this.localItemCode = param;
     }
 
@@ -274,9 +274,9 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
 
     /**
      * Auto generated getter method
-     * @return merchant.Discount
+     * @return ru.paymentgate.engine.webservices.merchant.Discount
      */
-    public merchant.Discount getDiscount() {
+    public Discount getDiscount() {
         return localDiscount;
     }
 
@@ -285,7 +285,7 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
      * @param param Discount
      */
     public void setDiscount(
-        merchant.Discount param) {
+        Discount param) {
         localDiscountTracker = param != null;
 
         this.localDiscount = param;
@@ -297,9 +297,9 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
 
     /**
      * Auto generated getter method
-     * @return merchant.AgentInterest
+     * @return ru.paymentgate.engine.webservices.merchant.AgentInterest
      */
-    public merchant.AgentInterest getAgentInterest() {
+    public AgentInterest getAgentInterest() {
         return localAgentInterest;
     }
 
@@ -308,7 +308,7 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
      * @param param AgentInterest
      */
     public void setAgentInterest(
-        merchant.AgentInterest param) {
+        AgentInterest param) {
         localAgentInterestTracker = param != null;
 
         this.localAgentInterest = param;
@@ -320,9 +320,9 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
 
     /**
      * Auto generated getter method
-     * @return merchant.Tax
+     * @return ru.paymentgate.engine.webservices.merchant.Tax
      */
-    public merchant.Tax getTax() {
+    public Tax getTax() {
         return localTax;
     }
 
@@ -330,7 +330,7 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
      * Auto generated setter method
      * @param param Tax
      */
-    public void setTax(merchant.Tax param) {
+    public void setTax(Tax param) {
         localTaxTracker = param != null;
 
         this.localTax = param;
@@ -354,7 +354,7 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
      */
     public void setItemPrice(long param) {
         // setting primitive attribute tracker to true
-        localItemPriceTracker = param != java.lang.Long.MIN_VALUE;
+        localItemPriceTracker = param != Long.MIN_VALUE;
 
         this.localItemPrice = param;
     }
@@ -365,9 +365,9 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
 
     /**
      * Auto generated getter method
-     * @return merchant.ItemAttributes
+     * @return ru.paymentgate.engine.webservices.merchant.ItemAttributes
      */
-    public merchant.ItemAttributes getItemAttributes() {
+    public ItemAttributes getItemAttributes() {
         return localItemAttributes;
     }
 
@@ -376,7 +376,7 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
      * @param param ItemAttributes
      */
     public void setItemAttributes(
-        merchant.ItemAttributes param) {
+        ItemAttributes param) {
         localItemAttributesTracker = param != null;
 
         this.localItemAttributes = param;
@@ -386,7 +386,7 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getPositionId() {
+    public String getPositionId() {
         return localPositionId;
     }
 
@@ -394,7 +394,7 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
      * Auto generated setter method
      * @param param PositionId
      */
-    public void setPositionId(java.lang.String param) {
+    public void setPositionId(String param) {
         this.localPositionId = param;
     }
 
@@ -423,8 +423,8 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
         javax.xml.stream.XMLStreamWriter xmlWriter, boolean serializeType)
         throws javax.xml.stream.XMLStreamException,
             org.apache.axis2.databinding.ADBException {
-        java.lang.String prefix = null;
-        java.lang.String namespace = null;
+        String prefix = null;
+        String namespace = null;
 
         prefix = parentQName.getPrefix();
         namespace = parentQName.getNamespaceURI();
@@ -432,7 +432,7 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
             xmlWriter);
 
         if (serializeType) {
-            java.lang.String namespacePrefix = registerPrefix(xmlWriter,
+            String namespacePrefix = registerPrefix(xmlWriter,
                     "http://engine.paymentgate.ru/webservices/merchant");
 
             if ((namespacePrefix != null) &&
@@ -487,7 +487,7 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
         namespace = "";
         writeStartElement(null, namespace, "itemAmount", xmlWriter);
 
-        if (localItemAmount == java.lang.Long.MIN_VALUE) {
+        if (localItemAmount == Long.MIN_VALUE) {
             throw new org.apache.axis2.databinding.ADBException(
                 "itemAmount cannot be null!!");
         } else {
@@ -501,7 +501,7 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
             namespace = "";
             writeStartElement(null, namespace, "depositedItemAmount", xmlWriter);
 
-            if (localDepositedItemAmount == java.lang.Long.MIN_VALUE) {
+            if (localDepositedItemAmount == Long.MIN_VALUE) {
                 throw new org.apache.axis2.databinding.ADBException(
                     "depositedItemAmount cannot be null!!");
             } else {
@@ -516,7 +516,7 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
             namespace = "";
             writeStartElement(null, namespace, "itemCurrency", xmlWriter);
 
-            if (localItemCurrency == java.lang.Integer.MIN_VALUE) {
+            if (localItemCurrency == Integer.MIN_VALUE) {
                 throw new org.apache.axis2.databinding.ADBException(
                     "itemCurrency cannot be null!!");
             } else {
@@ -574,7 +574,7 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
             namespace = "";
             writeStartElement(null, namespace, "itemPrice", xmlWriter);
 
-            if (localItemPrice == java.lang.Long.MIN_VALUE) {
+            if (localItemPrice == Long.MIN_VALUE) {
                 throw new org.apache.axis2.databinding.ADBException(
                     "itemPrice cannot be null!!");
             } else {
@@ -598,7 +598,7 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
         xmlWriter.writeEndElement();
     }
 
-    private static java.lang.String generatePrefix(java.lang.String namespace) {
+    private static String generatePrefix(String namespace) {
         if (namespace.equals(
                     "http://engine.paymentgate.ru/webservices/merchant")) {
             return "ns1";
@@ -610,11 +610,11 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
     /**
      * Utility method to write an element start tag.
      */
-    private void writeStartElement(java.lang.String prefix,
-        java.lang.String namespace, java.lang.String localPart,
+    private void writeStartElement(String prefix,
+        String namespace, String localPart,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String writerPrefix = xmlWriter.getPrefix(namespace);
+        String writerPrefix = xmlWriter.getPrefix(namespace);
 
         if (writerPrefix != null) {
             xmlWriter.writeStartElement(writerPrefix, localPart, namespace);
@@ -634,11 +634,11 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
     /**
      * Util method to write an attribute with the ns prefix
      */
-    private void writeAttribute(java.lang.String prefix,
-        java.lang.String namespace, java.lang.String attName,
-        java.lang.String attValue, javax.xml.stream.XMLStreamWriter xmlWriter)
+    private void writeAttribute(String prefix,
+        String namespace, String attName,
+        String attValue, javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String writerPrefix = xmlWriter.getPrefix(namespace);
+        String writerPrefix = xmlWriter.getPrefix(namespace);
 
         if (writerPrefix != null) {
             xmlWriter.writeAttribute(writerPrefix, namespace, attName, attValue);
@@ -652,8 +652,8 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
     /**
      * Util method to write an attribute without the ns prefix
      */
-    private void writeAttribute(java.lang.String namespace,
-        java.lang.String attName, java.lang.String attValue,
+    private void writeAttribute(String namespace,
+        String attName, String attValue,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
         if (namespace.equals("")) {
@@ -667,18 +667,18 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
     /**
      * Util method to write an attribute without the ns prefix
      */
-    private void writeQNameAttribute(java.lang.String namespace,
-        java.lang.String attName, javax.xml.namespace.QName qname,
+    private void writeQNameAttribute(String namespace,
+        String attName, javax.xml.namespace.QName qname,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String attributeNamespace = qname.getNamespaceURI();
-        java.lang.String attributePrefix = xmlWriter.getPrefix(attributeNamespace);
+        String attributeNamespace = qname.getNamespaceURI();
+        String attributePrefix = xmlWriter.getPrefix(attributeNamespace);
 
         if (attributePrefix == null) {
             attributePrefix = registerPrefix(xmlWriter, attributeNamespace);
         }
 
-        java.lang.String attributeValue;
+        String attributeValue;
 
         if (attributePrefix.trim().length() > 0) {
             attributeValue = attributePrefix + ":" + qname.getLocalPart();
@@ -701,10 +701,10 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
     private void writeQName(javax.xml.namespace.QName qname,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String namespaceURI = qname.getNamespaceURI();
+        String namespaceURI = qname.getNamespaceURI();
 
         if (namespaceURI != null) {
-            java.lang.String prefix = xmlWriter.getPrefix(namespaceURI);
+            String prefix = xmlWriter.getPrefix(namespaceURI);
 
             if (prefix == null) {
                 prefix = generatePrefix(namespaceURI);
@@ -733,9 +733,9 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
         if (qnames != null) {
             // we have to store this data until last moment since it is not possible to write any
             // namespace data after writing the charactor data
-            java.lang.StringBuffer stringToWrite = new java.lang.StringBuffer();
-            java.lang.String namespaceURI = null;
-            java.lang.String prefix = null;
+            StringBuffer stringToWrite = new StringBuffer();
+            String namespaceURI = null;
+            String prefix = null;
 
             for (int i = 0; i < qnames.length; i++) {
                 if (i > 0) {
@@ -774,10 +774,10 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
     /**
      * Register a namespace prefix
      */
-    private java.lang.String registerPrefix(
-        javax.xml.stream.XMLStreamWriter xmlWriter, java.lang.String namespace)
+    private String registerPrefix(
+        javax.xml.stream.XMLStreamWriter xmlWriter, String namespace)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String prefix = xmlWriter.getPrefix(namespace);
+        String prefix = xmlWriter.getPrefix(namespace);
 
         if (prefix == null) {
             prefix = generatePrefix(namespace);
@@ -785,7 +785,7 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
             javax.xml.namespace.NamespaceContext nsContext = xmlWriter.getNamespaceContext();
 
             while (true) {
-                java.lang.String uri = nsContext.getNamespaceURI(prefix);
+                String uri = nsContext.getNamespaceURI(prefix);
 
                 if ((uri == null) || (uri.length() == 0)) {
                     break;
@@ -815,14 +815,14 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
          *                If this object is a complex type, the reader is positioned at the end element of its outer element
          */
         public static Item parse(javax.xml.stream.XMLStreamReader reader)
-            throws java.lang.Exception {
+            throws Exception {
             Item object = new Item();
 
             int event;
             javax.xml.namespace.QName currentQName = null;
-            java.lang.String nillableValue = null;
-            java.lang.String prefix = "";
-            java.lang.String namespaceuri = "";
+            String nillableValue = null;
+            String prefix = "";
+            String namespaceuri = "";
 
             try {
                 while (!reader.isStartElement() && !reader.isEndElement())
@@ -832,11 +832,11 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
 
                 if (reader.getAttributeValue(
                             "http://www.w3.org/2001/XMLSchema-instance", "type") != null) {
-                    java.lang.String fullTypeName = reader.getAttributeValue("http://www.w3.org/2001/XMLSchema-instance",
+                    String fullTypeName = reader.getAttributeValue("http://www.w3.org/2001/XMLSchema-instance",
                             "type");
 
                     if (fullTypeName != null) {
-                        java.lang.String nsPrefix = null;
+                        String nsPrefix = null;
 
                         if (fullTypeName.indexOf(":") > -1) {
                             nsPrefix = fullTypeName.substring(0,
@@ -845,15 +845,15 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
 
                         nsPrefix = (nsPrefix == null) ? "" : nsPrefix;
 
-                        java.lang.String type = fullTypeName.substring(fullTypeName.indexOf(
+                        String type = fullTypeName.substring(fullTypeName.indexOf(
                                     ":") + 1);
 
                         if (!"item".equals(type)) {
                             //find namespace for the prefix
-                            java.lang.String nsUri = reader.getNamespaceContext()
+                            String nsUri = reader.getNamespaceContext()
                                                            .getNamespaceURI(nsPrefix);
 
-                            return (Item) merchant.ExtensionMapper.getTypeObject(nsUri,
+                            return (Item) ExtensionMapper.getTypeObject(nsUri,
                                 type, reader);
                         }
                     }
@@ -864,11 +864,11 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
                 java.util.Vector handledAttributes = new java.util.Vector();
 
                 // handle attribute "positionId"
-                java.lang.String tempAttribPositionId = reader.getAttributeValue(null,
+                String tempAttribPositionId = reader.getAttributeValue(null,
                         "positionId");
 
                 if (tempAttribPositionId != null) {
-                    java.lang.String content = tempAttribPositionId;
+                    String content = tempAttribPositionId;
 
                     object.setPositionId(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribPositionId));
@@ -894,7 +894,7 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
                             "The element: " + "name" + "  cannot be null");
                     }
 
-                    java.lang.String content = reader.getElementText();
+                    String content = reader.getElementText();
 
                     object.setName(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             content));
@@ -914,7 +914,7 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
                 if (reader.isStartElement() &&
                         new javax.xml.namespace.QName("", "itemDetails").equals(
                             reader.getName())) {
-                    object.setItemDetails(merchant.ItemDetails.Factory.parse(
+                    object.setItemDetails(ItemDetails.Factory.parse(
                             reader));
 
                     reader.next();
@@ -929,7 +929,7 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
                 if (reader.isStartElement() &&
                         new javax.xml.namespace.QName("", "quantity").equals(
                             reader.getName())) {
-                    object.setQuantity(merchant.Quantity.Factory.parse(
+                    object.setQuantity(Quantity.Factory.parse(
                             reader));
 
                     reader.next();
@@ -957,7 +957,7 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
                             "  cannot be null");
                     }
 
-                    java.lang.String content = reader.getElementText();
+                    String content = reader.getElementText();
 
                     object.setItemAmount(org.apache.axis2.databinding.utils.ConverterUtil.convertToLong(
                             content));
@@ -987,7 +987,7 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
                             "  cannot be null");
                     }
 
-                    java.lang.String content = reader.getElementText();
+                    String content = reader.getElementText();
 
                     object.setDepositedItemAmount(org.apache.axis2.databinding.utils.ConverterUtil.convertToLong(
                             content));
@@ -996,7 +996,7 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
                 } // End of if for expected property start element
 
                 else {
-                    object.setDepositedItemAmount(java.lang.Long.MIN_VALUE);
+                    object.setDepositedItemAmount(Long.MIN_VALUE);
                 }
 
                 while (!reader.isStartElement() && !reader.isEndElement())
@@ -1015,7 +1015,7 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
                             "  cannot be null");
                     }
 
-                    java.lang.String content = reader.getElementText();
+                    String content = reader.getElementText();
 
                     object.setItemCurrency(org.apache.axis2.databinding.utils.ConverterUtil.convertToInt(
                             content));
@@ -1024,7 +1024,7 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
                 } // End of if for expected property start element
 
                 else {
-                    object.setItemCurrency(java.lang.Integer.MIN_VALUE);
+                    object.setItemCurrency(Integer.MIN_VALUE);
                 }
 
                 while (!reader.isStartElement() && !reader.isEndElement())
@@ -1042,7 +1042,7 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
                             "The element: " + "itemCode" + "  cannot be null");
                     }
 
-                    java.lang.String content = reader.getElementText();
+                    String content = reader.getElementText();
 
                     object.setItemCode(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             content));
@@ -1062,7 +1062,7 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
                 if (reader.isStartElement() &&
                         new javax.xml.namespace.QName("", "discount").equals(
                             reader.getName())) {
-                    object.setDiscount(merchant.Discount.Factory.parse(
+                    object.setDiscount(Discount.Factory.parse(
                             reader));
 
                     reader.next();
@@ -1077,7 +1077,7 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
                 if (reader.isStartElement() &&
                         new javax.xml.namespace.QName("", "agentInterest").equals(
                             reader.getName())) {
-                    object.setAgentInterest(merchant.AgentInterest.Factory.parse(
+                    object.setAgentInterest(AgentInterest.Factory.parse(
                             reader));
 
                     reader.next();
@@ -1092,7 +1092,7 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
                 if (reader.isStartElement() &&
                         new javax.xml.namespace.QName("", "tax").equals(
                             reader.getName())) {
-                    object.setTax(merchant.Tax.Factory.parse(
+                    object.setTax(Tax.Factory.parse(
                             reader));
 
                     reader.next();
@@ -1116,7 +1116,7 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
                             "The element: " + "itemPrice" + "  cannot be null");
                     }
 
-                    java.lang.String content = reader.getElementText();
+                    String content = reader.getElementText();
 
                     object.setItemPrice(org.apache.axis2.databinding.utils.ConverterUtil.convertToLong(
                             content));
@@ -1125,7 +1125,7 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
                 } // End of if for expected property start element
 
                 else {
-                    object.setItemPrice(java.lang.Long.MIN_VALUE);
+                    object.setItemPrice(Long.MIN_VALUE);
                 }
 
                 while (!reader.isStartElement() && !reader.isEndElement())
@@ -1134,7 +1134,7 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
                 if (reader.isStartElement() &&
                         new javax.xml.namespace.QName("", "itemAttributes").equals(
                             reader.getName())) {
-                    object.setItemAttributes(merchant.ItemAttributes.Factory.parse(
+                    object.setItemAttributes(ItemAttributes.Factory.parse(
                             reader));
 
                     reader.next();
@@ -1152,7 +1152,7 @@ public class Item implements org.apache.axis2.databinding.ADBBean {
                         "Unexpected subelement " + reader.getName());
                 }
             } catch (javax.xml.stream.XMLStreamException e) {
-                throw new java.lang.Exception(e);
+                throw new Exception(e);
             }
 
             return object;

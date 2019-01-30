@@ -14,612 +14,612 @@ package merchant;
     "unused"
 })
 public class ExtensionMapper {
-    public static java.lang.Object getTypeObject(
-        java.lang.String namespaceURI, java.lang.String typeName,
-        javax.xml.stream.XMLStreamReader reader) throws java.lang.Exception {
+    public static Object getTypeObject(
+        String namespaceURI, String typeName,
+        javax.xml.stream.XMLStreamReader reader) throws Exception {
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "itemDetails".equals(typeName)) {
-            return merchant.ItemDetails.Factory.parse(reader);
+            return ItemDetails.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "entry_type7".equals(typeName)) {
-            return merchant.Entry_type7.Factory.parse(reader);
+            return Entry_type7.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "tax".equals(typeName)) {
-            return merchant.Tax.Factory.parse(reader);
+            return Tax.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "androidError".equals(typeName)) {
-            return merchant.AndroidError.Factory.parse(reader);
+            return AndroidError.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "threeDSInfo".equals(typeName)) {
-            return merchant.ThreeDSInfo.Factory.parse(reader);
+            return ThreeDSInfo.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) &&
                 "recurrentPaymentResponse".equals(typeName)) {
-            return merchant.RecurrentPaymentResponse.Factory.parse(reader);
+            return RecurrentPaymentResponse.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "orderResult".equals(typeName)) {
-            return merchant.OrderResult.Factory.parse(reader);
+            return OrderResult.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) &&
                 "createBindingNoPaymentResponse".equals(typeName)) {
-            return merchant.CreateBindingNoPaymentResponse.Factory.parse(reader);
+            return CreateBindingNoPaymentResponse.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "cardBindingInfo".equals(typeName)) {
-            return merchant.CardBindingInfo.Factory.parse(reader);
+            return CardBindingInfo.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) &&
                 "paymentOrderOtherWayParams".equals(typeName)) {
-            return merchant.PaymentOrderOtherWayParams.Factory.parse(reader);
+            return PaymentOrderOtherWayParams.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "orderInfo".equals(typeName)) {
-            return merchant.OrderInfo.Factory.parse(reader);
+            return OrderInfo.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) &&
                 "applePayPaymentResponse".equals(typeName)) {
-            return merchant.ApplePayPaymentResponse.Factory.parse(reader);
+            return ApplePayPaymentResponse.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "features_type0".equals(typeName)) {
-            return merchant.Features_type0.Factory.parse(reader);
+            return Features_type0.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "entry_type1".equals(typeName)) {
-            return merchant.Entry_type1.Factory.parse(reader);
+            return Entry_type1.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "googlePayError".equals(typeName)) {
-            return merchant.GooglePayError.Factory.parse(reader);
+            return GooglePayError.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "entry_type2".equals(typeName)) {
-            return merchant.Entry_type2.Factory.parse(reader);
+            return Entry_type2.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "entry_type0".equals(typeName)) {
-            return merchant.Entry_type0.Factory.parse(reader);
+            return Entry_type0.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "recurrentPaymentError".equals(typeName)) {
-            return merchant.RecurrentPaymentError.Factory.parse(reader);
+            return RecurrentPaymentError.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "entry_type5".equals(typeName)) {
-            return merchant.Entry_type5.Factory.parse(reader);
+            return Entry_type5.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "depositOrderParams".equals(typeName)) {
-            return merchant.DepositOrderParams.Factory.parse(reader);
+            return DepositOrderParams.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "entry_type6".equals(typeName)) {
-            return merchant.Entry_type6.Factory.parse(reader);
+            return Entry_type6.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "entry_type3".equals(typeName)) {
-            return merchant.Entry_type3.Factory.parse(reader);
+            return Entry_type3.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "entry_type4".equals(typeName)) {
-            return merchant.Entry_type4.Factory.parse(reader);
+            return Entry_type4.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "agentInterest".equals(typeName)) {
-            return merchant.AgentInterest.Factory.parse(reader);
+            return AgentInterest.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "paymentAmountInfo".equals(typeName)) {
-            return merchant.PaymentAmountInfo.Factory.parse(reader);
+            return PaymentAmountInfo.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "googlePayDirectRequest".equals(typeName)) {
-            return merchant.GooglePayDirectRequest.Factory.parse(reader);
+            return GooglePayDirectRequest.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "abstractResponse".equals(typeName)) {
-            return merchant.AbstractResponse.Factory.parse(reader);
+            return AbstractResponse.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "abstractServiceRequest".equals(typeName)) {
-            return merchant.AbstractServiceRequest.Factory.parse(reader);
+            return AbstractServiceRequest.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "agent".equals(typeName)) {
-            return merchant.Agent.Factory.parse(reader);
+            return Agent.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "data".equals(typeName)) {
-            return merchant.Data.Factory.parse(reader);
+            return Data.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "googlePayResponse".equals(typeName)) {
-            return merchant.GooglePayResponse.Factory.parse(reader);
+            return GooglePayResponse.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "orderStatusRequest".equals(typeName)) {
-            return merchant.OrderStatusRequest.Factory.parse(reader);
+            return OrderStatusRequest.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "googlePayData".equals(typeName)) {
-            return merchant.GooglePayData.Factory.parse(reader);
+            return GooglePayData.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "transactionStates".equals(typeName)) {
-            return merchant.TransactionStates.Factory.parse(reader);
+            return TransactionStates.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "orderInfoArray".equals(typeName)) {
-            return merchant.OrderInfoArray.Factory.parse(reader);
+            return OrderInfoArray.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) &&
                 "getOrderStatusExtendedResponse".equals(typeName)) {
-            return merchant.GetOrderStatusExtendedResponse.Factory.parse(reader);
+            return GetOrderStatusExtendedResponse.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) &&
                 "getBindingsByCardOrIdRequest".equals(typeName)) {
-            return merchant.GetBindingsByCardOrIdRequest.Factory.parse(reader);
+            return GetBindingsByCardOrIdRequest.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) &&
                 "getLastOrdersForMerchantsResponse".equals(typeName)) {
-            return merchant.GetLastOrdersForMerchantsResponse.Factory.parse(reader);
+            return GetLastOrdersForMerchantsResponse.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "quantity".equals(typeName)) {
-            return merchant.Quantity.Factory.parse(reader);
+            return Quantity.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "reversalOrderParams".equals(typeName)) {
-            return merchant.ReversalOrderParams.Factory.parse(reader);
+            return ReversalOrderParams.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) &&
                 "androidPayPaymentResponse".equals(typeName)) {
-            return merchant.AndroidPayPaymentResponse.Factory.parse(reader);
+            return AndroidPayPaymentResponse.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "transactionState".equals(typeName)) {
-            return merchant.TransactionState.Factory.parse(reader);
+            return TransactionState.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "cartItems".equals(typeName)) {
-            return merchant.CartItems.Factory.parse(reader);
+            return CartItems.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "merchants".equals(typeName)) {
-            return merchant.Merchants.Factory.parse(reader);
+            return Merchants.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "finishThreeDSRequest".equals(typeName)) {
-            return merchant.FinishThreeDSRequest.Factory.parse(reader);
+            return FinishThreeDSRequest.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) &&
                 "paymentOrderOtherWayResult".equals(typeName)) {
-            return merchant.PaymentOrderOtherWayResult.Factory.parse(reader);
+            return PaymentOrderOtherWayResult.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "loyaltyInfo".equals(typeName)) {
-            return merchant.LoyaltyInfo.Factory.parse(reader);
+            return LoyaltyInfo.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "paymentOrderResult".equals(typeName)) {
-            return merchant.PaymentOrderResult.Factory.parse(reader);
+            return PaymentOrderResult.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "orderStatusResponse".equals(typeName)) {
-            return merchant.OrderStatusResponse.Factory.parse(reader);
+            return OrderStatusResponse.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) &&
                 "createBindingNoPaymentRequest".equals(typeName)) {
-            return merchant.CreateBindingNoPaymentRequest.Factory.parse(reader);
+            return CreateBindingNoPaymentRequest.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "error".equals(typeName)) {
-            return merchant.Error.Factory.parse(reader);
+            return Error.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "extendBindingResponse".equals(typeName)) {
-            return merchant.ExtendBindingResponse.Factory.parse(reader);
+            return ExtendBindingResponse.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "refundOrderParams".equals(typeName)) {
-            return merchant.RefundOrderParams.Factory.parse(reader);
+            return RefundOrderParams.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "paymentOrderParams".equals(typeName)) {
-            return merchant.PaymentOrderParams.Factory.parse(reader);
+            return PaymentOrderParams.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) &&
                 "samsungPayPaymentRequest".equals(typeName)) {
-            return merchant.SamsungPayPaymentRequest.Factory.parse(reader);
+            return SamsungPayPaymentRequest.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) &&
                 "rawPositionRefundRequest".equals(typeName)) {
-            return merchant.RawPositionRefundRequest.Factory.parse(reader);
+            return RawPositionRefundRequest.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "customerDetails".equals(typeName)) {
-            return merchant.CustomerDetails.Factory.parse(reader);
+            return CustomerDetails.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "bindings_type0".equals(typeName)) {
-            return merchant.Bindings_type0.Factory.parse(reader);
+            return Bindings_type0.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) &&
                 "samsungPayPaymentResponse".equals(typeName)) {
-            return merchant.SamsungPayPaymentResponse.Factory.parse(reader);
+            return SamsungPayPaymentResponse.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "recurrentPaymentData".equals(typeName)) {
-            return merchant.RecurrentPaymentData.Factory.parse(reader);
+            return RecurrentPaymentData.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) &&
                 "paymentOrderBindingParams".equals(typeName)) {
-            return merchant.PaymentOrderBindingParams.Factory.parse(reader);
+            return PaymentOrderBindingParams.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "bankInfo".equals(typeName)) {
-            return merchant.BankInfo.Factory.parse(reader);
+            return BankInfo.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) &&
                 "applePayDirectPaymentRequest".equals(typeName)) {
-            return merchant.ApplePayDirectPaymentRequest.Factory.parse(reader);
+            return ApplePayDirectPaymentRequest.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "item".equals(typeName)) {
-            return merchant.Item.Factory.parse(reader);
+            return Item.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "loyalty".equals(typeName)) {
-            return merchant.Loyalty.Factory.parse(reader);
+            return Loyalty.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "samsungError".equals(typeName)) {
-            return merchant.SamsungError.Factory.parse(reader);
+            return SamsungError.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "loyaltyOperation".equals(typeName)) {
-            return merchant.LoyaltyOperation.Factory.parse(reader);
+            return LoyaltyOperation.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "itemAttribute".equals(typeName)) {
-            return merchant.ItemAttribute.Factory.parse(reader);
+            return ItemAttribute.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "refund".equals(typeName)) {
-            return merchant.Refund.Factory.parse(reader);
+            return Refund.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) &&
                 "getLastOrdersForMerchantsRequest".equals(typeName)) {
-            return merchant.GetLastOrdersForMerchantsRequest.Factory.parse(reader);
+            return GetLastOrdersForMerchantsRequest.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "awardBonus".equals(typeName)) {
-            return merchant.AwardBonus.Factory.parse(reader);
+            return AwardBonus.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "registerOrderResponse".equals(typeName)) {
-            return merchant.RegisterOrderResponse.Factory.parse(reader);
+            return RegisterOrderResponse.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "discount".equals(typeName)) {
-            return merchant.Discount.Factory.parse(reader);
+            return Discount.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "binding".equals(typeName)) {
-            return merchant.Binding.Factory.parse(reader);
+            return Binding.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) &&
                 "abstractServiceResponse".equals(typeName)) {
-            return merchant.AbstractServiceResponse.Factory.parse(reader);
+            return AbstractServiceResponse.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "finishThreeDSResponse".equals(typeName)) {
-            return merchant.FinishThreeDSResponse.Factory.parse(reader);
+            return FinishThreeDSResponse.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) &&
                 "recurrentPaymentRequest".equals(typeName)) {
-            return merchant.RecurrentPaymentRequest.Factory.parse(reader);
+            return RecurrentPaymentRequest.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "itemAttributes".equals(typeName)) {
-            return merchant.ItemAttributes.Factory.parse(reader);
+            return ItemAttributes.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "taxType".equals(typeName)) {
-            return merchant.TaxType.Factory.parse(reader);
+            return TaxType.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "applePayPaymentRequest".equals(typeName)) {
-            return merchant.ApplePayPaymentRequest.Factory.parse(reader);
+            return ApplePayPaymentRequest.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) &&
                 "additionalParameters_type3".equals(typeName)) {
-            return merchant.AdditionalParameters_type3.Factory.parse(reader);
+            return AdditionalParameters_type3.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) &&
                 "additionalParameters_type2".equals(typeName)) {
-            return merchant.AdditionalParameters_type2.Factory.parse(reader);
+            return AdditionalParameters_type2.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) &&
                 "verifyEnrollmentResponse".equals(typeName)) {
-            return merchant.VerifyEnrollmentResponse.Factory.parse(reader);
+            return VerifyEnrollmentResponse.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) &&
                 "additionalParameters_type1".equals(typeName)) {
-            return merchant.AdditionalParameters_type1.Factory.parse(reader);
+            return AdditionalParameters_type1.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) &&
                 "additionalParameters_type0".equals(typeName)) {
-            return merchant.AdditionalParameters_type0.Factory.parse(reader);
+            return AdditionalParameters_type0.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) &&
                 "getOrderStatusExtendedRequest".equals(typeName)) {
-            return merchant.GetOrderStatusExtendedRequest.Factory.parse(reader);
+            return GetOrderStatusExtendedRequest.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) &&
                 "additionalParameters_type7".equals(typeName)) {
-            return merchant.AdditionalParameters_type7.Factory.parse(reader);
+            return AdditionalParameters_type7.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) &&
                 "additionalParameters_type6".equals(typeName)) {
-            return merchant.AdditionalParameters_type6.Factory.parse(reader);
+            return AdditionalParameters_type6.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) &&
                 "additionalParameters_type5".equals(typeName)) {
-            return merchant.AdditionalParameters_type5.Factory.parse(reader);
+            return AdditionalParameters_type5.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) &&
                 "additionalParameters_type4".equals(typeName)) {
-            return merchant.AdditionalParameters_type4.Factory.parse(reader);
+            return AdditionalParameters_type4.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "androidData".equals(typeName)) {
-            return merchant.AndroidData.Factory.parse(reader);
+            return AndroidData.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "deliveryInfo".equals(typeName)) {
-            return merchant.DeliveryInfo.Factory.parse(reader);
+            return DeliveryInfo.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "loyalties".equals(typeName)) {
-            return merchant.Loyalties.Factory.parse(reader);
+            return Loyalties.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "itemDetailsParam".equals(typeName)) {
-            return merchant.ItemDetailsParam.Factory.parse(reader);
+            return ItemDetailsParam.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "orderFeature".equals(typeName)) {
-            return merchant.OrderFeature.Factory.parse(reader);
+            return OrderFeature.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "loginParams".equals(typeName)) {
-            return merchant.LoginParams.Factory.parse(reader);
+            return LoginParams.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "operation".equals(typeName)) {
-            return merchant.Operation.Factory.parse(reader);
+            return Operation.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "paymentBonus".equals(typeName)) {
-            return merchant.PaymentBonus.Factory.parse(reader);
+            return PaymentBonus.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "secureAuthInfo".equals(typeName)) {
-            return merchant.SecureAuthInfo.Factory.parse(reader);
+            return SecureAuthInfo.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "extendBindingRequest".equals(typeName)) {
-            return merchant.ExtendBindingRequest.Factory.parse(reader);
+            return ExtendBindingRequest.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "orderParams".equals(typeName)) {
-            return merchant.OrderParams.Factory.parse(reader);
+            return OrderParams.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "rawSumRefundRequest".equals(typeName)) {
-            return merchant.RawSumRefundRequest.Factory.parse(reader);
+            return RawSumRefundRequest.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "getBindingsRequest".equals(typeName)) {
-            return merchant.GetBindingsRequest.Factory.parse(reader);
+            return GetBindingsRequest.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "payerData".equals(typeName)) {
-            return merchant.PayerData.Factory.parse(reader);
+            return PayerData.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "orderBundle".equals(typeName)) {
-            return merchant.OrderBundle.Factory.parse(reader);
+            return OrderBundle.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "processingOperation".equals(typeName)) {
-            return merchant.ProcessingOperation.Factory.parse(reader);
+            return ProcessingOperation.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "agentType".equals(typeName)) {
-            return merchant.AgentType.Factory.parse(reader);
+            return AgentType.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "getBindingsResponse".equals(typeName)) {
-            return merchant.GetBindingsResponse.Factory.parse(reader);
+            return GetBindingsResponse.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "serviceParam".equals(typeName)) {
-            return merchant.ServiceParam.Factory.parse(reader);
+            return ServiceParam.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) &&
                 "processingOperationType".equals(typeName)) {
-            return merchant.ProcessingOperationType.Factory.parse(reader);
+            return ProcessingOperationType.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "cardAuthInfo".equals(typeName)) {
-            return merchant.CardAuthInfo.Factory.parse(reader);
+            return CardAuthInfo.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "googlePayRequest".equals(typeName)) {
-            return merchant.GooglePayRequest.Factory.parse(reader);
+            return GooglePayRequest.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) &&
                 "androidPayPaymentRequest".equals(typeName)) {
-            return merchant.AndroidPayPaymentRequest.Factory.parse(reader);
+            return AndroidPayPaymentRequest.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "samsungData".equals(typeName)) {
-            return merchant.SamsungData.Factory.parse(reader);
+            return SamsungData.Factory.parse(reader);
         }
 
         if ("http://engine.paymentgate.ru/webservices/merchant".equals(
                     namespaceURI) && "addParamsRequest".equals(typeName)) {
-            return merchant.AddParamsRequest.Factory.parse(reader);
+            return AddParamsRequest.Factory.parse(reader);
         }
 
         throw new org.apache.axis2.databinding.ADBException("Unsupported type " +

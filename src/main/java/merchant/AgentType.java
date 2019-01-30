@@ -57,7 +57,7 @@ public class AgentType implements org.apache.axis2.databinding.ADBBean {
         return localAgentType;
     }
 
-    public boolean equals(java.lang.Object obj) {
+    public boolean equals(Object obj) {
         return (obj == this);
     }
 
@@ -65,7 +65,7 @@ public class AgentType implements org.apache.axis2.databinding.ADBBean {
         return toString().hashCode();
     }
 
-    public java.lang.String toString() {
+    public String toString() {
         return org.apache.axis2.databinding.utils.ConverterUtil.convertToString(localAgentType);
     }
 
@@ -95,14 +95,14 @@ public class AgentType implements org.apache.axis2.databinding.ADBBean {
         throws javax.xml.stream.XMLStreamException,
             org.apache.axis2.databinding.ADBException {
         //We can safely assume an element has only one type associated with it
-        java.lang.String namespace = parentQName.getNamespaceURI();
-        java.lang.String _localName = parentQName.getLocalPart();
+        String namespace = parentQName.getNamespaceURI();
+        String _localName = parentQName.getLocalPart();
 
         writeStartElement(null, namespace, _localName, xmlWriter);
 
         // add the type details if this is used in a simple type
         if (serializeType) {
-            java.lang.String namespacePrefix = registerPrefix(xmlWriter,
+            String namespacePrefix = registerPrefix(xmlWriter,
                     "http://engine.paymentgate.ru/webservices/merchant");
 
             if ((namespacePrefix != null) &&
@@ -117,7 +117,7 @@ public class AgentType implements org.apache.axis2.databinding.ADBBean {
             }
         }
 
-        if (localAgentType == java.lang.Integer.MIN_VALUE) {
+        if (localAgentType == Integer.MIN_VALUE) {
             throw new org.apache.axis2.databinding.ADBException(
                 "property value cannot be null!!");
         } else {
@@ -128,7 +128,7 @@ public class AgentType implements org.apache.axis2.databinding.ADBBean {
         xmlWriter.writeEndElement();
     }
 
-    private static java.lang.String generatePrefix(java.lang.String namespace) {
+    private static String generatePrefix(String namespace) {
         if (namespace.equals(
                     "http://engine.paymentgate.ru/webservices/merchant")) {
             return "ns1";
@@ -140,11 +140,11 @@ public class AgentType implements org.apache.axis2.databinding.ADBBean {
     /**
      * Utility method to write an element start tag.
      */
-    private void writeStartElement(java.lang.String prefix,
-        java.lang.String namespace, java.lang.String localPart,
+    private void writeStartElement(String prefix,
+        String namespace, String localPart,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String writerPrefix = xmlWriter.getPrefix(namespace);
+        String writerPrefix = xmlWriter.getPrefix(namespace);
 
         if (writerPrefix != null) {
             xmlWriter.writeStartElement(writerPrefix, localPart, namespace);
@@ -164,11 +164,11 @@ public class AgentType implements org.apache.axis2.databinding.ADBBean {
     /**
      * Util method to write an attribute with the ns prefix
      */
-    private void writeAttribute(java.lang.String prefix,
-        java.lang.String namespace, java.lang.String attName,
-        java.lang.String attValue, javax.xml.stream.XMLStreamWriter xmlWriter)
+    private void writeAttribute(String prefix,
+        String namespace, String attName,
+        String attValue, javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String writerPrefix = xmlWriter.getPrefix(namespace);
+        String writerPrefix = xmlWriter.getPrefix(namespace);
 
         if (writerPrefix != null) {
             xmlWriter.writeAttribute(writerPrefix, namespace, attName, attValue);
@@ -182,8 +182,8 @@ public class AgentType implements org.apache.axis2.databinding.ADBBean {
     /**
      * Util method to write an attribute without the ns prefix
      */
-    private void writeAttribute(java.lang.String namespace,
-        java.lang.String attName, java.lang.String attValue,
+    private void writeAttribute(String namespace,
+        String attName, String attValue,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
         if (namespace.equals("")) {
@@ -197,18 +197,18 @@ public class AgentType implements org.apache.axis2.databinding.ADBBean {
     /**
      * Util method to write an attribute without the ns prefix
      */
-    private void writeQNameAttribute(java.lang.String namespace,
-        java.lang.String attName, javax.xml.namespace.QName qname,
+    private void writeQNameAttribute(String namespace,
+        String attName, javax.xml.namespace.QName qname,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String attributeNamespace = qname.getNamespaceURI();
-        java.lang.String attributePrefix = xmlWriter.getPrefix(attributeNamespace);
+        String attributeNamespace = qname.getNamespaceURI();
+        String attributePrefix = xmlWriter.getPrefix(attributeNamespace);
 
         if (attributePrefix == null) {
             attributePrefix = registerPrefix(xmlWriter, attributeNamespace);
         }
 
-        java.lang.String attributeValue;
+        String attributeValue;
 
         if (attributePrefix.trim().length() > 0) {
             attributeValue = attributePrefix + ":" + qname.getLocalPart();
@@ -231,10 +231,10 @@ public class AgentType implements org.apache.axis2.databinding.ADBBean {
     private void writeQName(javax.xml.namespace.QName qname,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String namespaceURI = qname.getNamespaceURI();
+        String namespaceURI = qname.getNamespaceURI();
 
         if (namespaceURI != null) {
-            java.lang.String prefix = xmlWriter.getPrefix(namespaceURI);
+            String prefix = xmlWriter.getPrefix(namespaceURI);
 
             if (prefix == null) {
                 prefix = generatePrefix(namespaceURI);
@@ -263,9 +263,9 @@ public class AgentType implements org.apache.axis2.databinding.ADBBean {
         if (qnames != null) {
             // we have to store this data until last moment since it is not possible to write any
             // namespace data after writing the charactor data
-            java.lang.StringBuffer stringToWrite = new java.lang.StringBuffer();
-            java.lang.String namespaceURI = null;
-            java.lang.String prefix = null;
+            StringBuffer stringToWrite = new StringBuffer();
+            String namespaceURI = null;
+            String prefix = null;
 
             for (int i = 0; i < qnames.length; i++) {
                 if (i > 0) {
@@ -304,10 +304,10 @@ public class AgentType implements org.apache.axis2.databinding.ADBBean {
     /**
      * Register a namespace prefix
      */
-    private java.lang.String registerPrefix(
-        javax.xml.stream.XMLStreamWriter xmlWriter, java.lang.String namespace)
+    private String registerPrefix(
+        javax.xml.stream.XMLStreamWriter xmlWriter, String namespace)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String prefix = xmlWriter.getPrefix(namespace);
+        String prefix = xmlWriter.getPrefix(namespace);
 
         if (prefix == null) {
             prefix = generatePrefix(namespace);
@@ -315,7 +315,7 @@ public class AgentType implements org.apache.axis2.databinding.ADBBean {
             javax.xml.namespace.NamespaceContext nsContext = xmlWriter.getNamespaceContext();
 
             while (true) {
-                java.lang.String uri = nsContext.getNamespaceURI(prefix);
+                String uri = nsContext.getNamespaceURI(prefix);
 
                 if ((uri == null) || (uri.length() == 0)) {
                     break;
@@ -338,35 +338,35 @@ public class AgentType implements org.apache.axis2.databinding.ADBBean {
         private static org.apache.commons.logging.Log log = org.apache.commons.logging.LogFactory.getLog(Factory.class);
 
         public static AgentType fromValue(int value)
-            throws java.lang.IllegalArgumentException {
+            throws IllegalArgumentException {
             AgentType enumeration = (AgentType) _table_.get(value + "");
 
             // handle unexpected enumeration values properly
             if (enumeration == null) {
-                throw new java.lang.IllegalArgumentException();
+                throw new IllegalArgumentException();
             }
 
             return enumeration;
         }
 
-        public static AgentType fromString(java.lang.String value,
-            java.lang.String namespaceURI)
-            throws java.lang.IllegalArgumentException {
+        public static AgentType fromString(String value,
+                                           String namespaceURI)
+            throws IllegalArgumentException {
             try {
                 return fromValue(org.apache.axis2.databinding.utils.ConverterUtil.convertToInt(
                         value));
-            } catch (java.lang.Exception e) {
-                throw new java.lang.IllegalArgumentException();
+            } catch (Exception e) {
+                throw new IllegalArgumentException();
             }
         }
 
         public static AgentType fromString(
             javax.xml.stream.XMLStreamReader xmlStreamReader,
-            java.lang.String content) {
+            String content) {
             if (content.indexOf(":") > -1) {
-                java.lang.String prefix = content.substring(0,
+                String prefix = content.substring(0,
                         content.indexOf(":"));
-                java.lang.String namespaceUri = xmlStreamReader.getNamespaceContext()
+                String namespaceUri = xmlStreamReader.getNamespaceContext()
                                                                .getNamespaceURI(prefix);
 
                 return AgentType.Factory.fromString(content, namespaceUri);
@@ -383,7 +383,7 @@ public class AgentType implements org.apache.axis2.databinding.ADBBean {
          *                If this object is a complex type, the reader is positioned at the end element of its outer element
          */
         public static AgentType parse(javax.xml.stream.XMLStreamReader reader)
-            throws java.lang.Exception {
+            throws Exception {
             AgentType object = null;
 
             // initialize a hash map to keep values
@@ -392,9 +392,9 @@ public class AgentType implements org.apache.axis2.databinding.ADBBean {
 
             int event;
             javax.xml.namespace.QName currentQName = null;
-            java.lang.String nillableValue = null;
-            java.lang.String prefix = "";
-            java.lang.String namespaceuri = "";
+            String nillableValue = null;
+            String prefix = "";
+            String namespaceuri = "";
 
             try {
                 while (!reader.isStartElement() && !reader.isEndElement())
@@ -418,7 +418,7 @@ public class AgentType implements org.apache.axis2.databinding.ADBBean {
                                 "  cannot be null");
                         }
 
-                        java.lang.String content = reader.getElementText();
+                        String content = reader.getElementText();
 
                         if (content.indexOf(":") > 0) {
                             // this seems to be a Qname so find the namespace and send
@@ -436,7 +436,7 @@ public class AgentType implements org.apache.axis2.databinding.ADBBean {
                     }
                 } // end of while loop
             } catch (javax.xml.stream.XMLStreamException e) {
-                throw new java.lang.Exception(e);
+                throw new Exception(e);
             }
 
             return object;

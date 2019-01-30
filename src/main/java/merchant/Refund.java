@@ -24,13 +24,13 @@ public class Refund implements org.apache.axis2.databinding.ADBBean {
      * field for ReferenceNumber
      * This was an Attribute!
      */
-    protected java.lang.String localReferenceNumber;
+    protected String localReferenceNumber;
 
     /**
      * field for ActionCode
      * This was an Attribute!
      */
-    protected java.lang.String localActionCode;
+    protected String localActionCode;
 
     /**
      * field for Amount
@@ -42,19 +42,19 @@ public class Refund implements org.apache.axis2.databinding.ADBBean {
      * field for ApprovalCode
      * This was an Attribute!
      */
-    protected java.lang.String localApprovalCode;
+    protected String localApprovalCode;
 
     /**
      * field for Date
      * This was an Attribute!
      */
-    protected java.lang.String localDate;
+    protected String localDate;
 
     /**
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getReferenceNumber() {
+    public String getReferenceNumber() {
         return localReferenceNumber;
     }
 
@@ -62,7 +62,7 @@ public class Refund implements org.apache.axis2.databinding.ADBBean {
      * Auto generated setter method
      * @param param ReferenceNumber
      */
-    public void setReferenceNumber(java.lang.String param) {
+    public void setReferenceNumber(String param) {
         this.localReferenceNumber = param;
     }
 
@@ -70,7 +70,7 @@ public class Refund implements org.apache.axis2.databinding.ADBBean {
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getActionCode() {
+    public String getActionCode() {
         return localActionCode;
     }
 
@@ -78,7 +78,7 @@ public class Refund implements org.apache.axis2.databinding.ADBBean {
      * Auto generated setter method
      * @param param ActionCode
      */
-    public void setActionCode(java.lang.String param) {
+    public void setActionCode(String param) {
         this.localActionCode = param;
     }
 
@@ -102,7 +102,7 @@ public class Refund implements org.apache.axis2.databinding.ADBBean {
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getApprovalCode() {
+    public String getApprovalCode() {
         return localApprovalCode;
     }
 
@@ -110,7 +110,7 @@ public class Refund implements org.apache.axis2.databinding.ADBBean {
      * Auto generated setter method
      * @param param ApprovalCode
      */
-    public void setApprovalCode(java.lang.String param) {
+    public void setApprovalCode(String param) {
         this.localApprovalCode = param;
     }
 
@@ -118,7 +118,7 @@ public class Refund implements org.apache.axis2.databinding.ADBBean {
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getDate() {
+    public String getDate() {
         return localDate;
     }
 
@@ -126,7 +126,7 @@ public class Refund implements org.apache.axis2.databinding.ADBBean {
      * Auto generated setter method
      * @param param Date
      */
-    public void setDate(java.lang.String param) {
+    public void setDate(String param) {
         this.localDate = param;
     }
 
@@ -155,8 +155,8 @@ public class Refund implements org.apache.axis2.databinding.ADBBean {
         javax.xml.stream.XMLStreamWriter xmlWriter, boolean serializeType)
         throws javax.xml.stream.XMLStreamException,
             org.apache.axis2.databinding.ADBException {
-        java.lang.String prefix = null;
-        java.lang.String namespace = null;
+        String prefix = null;
+        String namespace = null;
 
         prefix = parentQName.getPrefix();
         namespace = parentQName.getNamespaceURI();
@@ -164,7 +164,7 @@ public class Refund implements org.apache.axis2.databinding.ADBBean {
             xmlWriter);
 
         if (serializeType) {
-            java.lang.String namespacePrefix = registerPrefix(xmlWriter,
+            String namespacePrefix = registerPrefix(xmlWriter,
                     "http://engine.paymentgate.ru/webservices/merchant");
 
             if ((namespacePrefix != null) &&
@@ -191,7 +191,7 @@ public class Refund implements org.apache.axis2.databinding.ADBBean {
                     localActionCode), xmlWriter);
         }
 
-        if (localAmount != java.lang.Long.MIN_VALUE) {
+        if (localAmount != Long.MIN_VALUE) {
             writeAttribute("", "amount",
                 org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                     localAmount), xmlWriter);
@@ -216,7 +216,7 @@ public class Refund implements org.apache.axis2.databinding.ADBBean {
         xmlWriter.writeEndElement();
     }
 
-    private static java.lang.String generatePrefix(java.lang.String namespace) {
+    private static String generatePrefix(String namespace) {
         if (namespace.equals(
                     "http://engine.paymentgate.ru/webservices/merchant")) {
             return "ns1";
@@ -228,11 +228,11 @@ public class Refund implements org.apache.axis2.databinding.ADBBean {
     /**
      * Utility method to write an element start tag.
      */
-    private void writeStartElement(java.lang.String prefix,
-        java.lang.String namespace, java.lang.String localPart,
+    private void writeStartElement(String prefix,
+        String namespace, String localPart,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String writerPrefix = xmlWriter.getPrefix(namespace);
+        String writerPrefix = xmlWriter.getPrefix(namespace);
 
         if (writerPrefix != null) {
             xmlWriter.writeStartElement(writerPrefix, localPart, namespace);
@@ -252,11 +252,11 @@ public class Refund implements org.apache.axis2.databinding.ADBBean {
     /**
      * Util method to write an attribute with the ns prefix
      */
-    private void writeAttribute(java.lang.String prefix,
-        java.lang.String namespace, java.lang.String attName,
-        java.lang.String attValue, javax.xml.stream.XMLStreamWriter xmlWriter)
+    private void writeAttribute(String prefix,
+        String namespace, String attName,
+        String attValue, javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String writerPrefix = xmlWriter.getPrefix(namespace);
+        String writerPrefix = xmlWriter.getPrefix(namespace);
 
         if (writerPrefix != null) {
             xmlWriter.writeAttribute(writerPrefix, namespace, attName, attValue);
@@ -270,8 +270,8 @@ public class Refund implements org.apache.axis2.databinding.ADBBean {
     /**
      * Util method to write an attribute without the ns prefix
      */
-    private void writeAttribute(java.lang.String namespace,
-        java.lang.String attName, java.lang.String attValue,
+    private void writeAttribute(String namespace,
+        String attName, String attValue,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
         if (namespace.equals("")) {
@@ -285,18 +285,18 @@ public class Refund implements org.apache.axis2.databinding.ADBBean {
     /**
      * Util method to write an attribute without the ns prefix
      */
-    private void writeQNameAttribute(java.lang.String namespace,
-        java.lang.String attName, javax.xml.namespace.QName qname,
+    private void writeQNameAttribute(String namespace,
+        String attName, javax.xml.namespace.QName qname,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String attributeNamespace = qname.getNamespaceURI();
-        java.lang.String attributePrefix = xmlWriter.getPrefix(attributeNamespace);
+        String attributeNamespace = qname.getNamespaceURI();
+        String attributePrefix = xmlWriter.getPrefix(attributeNamespace);
 
         if (attributePrefix == null) {
             attributePrefix = registerPrefix(xmlWriter, attributeNamespace);
         }
 
-        java.lang.String attributeValue;
+        String attributeValue;
 
         if (attributePrefix.trim().length() > 0) {
             attributeValue = attributePrefix + ":" + qname.getLocalPart();
@@ -319,10 +319,10 @@ public class Refund implements org.apache.axis2.databinding.ADBBean {
     private void writeQName(javax.xml.namespace.QName qname,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String namespaceURI = qname.getNamespaceURI();
+        String namespaceURI = qname.getNamespaceURI();
 
         if (namespaceURI != null) {
-            java.lang.String prefix = xmlWriter.getPrefix(namespaceURI);
+            String prefix = xmlWriter.getPrefix(namespaceURI);
 
             if (prefix == null) {
                 prefix = generatePrefix(namespaceURI);
@@ -351,9 +351,9 @@ public class Refund implements org.apache.axis2.databinding.ADBBean {
         if (qnames != null) {
             // we have to store this data until last moment since it is not possible to write any
             // namespace data after writing the charactor data
-            java.lang.StringBuffer stringToWrite = new java.lang.StringBuffer();
-            java.lang.String namespaceURI = null;
-            java.lang.String prefix = null;
+            StringBuffer stringToWrite = new StringBuffer();
+            String namespaceURI = null;
+            String prefix = null;
 
             for (int i = 0; i < qnames.length; i++) {
                 if (i > 0) {
@@ -392,10 +392,10 @@ public class Refund implements org.apache.axis2.databinding.ADBBean {
     /**
      * Register a namespace prefix
      */
-    private java.lang.String registerPrefix(
-        javax.xml.stream.XMLStreamWriter xmlWriter, java.lang.String namespace)
+    private String registerPrefix(
+        javax.xml.stream.XMLStreamWriter xmlWriter, String namespace)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String prefix = xmlWriter.getPrefix(namespace);
+        String prefix = xmlWriter.getPrefix(namespace);
 
         if (prefix == null) {
             prefix = generatePrefix(namespace);
@@ -403,7 +403,7 @@ public class Refund implements org.apache.axis2.databinding.ADBBean {
             javax.xml.namespace.NamespaceContext nsContext = xmlWriter.getNamespaceContext();
 
             while (true) {
-                java.lang.String uri = nsContext.getNamespaceURI(prefix);
+                String uri = nsContext.getNamespaceURI(prefix);
 
                 if ((uri == null) || (uri.length() == 0)) {
                     break;
@@ -433,14 +433,14 @@ public class Refund implements org.apache.axis2.databinding.ADBBean {
          *                If this object is a complex type, the reader is positioned at the end element of its outer element
          */
         public static Refund parse(javax.xml.stream.XMLStreamReader reader)
-            throws java.lang.Exception {
+            throws Exception {
             Refund object = new Refund();
 
             int event;
             javax.xml.namespace.QName currentQName = null;
-            java.lang.String nillableValue = null;
-            java.lang.String prefix = "";
-            java.lang.String namespaceuri = "";
+            String nillableValue = null;
+            String prefix = "";
+            String namespaceuri = "";
 
             try {
                 while (!reader.isStartElement() && !reader.isEndElement())
@@ -450,11 +450,11 @@ public class Refund implements org.apache.axis2.databinding.ADBBean {
 
                 if (reader.getAttributeValue(
                             "http://www.w3.org/2001/XMLSchema-instance", "type") != null) {
-                    java.lang.String fullTypeName = reader.getAttributeValue("http://www.w3.org/2001/XMLSchema-instance",
+                    String fullTypeName = reader.getAttributeValue("http://www.w3.org/2001/XMLSchema-instance",
                             "type");
 
                     if (fullTypeName != null) {
-                        java.lang.String nsPrefix = null;
+                        String nsPrefix = null;
 
                         if (fullTypeName.indexOf(":") > -1) {
                             nsPrefix = fullTypeName.substring(0,
@@ -463,15 +463,15 @@ public class Refund implements org.apache.axis2.databinding.ADBBean {
 
                         nsPrefix = (nsPrefix == null) ? "" : nsPrefix;
 
-                        java.lang.String type = fullTypeName.substring(fullTypeName.indexOf(
+                        String type = fullTypeName.substring(fullTypeName.indexOf(
                                     ":") + 1);
 
                         if (!"refund".equals(type)) {
                             //find namespace for the prefix
-                            java.lang.String nsUri = reader.getNamespaceContext()
+                            String nsUri = reader.getNamespaceContext()
                                                            .getNamespaceURI(nsPrefix);
 
-                            return (Refund) merchant.ExtensionMapper.getTypeObject(nsUri,
+                            return (Refund) ExtensionMapper.getTypeObject(nsUri,
                                 type, reader);
                         }
                     }
@@ -482,11 +482,11 @@ public class Refund implements org.apache.axis2.databinding.ADBBean {
                 java.util.Vector handledAttributes = new java.util.Vector();
 
                 // handle attribute "referenceNumber"
-                java.lang.String tempAttribReferenceNumber = reader.getAttributeValue(null,
+                String tempAttribReferenceNumber = reader.getAttributeValue(null,
                         "referenceNumber");
 
                 if (tempAttribReferenceNumber != null) {
-                    java.lang.String content = tempAttribReferenceNumber;
+                    String content = tempAttribReferenceNumber;
 
                     object.setReferenceNumber(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribReferenceNumber));
@@ -496,11 +496,11 @@ public class Refund implements org.apache.axis2.databinding.ADBBean {
                 handledAttributes.add("referenceNumber");
 
                 // handle attribute "actionCode"
-                java.lang.String tempAttribActionCode = reader.getAttributeValue(null,
+                String tempAttribActionCode = reader.getAttributeValue(null,
                         "actionCode");
 
                 if (tempAttribActionCode != null) {
-                    java.lang.String content = tempAttribActionCode;
+                    String content = tempAttribActionCode;
 
                     object.setActionCode(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribActionCode));
@@ -510,11 +510,11 @@ public class Refund implements org.apache.axis2.databinding.ADBBean {
                 handledAttributes.add("actionCode");
 
                 // handle attribute "amount"
-                java.lang.String tempAttribAmount = reader.getAttributeValue(null,
+                String tempAttribAmount = reader.getAttributeValue(null,
                         "amount");
 
                 if (tempAttribAmount != null) {
-                    java.lang.String content = tempAttribAmount;
+                    String content = tempAttribAmount;
 
                     object.setAmount(org.apache.axis2.databinding.utils.ConverterUtil.convertToLong(
                             tempAttribAmount));
@@ -526,11 +526,11 @@ public class Refund implements org.apache.axis2.databinding.ADBBean {
                 handledAttributes.add("amount");
 
                 // handle attribute "approvalCode"
-                java.lang.String tempAttribApprovalCode = reader.getAttributeValue(null,
+                String tempAttribApprovalCode = reader.getAttributeValue(null,
                         "approvalCode");
 
                 if (tempAttribApprovalCode != null) {
-                    java.lang.String content = tempAttribApprovalCode;
+                    String content = tempAttribApprovalCode;
 
                     object.setApprovalCode(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribApprovalCode));
@@ -540,11 +540,11 @@ public class Refund implements org.apache.axis2.databinding.ADBBean {
                 handledAttributes.add("approvalCode");
 
                 // handle attribute "date"
-                java.lang.String tempAttribDate = reader.getAttributeValue(null,
+                String tempAttribDate = reader.getAttributeValue(null,
                         "date");
 
                 if (tempAttribDate != null) {
-                    java.lang.String content = tempAttribDate;
+                    String content = tempAttribDate;
 
                     object.setDate(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribDate));
@@ -564,7 +564,7 @@ public class Refund implements org.apache.axis2.databinding.ADBBean {
                         "Unexpected subelement " + reader.getName());
                 }
             } catch (javax.xml.stream.XMLStreamException e) {
-                throw new java.lang.Exception(e);
+                throw new Exception(e);
             }
 
             return object;

@@ -13,7 +13,7 @@ package merchant;
 @SuppressWarnings({"unchecked",
     "unused"
 })
-public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResponse
+public class GetOrderStatusExtendedResponse extends AbstractServiceResponse
     implements org.apache.axis2.databinding.ADBBean {
     /* This type was generated from the piece of schema that had
        name = getOrderStatusExtendedResponse
@@ -25,7 +25,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
      * field for MerchantOrderParams
      * This was an Array!
      */
-    protected merchant.ServiceParam[] localMerchantOrderParams;
+    protected ServiceParam[] localMerchantOrderParams;
 
     /*  This tracker boolean wil be used to detect whether the user called the set method
      *   for this attribute. It will be used to determine whether to include this field
@@ -37,7 +37,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
      * field for Attributes
      * This was an Array!
      */
-    protected merchant.ServiceParam[] localAttributes;
+    protected ServiceParam[] localAttributes;
 
     /*  This tracker boolean wil be used to detect whether the user called the set method
      *   for this attribute. It will be used to determine whether to include this field
@@ -48,7 +48,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
     /**
      * field for CardAuthInfo
      */
-    protected merchant.CardAuthInfo localCardAuthInfo;
+    protected CardAuthInfo localCardAuthInfo;
 
     /*  This tracker boolean wil be used to detect whether the user called the set method
      *   for this attribute. It will be used to determine whether to include this field
@@ -59,7 +59,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
     /**
      * field for BindingInfo
      */
-    protected merchant.CardBindingInfo localBindingInfo;
+    protected CardBindingInfo localBindingInfo;
 
     /*  This tracker boolean wil be used to detect whether the user called the set method
      *   for this attribute. It will be used to determine whether to include this field
@@ -81,7 +81,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
     /**
      * field for TerminalId
      */
-    protected java.lang.String localTerminalId;
+    protected String localTerminalId;
 
     /*  This tracker boolean wil be used to detect whether the user called the set method
      *   for this attribute. It will be used to determine whether to include this field
@@ -92,7 +92,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
     /**
      * field for AuthRefNum
      */
-    protected java.lang.String localAuthRefNum;
+    protected String localAuthRefNum;
 
     /*  This tracker boolean wil be used to detect whether the user called the set method
      *   for this attribute. It will be used to determine whether to include this field
@@ -103,7 +103,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
     /**
      * field for PaymentAmountInfo
      */
-    protected merchant.PaymentAmountInfo localPaymentAmountInfo;
+    protected PaymentAmountInfo localPaymentAmountInfo;
 
     /*  This tracker boolean wil be used to detect whether the user called the set method
      *   for this attribute. It will be used to determine whether to include this field
@@ -114,7 +114,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
     /**
      * field for BankInfo
      */
-    protected merchant.BankInfo localBankInfo;
+    protected BankInfo localBankInfo;
 
     /*  This tracker boolean wil be used to detect whether the user called the set method
      *   for this attribute. It will be used to determine whether to include this field
@@ -125,7 +125,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
     /**
      * field for PayerData
      */
-    protected merchant.PayerData localPayerData;
+    protected PayerData localPayerData;
 
     /*  This tracker boolean wil be used to detect whether the user called the set method
      *   for this attribute. It will be used to determine whether to include this field
@@ -136,7 +136,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
     /**
      * field for OrderBundle
      */
-    protected merchant.OrderBundle localOrderBundle;
+    protected OrderBundle localOrderBundle;
 
     /*  This tracker boolean wil be used to detect whether the user called the set method
      *   for this attribute. It will be used to determine whether to include this field
@@ -147,7 +147,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
     /**
      * field for LoyaltyInfo
      */
-    protected merchant.LoyaltyInfo localLoyaltyInfo;
+    protected LoyaltyInfo localLoyaltyInfo;
 
     /*  This tracker boolean wil be used to detect whether the user called the set method
      *   for this attribute. It will be used to determine whether to include this field
@@ -159,7 +159,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
      * field for Refunds
      * This was an Array!
      */
-    protected merchant.Refund[] localRefunds;
+    protected Refund[] localRefunds;
 
     /*  This tracker boolean wil be used to detect whether the user called the set method
      *   for this attribute. It will be used to determine whether to include this field
@@ -182,7 +182,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
      * field for Operations
      * This was an Array!
      */
-    protected merchant.ProcessingOperation[] localOperations;
+    protected ProcessingOperation[] localOperations;
 
     /*  This tracker boolean wil be used to detect whether the user called the set method
      *   for this attribute. It will be used to determine whether to include this field
@@ -193,7 +193,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
     /**
      * field for PaymentWay
      */
-    protected java.lang.String localPaymentWay;
+    protected String localPaymentWay;
 
     /*  This tracker boolean wil be used to detect whether the user called the set method
      *   for this attribute. It will be used to determine whether to include this field
@@ -205,7 +205,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
      * field for OrderNumber
      * This was an Attribute!
      */
-    protected java.lang.String localOrderNumber;
+    protected String localOrderNumber;
 
     /**
      * field for OrderStatus
@@ -223,13 +223,13 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
      * field for ActionCodeDescription
      * This was an Attribute!
      */
-    protected java.lang.String localActionCodeDescription;
+    protected String localActionCodeDescription;
 
     /**
      * field for OriginalActionCode
      * This was an Attribute!
      */
-    protected java.lang.String localOriginalActionCode;
+    protected String localOriginalActionCode;
 
     /**
      * field for Amount
@@ -241,7 +241,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
      * field for Currency
      * This was an Attribute!
      */
-    protected java.lang.String localCurrency;
+    protected String localCurrency;
 
     /**
      * field for Date
@@ -271,13 +271,13 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
      * field for OrderDescription
      * This was an Attribute!
      */
-    protected java.lang.String localOrderDescription;
+    protected String localOrderDescription;
 
     /**
      * field for Ip
      * This was an Attribute!
      */
-    protected java.lang.String localIp;
+    protected String localIp;
 
     public boolean isMerchantOrderParamsSpecified() {
         return localMerchantOrderParamsTracker;
@@ -285,9 +285,9 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
 
     /**
      * Auto generated getter method
-     * @return merchant.ServiceParam[]
+     * @return ru.paymentgate.engine.webservices.merchant.ServiceParam[]
      */
-    public merchant.ServiceParam[] getMerchantOrderParams() {
+    public ServiceParam[] getMerchantOrderParams() {
         return localMerchantOrderParams;
     }
 
@@ -295,7 +295,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
      * validate the array for MerchantOrderParams
      */
     protected void validateMerchantOrderParams(
-        merchant.ServiceParam[] param) {
+        ServiceParam[] param) {
     }
 
     /**
@@ -303,7 +303,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
      * @param param MerchantOrderParams
      */
     public void setMerchantOrderParams(
-        merchant.ServiceParam[] param) {
+        ServiceParam[] param) {
         validateMerchantOrderParams(param);
 
         localMerchantOrderParamsTracker = param != null;
@@ -313,13 +313,13 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
 
     /**
      * Auto generated add method for the array for convenience
-     * @param param merchant.ServiceParam
+     * @param param ru.paymentgate.engine.webservices.merchant.ServiceParam
      */
     public void addMerchantOrderParams(
-        merchant.ServiceParam param) {
+        ServiceParam param) {
         if (localMerchantOrderParams == null) {
-            localMerchantOrderParams = new merchant.ServiceParam[] {
-                    
+            localMerchantOrderParams = new ServiceParam[] {
+
                 };
         }
 
@@ -328,7 +328,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
 
         java.util.List list = org.apache.axis2.databinding.utils.ConverterUtil.toList(localMerchantOrderParams);
         list.add(param);
-        this.localMerchantOrderParams = (merchant.ServiceParam[]) list.toArray(new merchant.ServiceParam[list.size()]);
+        this.localMerchantOrderParams = (ServiceParam[]) list.toArray(new ServiceParam[list.size()]);
     }
 
     public boolean isAttributesSpecified() {
@@ -337,9 +337,9 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
 
     /**
      * Auto generated getter method
-     * @return merchant.ServiceParam[]
+     * @return ru.paymentgate.engine.webservices.merchant.ServiceParam[]
      */
-    public merchant.ServiceParam[] getAttributes() {
+    public ServiceParam[] getAttributes() {
         return localAttributes;
     }
 
@@ -347,7 +347,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
      * validate the array for Attributes
      */
     protected void validateAttributes(
-        merchant.ServiceParam[] param) {
+        ServiceParam[] param) {
     }
 
     /**
@@ -355,7 +355,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
      * @param param Attributes
      */
     public void setAttributes(
-        merchant.ServiceParam[] param) {
+        ServiceParam[] param) {
         validateAttributes(param);
 
         localAttributesTracker = param != null;
@@ -365,13 +365,13 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
 
     /**
      * Auto generated add method for the array for convenience
-     * @param param merchant.ServiceParam
+     * @param param ru.paymentgate.engine.webservices.merchant.ServiceParam
      */
     public void addAttributes(
-        merchant.ServiceParam param) {
+        ServiceParam param) {
         if (localAttributes == null) {
-            localAttributes = new merchant.ServiceParam[] {
-                    
+            localAttributes = new ServiceParam[] {
+
                 };
         }
 
@@ -380,7 +380,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
 
         java.util.List list = org.apache.axis2.databinding.utils.ConverterUtil.toList(localAttributes);
         list.add(param);
-        this.localAttributes = (merchant.ServiceParam[]) list.toArray(new merchant.ServiceParam[list.size()]);
+        this.localAttributes = (ServiceParam[]) list.toArray(new ServiceParam[list.size()]);
     }
 
     public boolean isCardAuthInfoSpecified() {
@@ -389,9 +389,9 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
 
     /**
      * Auto generated getter method
-     * @return merchant.CardAuthInfo
+     * @return ru.paymentgate.engine.webservices.merchant.CardAuthInfo
      */
-    public merchant.CardAuthInfo getCardAuthInfo() {
+    public CardAuthInfo getCardAuthInfo() {
         return localCardAuthInfo;
     }
 
@@ -400,7 +400,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
      * @param param CardAuthInfo
      */
     public void setCardAuthInfo(
-        merchant.CardAuthInfo param) {
+        CardAuthInfo param) {
         localCardAuthInfoTracker = param != null;
 
         this.localCardAuthInfo = param;
@@ -412,9 +412,9 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
 
     /**
      * Auto generated getter method
-     * @return merchant.CardBindingInfo
+     * @return ru.paymentgate.engine.webservices.merchant.CardBindingInfo
      */
-    public merchant.CardBindingInfo getBindingInfo() {
+    public CardBindingInfo getBindingInfo() {
         return localBindingInfo;
     }
 
@@ -423,7 +423,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
      * @param param BindingInfo
      */
     public void setBindingInfo(
-        merchant.CardBindingInfo param) {
+        CardBindingInfo param) {
         localBindingInfoTracker = param != null;
 
         this.localBindingInfo = param;
@@ -459,7 +459,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getTerminalId() {
+    public String getTerminalId() {
         return localTerminalId;
     }
 
@@ -467,7 +467,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
      * Auto generated setter method
      * @param param TerminalId
      */
-    public void setTerminalId(java.lang.String param) {
+    public void setTerminalId(String param) {
         localTerminalIdTracker = param != null;
 
         this.localTerminalId = param;
@@ -481,7 +481,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getAuthRefNum() {
+    public String getAuthRefNum() {
         return localAuthRefNum;
     }
 
@@ -489,7 +489,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
      * Auto generated setter method
      * @param param AuthRefNum
      */
-    public void setAuthRefNum(java.lang.String param) {
+    public void setAuthRefNum(String param) {
         localAuthRefNumTracker = param != null;
 
         this.localAuthRefNum = param;
@@ -501,9 +501,9 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
 
     /**
      * Auto generated getter method
-     * @return merchant.PaymentAmountInfo
+     * @return ru.paymentgate.engine.webservices.merchant.PaymentAmountInfo
      */
-    public merchant.PaymentAmountInfo getPaymentAmountInfo() {
+    public PaymentAmountInfo getPaymentAmountInfo() {
         return localPaymentAmountInfo;
     }
 
@@ -512,7 +512,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
      * @param param PaymentAmountInfo
      */
     public void setPaymentAmountInfo(
-        merchant.PaymentAmountInfo param) {
+        PaymentAmountInfo param) {
         localPaymentAmountInfoTracker = param != null;
 
         this.localPaymentAmountInfo = param;
@@ -524,9 +524,9 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
 
     /**
      * Auto generated getter method
-     * @return merchant.BankInfo
+     * @return ru.paymentgate.engine.webservices.merchant.BankInfo
      */
-    public merchant.BankInfo getBankInfo() {
+    public BankInfo getBankInfo() {
         return localBankInfo;
     }
 
@@ -535,7 +535,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
      * @param param BankInfo
      */
     public void setBankInfo(
-        merchant.BankInfo param) {
+        BankInfo param) {
         localBankInfoTracker = param != null;
 
         this.localBankInfo = param;
@@ -547,9 +547,9 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
 
     /**
      * Auto generated getter method
-     * @return merchant.PayerData
+     * @return ru.paymentgate.engine.webservices.merchant.PayerData
      */
-    public merchant.PayerData getPayerData() {
+    public PayerData getPayerData() {
         return localPayerData;
     }
 
@@ -558,7 +558,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
      * @param param PayerData
      */
     public void setPayerData(
-        merchant.PayerData param) {
+        PayerData param) {
         localPayerDataTracker = param != null;
 
         this.localPayerData = param;
@@ -570,9 +570,9 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
 
     /**
      * Auto generated getter method
-     * @return merchant.OrderBundle
+     * @return ru.paymentgate.engine.webservices.merchant.OrderBundle
      */
-    public merchant.OrderBundle getOrderBundle() {
+    public OrderBundle getOrderBundle() {
         return localOrderBundle;
     }
 
@@ -581,7 +581,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
      * @param param OrderBundle
      */
     public void setOrderBundle(
-        merchant.OrderBundle param) {
+        OrderBundle param) {
         localOrderBundleTracker = param != null;
 
         this.localOrderBundle = param;
@@ -593,9 +593,9 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
 
     /**
      * Auto generated getter method
-     * @return merchant.LoyaltyInfo
+     * @return ru.paymentgate.engine.webservices.merchant.LoyaltyInfo
      */
-    public merchant.LoyaltyInfo getLoyaltyInfo() {
+    public LoyaltyInfo getLoyaltyInfo() {
         return localLoyaltyInfo;
     }
 
@@ -604,7 +604,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
      * @param param LoyaltyInfo
      */
     public void setLoyaltyInfo(
-        merchant.LoyaltyInfo param) {
+        LoyaltyInfo param) {
         localLoyaltyInfoTracker = param != null;
 
         this.localLoyaltyInfo = param;
@@ -616,9 +616,9 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
 
     /**
      * Auto generated getter method
-     * @return merchant.Refund[]
+     * @return ru.paymentgate.engine.webservices.merchant.Refund[]
      */
-    public merchant.Refund[] getRefunds() {
+    public Refund[] getRefunds() {
         return localRefunds;
     }
 
@@ -626,7 +626,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
      * validate the array for Refunds
      */
     protected void validateRefunds(
-        merchant.Refund[] param) {
+        Refund[] param) {
     }
 
     /**
@@ -634,7 +634,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
      * @param param Refunds
      */
     public void setRefunds(
-        merchant.Refund[] param) {
+        Refund[] param) {
         validateRefunds(param);
 
         localRefundsTracker = param != null;
@@ -644,13 +644,13 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
 
     /**
      * Auto generated add method for the array for convenience
-     * @param param merchant.Refund
+     * @param param ru.paymentgate.engine.webservices.merchant.Refund
      */
     public void addRefunds(
-        merchant.Refund param) {
+        Refund param) {
         if (localRefunds == null) {
-            localRefunds = new merchant.Refund[] {
-                    
+            localRefunds = new Refund[] {
+
                 };
         }
 
@@ -659,7 +659,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
 
         java.util.List list = org.apache.axis2.databinding.utils.ConverterUtil.toList(localRefunds);
         list.add(param);
-        this.localRefunds = (merchant.Refund[]) list.toArray(new merchant.Refund[list.size()]);
+        this.localRefunds = (Refund[]) list.toArray(new Refund[list.size()]);
     }
 
     public boolean isChargebackSpecified() {
@@ -691,9 +691,9 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
 
     /**
      * Auto generated getter method
-     * @return merchant.ProcessingOperation[]
+     * @return ru.paymentgate.engine.webservices.merchant.ProcessingOperation[]
      */
-    public merchant.ProcessingOperation[] getOperations() {
+    public ProcessingOperation[] getOperations() {
         return localOperations;
     }
 
@@ -701,7 +701,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
      * validate the array for Operations
      */
     protected void validateOperations(
-        merchant.ProcessingOperation[] param) {
+        ProcessingOperation[] param) {
     }
 
     /**
@@ -709,7 +709,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
      * @param param Operations
      */
     public void setOperations(
-        merchant.ProcessingOperation[] param) {
+        ProcessingOperation[] param) {
         validateOperations(param);
 
         localOperationsTracker = param != null;
@@ -719,13 +719,13 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
 
     /**
      * Auto generated add method for the array for convenience
-     * @param param merchant.ProcessingOperation
+     * @param param ru.paymentgate.engine.webservices.merchant.ProcessingOperation
      */
     public void addOperations(
-        merchant.ProcessingOperation param) {
+        ProcessingOperation param) {
         if (localOperations == null) {
-            localOperations = new merchant.ProcessingOperation[] {
-                    
+            localOperations = new ProcessingOperation[] {
+
                 };
         }
 
@@ -734,7 +734,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
 
         java.util.List list = org.apache.axis2.databinding.utils.ConverterUtil.toList(localOperations);
         list.add(param);
-        this.localOperations = (merchant.ProcessingOperation[]) list.toArray(new merchant.ProcessingOperation[list.size()]);
+        this.localOperations = (ProcessingOperation[]) list.toArray(new ProcessingOperation[list.size()]);
     }
 
     public boolean isPaymentWaySpecified() {
@@ -745,7 +745,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getPaymentWay() {
+    public String getPaymentWay() {
         return localPaymentWay;
     }
 
@@ -753,7 +753,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
      * Auto generated setter method
      * @param param PaymentWay
      */
-    public void setPaymentWay(java.lang.String param) {
+    public void setPaymentWay(String param) {
         localPaymentWayTracker = param != null;
 
         this.localPaymentWay = param;
@@ -763,7 +763,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getOrderNumber() {
+    public String getOrderNumber() {
         return localOrderNumber;
     }
 
@@ -771,7 +771,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
      * Auto generated setter method
      * @param param OrderNumber
      */
-    public void setOrderNumber(java.lang.String param) {
+    public void setOrderNumber(String param) {
         this.localOrderNumber = param;
     }
 
@@ -811,7 +811,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getActionCodeDescription() {
+    public String getActionCodeDescription() {
         return localActionCodeDescription;
     }
 
@@ -819,7 +819,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
      * Auto generated setter method
      * @param param ActionCodeDescription
      */
-    public void setActionCodeDescription(java.lang.String param) {
+    public void setActionCodeDescription(String param) {
         this.localActionCodeDescription = param;
     }
 
@@ -827,7 +827,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getOriginalActionCode() {
+    public String getOriginalActionCode() {
         return localOriginalActionCode;
     }
 
@@ -835,7 +835,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
      * Auto generated setter method
      * @param param OriginalActionCode
      */
-    public void setOriginalActionCode(java.lang.String param) {
+    public void setOriginalActionCode(String param) {
         this.localOriginalActionCode = param;
     }
 
@@ -859,7 +859,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getCurrency() {
+    public String getCurrency() {
         return localCurrency;
     }
 
@@ -867,7 +867,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
      * Auto generated setter method
      * @param param Currency
      */
-    public void setCurrency(java.lang.String param) {
+    public void setCurrency(String param) {
         this.localCurrency = param;
     }
 
@@ -939,7 +939,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getOrderDescription() {
+    public String getOrderDescription() {
         return localOrderDescription;
     }
 
@@ -947,7 +947,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
      * Auto generated setter method
      * @param param OrderDescription
      */
-    public void setOrderDescription(java.lang.String param) {
+    public void setOrderDescription(String param) {
         this.localOrderDescription = param;
     }
 
@@ -955,7 +955,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getIp() {
+    public String getIp() {
         return localIp;
     }
 
@@ -963,7 +963,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
      * Auto generated setter method
      * @param param Ip
      */
-    public void setIp(java.lang.String param) {
+    public void setIp(String param) {
         this.localIp = param;
     }
 
@@ -992,15 +992,15 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
         javax.xml.stream.XMLStreamWriter xmlWriter, boolean serializeType)
         throws javax.xml.stream.XMLStreamException,
             org.apache.axis2.databinding.ADBException {
-        java.lang.String prefix = null;
-        java.lang.String namespace = null;
+        String prefix = null;
+        String namespace = null;
 
         prefix = parentQName.getPrefix();
         namespace = parentQName.getNamespaceURI();
         writeStartElement(prefix, namespace, parentQName.getLocalPart(),
             xmlWriter);
 
-        java.lang.String namespacePrefix = registerPrefix(xmlWriter,
+        String namespacePrefix = registerPrefix(xmlWriter,
                 "http://engine.paymentgate.ru/webservices/merchant");
 
         if ((namespacePrefix != null) && (namespacePrefix.trim().length() > 0)) {
@@ -1036,13 +1036,13 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
                     localOrderNumber), xmlWriter);
         }
 
-        if (localOrderStatus != java.lang.Integer.MIN_VALUE) {
+        if (localOrderStatus != Integer.MIN_VALUE) {
             writeAttribute("", "orderStatus",
                 org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                     localOrderStatus), xmlWriter);
         }
 
-        if (localActionCode != java.lang.Integer.MIN_VALUE) {
+        if (localActionCode != Integer.MIN_VALUE) {
             writeAttribute("", "actionCode",
                 org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                     localActionCode), xmlWriter);
@@ -1060,7 +1060,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
                     localOriginalActionCode), xmlWriter);
         }
 
-        if (localAmount != java.lang.Long.MIN_VALUE) {
+        if (localAmount != Long.MIN_VALUE) {
             writeAttribute("", "amount",
                 org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                     localAmount), xmlWriter);
@@ -1321,7 +1321,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
         xmlWriter.writeEndElement();
     }
 
-    private static java.lang.String generatePrefix(java.lang.String namespace) {
+    private static String generatePrefix(String namespace) {
         if (namespace.equals(
                     "http://engine.paymentgate.ru/webservices/merchant")) {
             return "ns1";
@@ -1333,11 +1333,11 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
     /**
      * Utility method to write an element start tag.
      */
-    private void writeStartElement(java.lang.String prefix,
-        java.lang.String namespace, java.lang.String localPart,
+    private void writeStartElement(String prefix,
+        String namespace, String localPart,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String writerPrefix = xmlWriter.getPrefix(namespace);
+        String writerPrefix = xmlWriter.getPrefix(namespace);
 
         if (writerPrefix != null) {
             xmlWriter.writeStartElement(writerPrefix, localPart, namespace);
@@ -1357,11 +1357,11 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
     /**
      * Util method to write an attribute with the ns prefix
      */
-    private void writeAttribute(java.lang.String prefix,
-        java.lang.String namespace, java.lang.String attName,
-        java.lang.String attValue, javax.xml.stream.XMLStreamWriter xmlWriter)
+    private void writeAttribute(String prefix,
+        String namespace, String attName,
+        String attValue, javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String writerPrefix = xmlWriter.getPrefix(namespace);
+        String writerPrefix = xmlWriter.getPrefix(namespace);
 
         if (writerPrefix != null) {
             xmlWriter.writeAttribute(writerPrefix, namespace, attName, attValue);
@@ -1375,8 +1375,8 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
     /**
      * Util method to write an attribute without the ns prefix
      */
-    private void writeAttribute(java.lang.String namespace,
-        java.lang.String attName, java.lang.String attValue,
+    private void writeAttribute(String namespace,
+        String attName, String attValue,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
         if (namespace.equals("")) {
@@ -1390,18 +1390,18 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
     /**
      * Util method to write an attribute without the ns prefix
      */
-    private void writeQNameAttribute(java.lang.String namespace,
-        java.lang.String attName, javax.xml.namespace.QName qname,
+    private void writeQNameAttribute(String namespace,
+        String attName, javax.xml.namespace.QName qname,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String attributeNamespace = qname.getNamespaceURI();
-        java.lang.String attributePrefix = xmlWriter.getPrefix(attributeNamespace);
+        String attributeNamespace = qname.getNamespaceURI();
+        String attributePrefix = xmlWriter.getPrefix(attributeNamespace);
 
         if (attributePrefix == null) {
             attributePrefix = registerPrefix(xmlWriter, attributeNamespace);
         }
 
-        java.lang.String attributeValue;
+        String attributeValue;
 
         if (attributePrefix.trim().length() > 0) {
             attributeValue = attributePrefix + ":" + qname.getLocalPart();
@@ -1424,10 +1424,10 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
     private void writeQName(javax.xml.namespace.QName qname,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String namespaceURI = qname.getNamespaceURI();
+        String namespaceURI = qname.getNamespaceURI();
 
         if (namespaceURI != null) {
-            java.lang.String prefix = xmlWriter.getPrefix(namespaceURI);
+            String prefix = xmlWriter.getPrefix(namespaceURI);
 
             if (prefix == null) {
                 prefix = generatePrefix(namespaceURI);
@@ -1456,9 +1456,9 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
         if (qnames != null) {
             // we have to store this data until last moment since it is not possible to write any
             // namespace data after writing the charactor data
-            java.lang.StringBuffer stringToWrite = new java.lang.StringBuffer();
-            java.lang.String namespaceURI = null;
-            java.lang.String prefix = null;
+            StringBuffer stringToWrite = new StringBuffer();
+            String namespaceURI = null;
+            String prefix = null;
 
             for (int i = 0; i < qnames.length; i++) {
                 if (i > 0) {
@@ -1497,10 +1497,10 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
     /**
      * Register a namespace prefix
      */
-    private java.lang.String registerPrefix(
-        javax.xml.stream.XMLStreamWriter xmlWriter, java.lang.String namespace)
+    private String registerPrefix(
+        javax.xml.stream.XMLStreamWriter xmlWriter, String namespace)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String prefix = xmlWriter.getPrefix(namespace);
+        String prefix = xmlWriter.getPrefix(namespace);
 
         if (prefix == null) {
             prefix = generatePrefix(namespace);
@@ -1508,7 +1508,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
             javax.xml.namespace.NamespaceContext nsContext = xmlWriter.getNamespaceContext();
 
             while (true) {
-                java.lang.String uri = nsContext.getNamespaceURI(prefix);
+                String uri = nsContext.getNamespaceURI(prefix);
 
                 if ((uri == null) || (uri.length() == 0)) {
                     break;
@@ -1538,14 +1538,14 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
          *                If this object is a complex type, the reader is positioned at the end element of its outer element
          */
         public static GetOrderStatusExtendedResponse parse(
-            javax.xml.stream.XMLStreamReader reader) throws java.lang.Exception {
+            javax.xml.stream.XMLStreamReader reader) throws Exception {
             GetOrderStatusExtendedResponse object = new GetOrderStatusExtendedResponse();
 
             int event;
             javax.xml.namespace.QName currentQName = null;
-            java.lang.String nillableValue = null;
-            java.lang.String prefix = "";
-            java.lang.String namespaceuri = "";
+            String nillableValue = null;
+            String prefix = "";
+            String namespaceuri = "";
 
             try {
                 while (!reader.isStartElement() && !reader.isEndElement())
@@ -1555,11 +1555,11 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
 
                 if (reader.getAttributeValue(
                             "http://www.w3.org/2001/XMLSchema-instance", "type") != null) {
-                    java.lang.String fullTypeName = reader.getAttributeValue("http://www.w3.org/2001/XMLSchema-instance",
+                    String fullTypeName = reader.getAttributeValue("http://www.w3.org/2001/XMLSchema-instance",
                             "type");
 
                     if (fullTypeName != null) {
-                        java.lang.String nsPrefix = null;
+                        String nsPrefix = null;
 
                         if (fullTypeName.indexOf(":") > -1) {
                             nsPrefix = fullTypeName.substring(0,
@@ -1568,15 +1568,15 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
 
                         nsPrefix = (nsPrefix == null) ? "" : nsPrefix;
 
-                        java.lang.String type = fullTypeName.substring(fullTypeName.indexOf(
+                        String type = fullTypeName.substring(fullTypeName.indexOf(
                                     ":") + 1);
 
                         if (!"getOrderStatusExtendedResponse".equals(type)) {
                             //find namespace for the prefix
-                            java.lang.String nsUri = reader.getNamespaceContext()
+                            String nsUri = reader.getNamespaceContext()
                                                            .getNamespaceURI(nsPrefix);
 
-                            return (GetOrderStatusExtendedResponse) merchant.ExtensionMapper.getTypeObject(nsUri,
+                            return (GetOrderStatusExtendedResponse) ExtensionMapper.getTypeObject(nsUri,
                                 type, reader);
                         }
                     }
@@ -1587,11 +1587,11 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
                 java.util.Vector handledAttributes = new java.util.Vector();
 
                 // handle attribute "errorCode"
-                java.lang.String tempAttribErrorCode = reader.getAttributeValue(null,
+                String tempAttribErrorCode = reader.getAttributeValue(null,
                         "errorCode");
 
                 if (tempAttribErrorCode != null) {
-                    java.lang.String content = tempAttribErrorCode;
+                    String content = tempAttribErrorCode;
 
                     object.setErrorCode(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribErrorCode));
@@ -1601,11 +1601,11 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
                 handledAttributes.add("errorCode");
 
                 // handle attribute "errorMessage"
-                java.lang.String tempAttribErrorMessage = reader.getAttributeValue(null,
+                String tempAttribErrorMessage = reader.getAttributeValue(null,
                         "errorMessage");
 
                 if (tempAttribErrorMessage != null) {
-                    java.lang.String content = tempAttribErrorMessage;
+                    String content = tempAttribErrorMessage;
 
                     object.setErrorMessage(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribErrorMessage));
@@ -1615,11 +1615,11 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
                 handledAttributes.add("errorMessage");
 
                 // handle attribute "userMessage"
-                java.lang.String tempAttribUserMessage = reader.getAttributeValue(null,
+                String tempAttribUserMessage = reader.getAttributeValue(null,
                         "userMessage");
 
                 if (tempAttribUserMessage != null) {
-                    java.lang.String content = tempAttribUserMessage;
+                    String content = tempAttribUserMessage;
 
                     object.setUserMessage(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribUserMessage));
@@ -1629,11 +1629,11 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
                 handledAttributes.add("userMessage");
 
                 // handle attribute "orderNumber"
-                java.lang.String tempAttribOrderNumber = reader.getAttributeValue(null,
+                String tempAttribOrderNumber = reader.getAttributeValue(null,
                         "orderNumber");
 
                 if (tempAttribOrderNumber != null) {
-                    java.lang.String content = tempAttribOrderNumber;
+                    String content = tempAttribOrderNumber;
 
                     object.setOrderNumber(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribOrderNumber));
@@ -1643,41 +1643,41 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
                 handledAttributes.add("orderNumber");
 
                 // handle attribute "orderStatus"
-                java.lang.String tempAttribOrderStatus = reader.getAttributeValue(null,
+                String tempAttribOrderStatus = reader.getAttributeValue(null,
                         "orderStatus");
 
                 if (tempAttribOrderStatus != null) {
-                    java.lang.String content = tempAttribOrderStatus;
+                    String content = tempAttribOrderStatus;
 
                     object.setOrderStatus(org.apache.axis2.databinding.utils.ConverterUtil.convertToInt(
                             tempAttribOrderStatus));
                 } else {
-                    object.setOrderStatus(java.lang.Integer.MIN_VALUE);
+                    object.setOrderStatus(Integer.MIN_VALUE);
                 }
 
                 handledAttributes.add("orderStatus");
 
                 // handle attribute "actionCode"
-                java.lang.String tempAttribActionCode = reader.getAttributeValue(null,
+                String tempAttribActionCode = reader.getAttributeValue(null,
                         "actionCode");
 
                 if (tempAttribActionCode != null) {
-                    java.lang.String content = tempAttribActionCode;
+                    String content = tempAttribActionCode;
 
                     object.setActionCode(org.apache.axis2.databinding.utils.ConverterUtil.convertToInt(
                             tempAttribActionCode));
                 } else {
-                    object.setActionCode(java.lang.Integer.MIN_VALUE);
+                    object.setActionCode(Integer.MIN_VALUE);
                 }
 
                 handledAttributes.add("actionCode");
 
                 // handle attribute "actionCodeDescription"
-                java.lang.String tempAttribActionCodeDescription = reader.getAttributeValue(null,
+                String tempAttribActionCodeDescription = reader.getAttributeValue(null,
                         "actionCodeDescription");
 
                 if (tempAttribActionCodeDescription != null) {
-                    java.lang.String content = tempAttribActionCodeDescription;
+                    String content = tempAttribActionCodeDescription;
 
                     object.setActionCodeDescription(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribActionCodeDescription));
@@ -1687,11 +1687,11 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
                 handledAttributes.add("actionCodeDescription");
 
                 // handle attribute "originalActionCode"
-                java.lang.String tempAttribOriginalActionCode = reader.getAttributeValue(null,
+                String tempAttribOriginalActionCode = reader.getAttributeValue(null,
                         "originalActionCode");
 
                 if (tempAttribOriginalActionCode != null) {
-                    java.lang.String content = tempAttribOriginalActionCode;
+                    String content = tempAttribOriginalActionCode;
 
                     object.setOriginalActionCode(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribOriginalActionCode));
@@ -1701,26 +1701,26 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
                 handledAttributes.add("originalActionCode");
 
                 // handle attribute "amount"
-                java.lang.String tempAttribAmount = reader.getAttributeValue(null,
+                String tempAttribAmount = reader.getAttributeValue(null,
                         "amount");
 
                 if (tempAttribAmount != null) {
-                    java.lang.String content = tempAttribAmount;
+                    String content = tempAttribAmount;
 
                     object.setAmount(org.apache.axis2.databinding.utils.ConverterUtil.convertToLong(
                             tempAttribAmount));
                 } else {
-                    object.setAmount(java.lang.Long.MIN_VALUE);
+                    object.setAmount(Long.MIN_VALUE);
                 }
 
                 handledAttributes.add("amount");
 
                 // handle attribute "currency"
-                java.lang.String tempAttribCurrency = reader.getAttributeValue(null,
+                String tempAttribCurrency = reader.getAttributeValue(null,
                         "currency");
 
                 if (tempAttribCurrency != null) {
-                    java.lang.String content = tempAttribCurrency;
+                    String content = tempAttribCurrency;
 
                     object.setCurrency(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribCurrency));
@@ -1730,11 +1730,11 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
                 handledAttributes.add("currency");
 
                 // handle attribute "date"
-                java.lang.String tempAttribDate = reader.getAttributeValue(null,
+                String tempAttribDate = reader.getAttributeValue(null,
                         "date");
 
                 if (tempAttribDate != null) {
-                    java.lang.String content = tempAttribDate;
+                    String content = tempAttribDate;
 
                     object.setDate(org.apache.axis2.databinding.utils.ConverterUtil.convertToDateTime(
                             tempAttribDate));
@@ -1744,11 +1744,11 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
                 handledAttributes.add("date");
 
                 // handle attribute "depositedDate"
-                java.lang.String tempAttribDepositedDate = reader.getAttributeValue(null,
+                String tempAttribDepositedDate = reader.getAttributeValue(null,
                         "depositedDate");
 
                 if (tempAttribDepositedDate != null) {
-                    java.lang.String content = tempAttribDepositedDate;
+                    String content = tempAttribDepositedDate;
 
                     object.setDepositedDate(org.apache.axis2.databinding.utils.ConverterUtil.convertToDateTime(
                             tempAttribDepositedDate));
@@ -1758,11 +1758,11 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
                 handledAttributes.add("depositedDate");
 
                 // handle attribute "refundedDate"
-                java.lang.String tempAttribRefundedDate = reader.getAttributeValue(null,
+                String tempAttribRefundedDate = reader.getAttributeValue(null,
                         "refundedDate");
 
                 if (tempAttribRefundedDate != null) {
-                    java.lang.String content = tempAttribRefundedDate;
+                    String content = tempAttribRefundedDate;
 
                     object.setRefundedDate(org.apache.axis2.databinding.utils.ConverterUtil.convertToDateTime(
                             tempAttribRefundedDate));
@@ -1772,11 +1772,11 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
                 handledAttributes.add("refundedDate");
 
                 // handle attribute "reversedDate"
-                java.lang.String tempAttribReversedDate = reader.getAttributeValue(null,
+                String tempAttribReversedDate = reader.getAttributeValue(null,
                         "reversedDate");
 
                 if (tempAttribReversedDate != null) {
-                    java.lang.String content = tempAttribReversedDate;
+                    String content = tempAttribReversedDate;
 
                     object.setReversedDate(org.apache.axis2.databinding.utils.ConverterUtil.convertToDateTime(
                             tempAttribReversedDate));
@@ -1786,11 +1786,11 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
                 handledAttributes.add("reversedDate");
 
                 // handle attribute "orderDescription"
-                java.lang.String tempAttribOrderDescription = reader.getAttributeValue(null,
+                String tempAttribOrderDescription = reader.getAttributeValue(null,
                         "orderDescription");
 
                 if (tempAttribOrderDescription != null) {
-                    java.lang.String content = tempAttribOrderDescription;
+                    String content = tempAttribOrderDescription;
 
                     object.setOrderDescription(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribOrderDescription));
@@ -1800,11 +1800,11 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
                 handledAttributes.add("orderDescription");
 
                 // handle attribute "ip"
-                java.lang.String tempAttribIp = reader.getAttributeValue(null,
+                String tempAttribIp = reader.getAttributeValue(null,
                         "ip");
 
                 if (tempAttribIp != null) {
-                    java.lang.String content = tempAttribIp;
+                    String content = tempAttribIp;
 
                     object.setIp(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribIp));
@@ -1830,7 +1830,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
                         new javax.xml.namespace.QName("", "merchantOrderParams").equals(
                             reader.getName())) {
                     // Process the array and step past its final element's end.
-                    list1.add(merchant.ServiceParam.Factory.parse(
+                    list1.add(ServiceParam.Factory.parse(
                             reader));
 
                     //loop until we find a start element that is not part of this array
@@ -1856,7 +1856,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
                             if (new javax.xml.namespace.QName("",
                                         "merchantOrderParams").equals(
                                         reader.getName())) {
-                                list1.add(merchant.ServiceParam.Factory.parse(
+                                list1.add(ServiceParam.Factory.parse(
                                         reader));
                             } else {
                                 loopDone1 = true;
@@ -1865,8 +1865,8 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
                     }
 
                     // call the converter utility  to convert and set the array
-                    object.setMerchantOrderParams((merchant.ServiceParam[]) org.apache.axis2.databinding.utils.ConverterUtil.convertToArray(
-                            merchant.ServiceParam.class,
+                    object.setMerchantOrderParams((ServiceParam[]) org.apache.axis2.databinding.utils.ConverterUtil.convertToArray(
+                            ServiceParam.class,
                             list1));
                 } // End of if for expected property start element
 
@@ -1880,7 +1880,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
                         new javax.xml.namespace.QName("", "attributes").equals(
                             reader.getName())) {
                     // Process the array and step past its final element's end.
-                    list2.add(merchant.ServiceParam.Factory.parse(
+                    list2.add(ServiceParam.Factory.parse(
                             reader));
 
                     //loop until we find a start element that is not part of this array
@@ -1905,7 +1905,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
                         } else {
                             if (new javax.xml.namespace.QName("", "attributes").equals(
                                         reader.getName())) {
-                                list2.add(merchant.ServiceParam.Factory.parse(
+                                list2.add(ServiceParam.Factory.parse(
                                         reader));
                             } else {
                                 loopDone2 = true;
@@ -1914,8 +1914,8 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
                     }
 
                     // call the converter utility  to convert and set the array
-                    object.setAttributes((merchant.ServiceParam[]) org.apache.axis2.databinding.utils.ConverterUtil.convertToArray(
-                            merchant.ServiceParam.class,
+                    object.setAttributes((ServiceParam[]) org.apache.axis2.databinding.utils.ConverterUtil.convertToArray(
+                            ServiceParam.class,
                             list2));
                 } // End of if for expected property start element
 
@@ -1928,7 +1928,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
                 if (reader.isStartElement() &&
                         new javax.xml.namespace.QName("", "cardAuthInfo").equals(
                             reader.getName())) {
-                    object.setCardAuthInfo(merchant.CardAuthInfo.Factory.parse(
+                    object.setCardAuthInfo(CardAuthInfo.Factory.parse(
                             reader));
 
                     reader.next();
@@ -1943,7 +1943,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
                 if (reader.isStartElement() &&
                         new javax.xml.namespace.QName("", "bindingInfo").equals(
                             reader.getName())) {
-                    object.setBindingInfo(merchant.CardBindingInfo.Factory.parse(
+                    object.setBindingInfo(CardBindingInfo.Factory.parse(
                             reader));
 
                     reader.next();
@@ -1968,7 +1968,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
                             "  cannot be null");
                     }
 
-                    java.lang.String content = reader.getElementText();
+                    String content = reader.getElementText();
 
                     object.setAuthDateTime(org.apache.axis2.databinding.utils.ConverterUtil.convertToDateTime(
                             content));
@@ -1995,7 +1995,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
                             "  cannot be null");
                     }
 
-                    java.lang.String content = reader.getElementText();
+                    String content = reader.getElementText();
 
                     object.setTerminalId(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             content));
@@ -2022,7 +2022,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
                             "  cannot be null");
                     }
 
-                    java.lang.String content = reader.getElementText();
+                    String content = reader.getElementText();
 
                     object.setAuthRefNum(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             content));
@@ -2039,7 +2039,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
                 if (reader.isStartElement() &&
                         new javax.xml.namespace.QName("", "paymentAmountInfo").equals(
                             reader.getName())) {
-                    object.setPaymentAmountInfo(merchant.PaymentAmountInfo.Factory.parse(
+                    object.setPaymentAmountInfo(PaymentAmountInfo.Factory.parse(
                             reader));
 
                     reader.next();
@@ -2054,7 +2054,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
                 if (reader.isStartElement() &&
                         new javax.xml.namespace.QName("", "bankInfo").equals(
                             reader.getName())) {
-                    object.setBankInfo(merchant.BankInfo.Factory.parse(
+                    object.setBankInfo(BankInfo.Factory.parse(
                             reader));
 
                     reader.next();
@@ -2069,7 +2069,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
                 if (reader.isStartElement() &&
                         new javax.xml.namespace.QName("", "payerData").equals(
                             reader.getName())) {
-                    object.setPayerData(merchant.PayerData.Factory.parse(
+                    object.setPayerData(PayerData.Factory.parse(
                             reader));
 
                     reader.next();
@@ -2084,7 +2084,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
                 if (reader.isStartElement() &&
                         new javax.xml.namespace.QName("", "orderBundle").equals(
                             reader.getName())) {
-                    object.setOrderBundle(merchant.OrderBundle.Factory.parse(
+                    object.setOrderBundle(OrderBundle.Factory.parse(
                             reader));
 
                     reader.next();
@@ -2099,7 +2099,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
                 if (reader.isStartElement() &&
                         new javax.xml.namespace.QName("", "loyaltyInfo").equals(
                             reader.getName())) {
-                    object.setLoyaltyInfo(merchant.LoyaltyInfo.Factory.parse(
+                    object.setLoyaltyInfo(LoyaltyInfo.Factory.parse(
                             reader));
 
                     reader.next();
@@ -2115,7 +2115,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
                         new javax.xml.namespace.QName("", "refunds").equals(
                             reader.getName())) {
                     // Process the array and step past its final element's end.
-                    list13.add(merchant.Refund.Factory.parse(
+                    list13.add(Refund.Factory.parse(
                             reader));
 
                     //loop until we find a start element that is not part of this array
@@ -2140,7 +2140,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
                         } else {
                             if (new javax.xml.namespace.QName("", "refunds").equals(
                                         reader.getName())) {
-                                list13.add(merchant.Refund.Factory.parse(
+                                list13.add(Refund.Factory.parse(
                                         reader));
                             } else {
                                 loopDone13 = true;
@@ -2149,8 +2149,8 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
                     }
 
                     // call the converter utility  to convert and set the array
-                    object.setRefunds((merchant.Refund[]) org.apache.axis2.databinding.utils.ConverterUtil.convertToArray(
-                            merchant.Refund.class,
+                    object.setRefunds((Refund[]) org.apache.axis2.databinding.utils.ConverterUtil.convertToArray(
+                            Refund.class,
                             list13));
                 } // End of if for expected property start element
 
@@ -2173,7 +2173,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
                             "  cannot be null");
                     }
 
-                    java.lang.String content = reader.getElementText();
+                    String content = reader.getElementText();
 
                     object.setChargeback(org.apache.axis2.databinding.utils.ConverterUtil.convertToBoolean(
                             content));
@@ -2191,7 +2191,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
                         new javax.xml.namespace.QName("", "operations").equals(
                             reader.getName())) {
                     // Process the array and step past its final element's end.
-                    list15.add(merchant.ProcessingOperation.Factory.parse(
+                    list15.add(ProcessingOperation.Factory.parse(
                             reader));
 
                     //loop until we find a start element that is not part of this array
@@ -2216,7 +2216,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
                         } else {
                             if (new javax.xml.namespace.QName("", "operations").equals(
                                         reader.getName())) {
-                                list15.add(merchant.ProcessingOperation.Factory.parse(
+                                list15.add(ProcessingOperation.Factory.parse(
                                         reader));
                             } else {
                                 loopDone15 = true;
@@ -2225,8 +2225,8 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
                     }
 
                     // call the converter utility  to convert and set the array
-                    object.setOperations((merchant.ProcessingOperation[]) org.apache.axis2.databinding.utils.ConverterUtil.convertToArray(
-                            merchant.ProcessingOperation.class,
+                    object.setOperations((ProcessingOperation[]) org.apache.axis2.databinding.utils.ConverterUtil.convertToArray(
+                            ProcessingOperation.class,
                             list15));
                 } // End of if for expected property start element
 
@@ -2249,7 +2249,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
                             "  cannot be null");
                     }
 
-                    java.lang.String content = reader.getElementText();
+                    String content = reader.getElementText();
 
                     object.setPaymentWay(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             content));
@@ -2269,7 +2269,7 @@ public class GetOrderStatusExtendedResponse extends merchant.AbstractServiceResp
                         "Unexpected subelement " + reader.getName());
                 }
             } catch (javax.xml.stream.XMLStreamException e) {
-                throw new java.lang.Exception(e);
+                throw new Exception(e);
             }
 
             return object;

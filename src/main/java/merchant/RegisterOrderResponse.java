@@ -13,7 +13,7 @@ package merchant;
 @SuppressWarnings({"unchecked",
     "unused"
 })
-public class RegisterOrderResponse extends merchant.AbstractResponse
+public class RegisterOrderResponse extends AbstractResponse
     implements org.apache.axis2.databinding.ADBBean {
     /* This type was generated from the piece of schema that had
        name = registerOrderResponse
@@ -24,7 +24,7 @@ public class RegisterOrderResponse extends merchant.AbstractResponse
     /**
      * field for FormUrl
      */
-    protected java.lang.String localFormUrl;
+    protected String localFormUrl;
 
     /*  This tracker boolean wil be used to detect whether the user called the set method
      *   for this attribute. It will be used to determine whether to include this field
@@ -36,7 +36,7 @@ public class RegisterOrderResponse extends merchant.AbstractResponse
      * field for OrderId
      * This was an Attribute!
      */
-    protected java.lang.String localOrderId;
+    protected String localOrderId;
 
     public boolean isFormUrlSpecified() {
         return localFormUrlTracker;
@@ -46,7 +46,7 @@ public class RegisterOrderResponse extends merchant.AbstractResponse
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getFormUrl() {
+    public String getFormUrl() {
         return localFormUrl;
     }
 
@@ -54,7 +54,7 @@ public class RegisterOrderResponse extends merchant.AbstractResponse
      * Auto generated setter method
      * @param param FormUrl
      */
-    public void setFormUrl(java.lang.String param) {
+    public void setFormUrl(String param) {
         localFormUrlTracker = param != null;
 
         this.localFormUrl = param;
@@ -64,7 +64,7 @@ public class RegisterOrderResponse extends merchant.AbstractResponse
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getOrderId() {
+    public String getOrderId() {
         return localOrderId;
     }
 
@@ -72,7 +72,7 @@ public class RegisterOrderResponse extends merchant.AbstractResponse
      * Auto generated setter method
      * @param param OrderId
      */
-    public void setOrderId(java.lang.String param) {
+    public void setOrderId(String param) {
         this.localOrderId = param;
     }
 
@@ -101,15 +101,15 @@ public class RegisterOrderResponse extends merchant.AbstractResponse
         javax.xml.stream.XMLStreamWriter xmlWriter, boolean serializeType)
         throws javax.xml.stream.XMLStreamException,
             org.apache.axis2.databinding.ADBException {
-        java.lang.String prefix = null;
-        java.lang.String namespace = null;
+        String prefix = null;
+        String namespace = null;
 
         prefix = parentQName.getPrefix();
         namespace = parentQName.getNamespaceURI();
         writeStartElement(prefix, namespace, parentQName.getLocalPart(),
             xmlWriter);
 
-        java.lang.String namespacePrefix = registerPrefix(xmlWriter,
+        String namespacePrefix = registerPrefix(xmlWriter,
                 "http://engine.paymentgate.ru/webservices/merchant");
 
         if ((namespacePrefix != null) && (namespacePrefix.trim().length() > 0)) {
@@ -120,7 +120,7 @@ public class RegisterOrderResponse extends merchant.AbstractResponse
                 "type", "registerOrderResponse", xmlWriter);
         }
 
-        if (localErrorCode != java.lang.Integer.MIN_VALUE) {
+        if (localErrorCode != Integer.MIN_VALUE) {
             writeAttribute("", "errorCode",
                 org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                     localErrorCode), xmlWriter);
@@ -187,7 +187,7 @@ public class RegisterOrderResponse extends merchant.AbstractResponse
         xmlWriter.writeEndElement();
     }
 
-    private static java.lang.String generatePrefix(java.lang.String namespace) {
+    private static String generatePrefix(String namespace) {
         if (namespace.equals(
                     "http://engine.paymentgate.ru/webservices/merchant")) {
             return "ns1";
@@ -199,11 +199,11 @@ public class RegisterOrderResponse extends merchant.AbstractResponse
     /**
      * Utility method to write an element start tag.
      */
-    private void writeStartElement(java.lang.String prefix,
-        java.lang.String namespace, java.lang.String localPart,
+    private void writeStartElement(String prefix,
+        String namespace, String localPart,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String writerPrefix = xmlWriter.getPrefix(namespace);
+        String writerPrefix = xmlWriter.getPrefix(namespace);
 
         if (writerPrefix != null) {
             xmlWriter.writeStartElement(writerPrefix, localPart, namespace);
@@ -223,11 +223,11 @@ public class RegisterOrderResponse extends merchant.AbstractResponse
     /**
      * Util method to write an attribute with the ns prefix
      */
-    private void writeAttribute(java.lang.String prefix,
-        java.lang.String namespace, java.lang.String attName,
-        java.lang.String attValue, javax.xml.stream.XMLStreamWriter xmlWriter)
+    private void writeAttribute(String prefix,
+        String namespace, String attName,
+        String attValue, javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String writerPrefix = xmlWriter.getPrefix(namespace);
+        String writerPrefix = xmlWriter.getPrefix(namespace);
 
         if (writerPrefix != null) {
             xmlWriter.writeAttribute(writerPrefix, namespace, attName, attValue);
@@ -241,8 +241,8 @@ public class RegisterOrderResponse extends merchant.AbstractResponse
     /**
      * Util method to write an attribute without the ns prefix
      */
-    private void writeAttribute(java.lang.String namespace,
-        java.lang.String attName, java.lang.String attValue,
+    private void writeAttribute(String namespace,
+        String attName, String attValue,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
         if (namespace.equals("")) {
@@ -256,18 +256,18 @@ public class RegisterOrderResponse extends merchant.AbstractResponse
     /**
      * Util method to write an attribute without the ns prefix
      */
-    private void writeQNameAttribute(java.lang.String namespace,
-        java.lang.String attName, javax.xml.namespace.QName qname,
+    private void writeQNameAttribute(String namespace,
+        String attName, javax.xml.namespace.QName qname,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String attributeNamespace = qname.getNamespaceURI();
-        java.lang.String attributePrefix = xmlWriter.getPrefix(attributeNamespace);
+        String attributeNamespace = qname.getNamespaceURI();
+        String attributePrefix = xmlWriter.getPrefix(attributeNamespace);
 
         if (attributePrefix == null) {
             attributePrefix = registerPrefix(xmlWriter, attributeNamespace);
         }
 
-        java.lang.String attributeValue;
+        String attributeValue;
 
         if (attributePrefix.trim().length() > 0) {
             attributeValue = attributePrefix + ":" + qname.getLocalPart();
@@ -290,10 +290,10 @@ public class RegisterOrderResponse extends merchant.AbstractResponse
     private void writeQName(javax.xml.namespace.QName qname,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String namespaceURI = qname.getNamespaceURI();
+        String namespaceURI = qname.getNamespaceURI();
 
         if (namespaceURI != null) {
-            java.lang.String prefix = xmlWriter.getPrefix(namespaceURI);
+            String prefix = xmlWriter.getPrefix(namespaceURI);
 
             if (prefix == null) {
                 prefix = generatePrefix(namespaceURI);
@@ -322,9 +322,9 @@ public class RegisterOrderResponse extends merchant.AbstractResponse
         if (qnames != null) {
             // we have to store this data until last moment since it is not possible to write any
             // namespace data after writing the charactor data
-            java.lang.StringBuffer stringToWrite = new java.lang.StringBuffer();
-            java.lang.String namespaceURI = null;
-            java.lang.String prefix = null;
+            StringBuffer stringToWrite = new StringBuffer();
+            String namespaceURI = null;
+            String prefix = null;
 
             for (int i = 0; i < qnames.length; i++) {
                 if (i > 0) {
@@ -363,10 +363,10 @@ public class RegisterOrderResponse extends merchant.AbstractResponse
     /**
      * Register a namespace prefix
      */
-    private java.lang.String registerPrefix(
-        javax.xml.stream.XMLStreamWriter xmlWriter, java.lang.String namespace)
+    private String registerPrefix(
+        javax.xml.stream.XMLStreamWriter xmlWriter, String namespace)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String prefix = xmlWriter.getPrefix(namespace);
+        String prefix = xmlWriter.getPrefix(namespace);
 
         if (prefix == null) {
             prefix = generatePrefix(namespace);
@@ -374,7 +374,7 @@ public class RegisterOrderResponse extends merchant.AbstractResponse
             javax.xml.namespace.NamespaceContext nsContext = xmlWriter.getNamespaceContext();
 
             while (true) {
-                java.lang.String uri = nsContext.getNamespaceURI(prefix);
+                String uri = nsContext.getNamespaceURI(prefix);
 
                 if ((uri == null) || (uri.length() == 0)) {
                     break;
@@ -404,14 +404,14 @@ public class RegisterOrderResponse extends merchant.AbstractResponse
          *                If this object is a complex type, the reader is positioned at the end element of its outer element
          */
         public static RegisterOrderResponse parse(
-            javax.xml.stream.XMLStreamReader reader) throws java.lang.Exception {
+            javax.xml.stream.XMLStreamReader reader) throws Exception {
             RegisterOrderResponse object = new RegisterOrderResponse();
 
             int event;
             javax.xml.namespace.QName currentQName = null;
-            java.lang.String nillableValue = null;
-            java.lang.String prefix = "";
-            java.lang.String namespaceuri = "";
+            String nillableValue = null;
+            String prefix = "";
+            String namespaceuri = "";
 
             try {
                 while (!reader.isStartElement() && !reader.isEndElement())
@@ -421,11 +421,11 @@ public class RegisterOrderResponse extends merchant.AbstractResponse
 
                 if (reader.getAttributeValue(
                             "http://www.w3.org/2001/XMLSchema-instance", "type") != null) {
-                    java.lang.String fullTypeName = reader.getAttributeValue("http://www.w3.org/2001/XMLSchema-instance",
+                    String fullTypeName = reader.getAttributeValue("http://www.w3.org/2001/XMLSchema-instance",
                             "type");
 
                     if (fullTypeName != null) {
-                        java.lang.String nsPrefix = null;
+                        String nsPrefix = null;
 
                         if (fullTypeName.indexOf(":") > -1) {
                             nsPrefix = fullTypeName.substring(0,
@@ -434,15 +434,15 @@ public class RegisterOrderResponse extends merchant.AbstractResponse
 
                         nsPrefix = (nsPrefix == null) ? "" : nsPrefix;
 
-                        java.lang.String type = fullTypeName.substring(fullTypeName.indexOf(
+                        String type = fullTypeName.substring(fullTypeName.indexOf(
                                     ":") + 1);
 
                         if (!"registerOrderResponse".equals(type)) {
                             //find namespace for the prefix
-                            java.lang.String nsUri = reader.getNamespaceContext()
+                            String nsUri = reader.getNamespaceContext()
                                                            .getNamespaceURI(nsPrefix);
 
-                            return (RegisterOrderResponse) merchant.ExtensionMapper.getTypeObject(nsUri,
+                            return (RegisterOrderResponse) ExtensionMapper.getTypeObject(nsUri,
                                 type, reader);
                         }
                     }
@@ -453,11 +453,11 @@ public class RegisterOrderResponse extends merchant.AbstractResponse
                 java.util.Vector handledAttributes = new java.util.Vector();
 
                 // handle attribute "errorCode"
-                java.lang.String tempAttribErrorCode = reader.getAttributeValue(null,
+                String tempAttribErrorCode = reader.getAttributeValue(null,
                         "errorCode");
 
                 if (tempAttribErrorCode != null) {
-                    java.lang.String content = tempAttribErrorCode;
+                    String content = tempAttribErrorCode;
 
                     object.setErrorCode(org.apache.axis2.databinding.utils.ConverterUtil.convertToInt(
                             tempAttribErrorCode));
@@ -469,11 +469,11 @@ public class RegisterOrderResponse extends merchant.AbstractResponse
                 handledAttributes.add("errorCode");
 
                 // handle attribute "errorMessage"
-                java.lang.String tempAttribErrorMessage = reader.getAttributeValue(null,
+                String tempAttribErrorMessage = reader.getAttributeValue(null,
                         "errorMessage");
 
                 if (tempAttribErrorMessage != null) {
-                    java.lang.String content = tempAttribErrorMessage;
+                    String content = tempAttribErrorMessage;
 
                     object.setErrorMessage(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribErrorMessage));
@@ -483,11 +483,11 @@ public class RegisterOrderResponse extends merchant.AbstractResponse
                 handledAttributes.add("errorMessage");
 
                 // handle attribute "orderId"
-                java.lang.String tempAttribOrderId = reader.getAttributeValue(null,
+                String tempAttribOrderId = reader.getAttributeValue(null,
                         "orderId");
 
                 if (tempAttribOrderId != null) {
-                    java.lang.String content = tempAttribOrderId;
+                    String content = tempAttribOrderId;
 
                     object.setOrderId(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribOrderId));
@@ -515,7 +515,7 @@ public class RegisterOrderResponse extends merchant.AbstractResponse
                         list1.add(null);
                         reader.next();
                     } else {
-                        list1.add(merchant.LoyaltyOperation.Factory.parse(
+                        list1.add(LoyaltyOperation.Factory.parse(
                                 reader));
                     }
 
@@ -549,7 +549,7 @@ public class RegisterOrderResponse extends merchant.AbstractResponse
                                     list1.add(null);
                                     reader.next();
                                 } else {
-                                    list1.add(merchant.LoyaltyOperation.Factory.parse(
+                                    list1.add(LoyaltyOperation.Factory.parse(
                                             reader));
                                 }
                             } else {
@@ -559,8 +559,8 @@ public class RegisterOrderResponse extends merchant.AbstractResponse
                     }
 
                     // call the converter utility  to convert and set the array
-                    object.setOperations((merchant.LoyaltyOperation[]) org.apache.axis2.databinding.utils.ConverterUtil.convertToArray(
-                            merchant.LoyaltyOperation.class,
+                    object.setOperations((LoyaltyOperation[]) org.apache.axis2.databinding.utils.ConverterUtil.convertToArray(
+                            LoyaltyOperation.class,
                             list1));
                 } // End of if for expected property start element
 
@@ -582,7 +582,7 @@ public class RegisterOrderResponse extends merchant.AbstractResponse
                             "The element: " + "formUrl" + "  cannot be null");
                     }
 
-                    java.lang.String content = reader.getElementText();
+                    String content = reader.getElementText();
 
                     object.setFormUrl(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             content));
@@ -602,7 +602,7 @@ public class RegisterOrderResponse extends merchant.AbstractResponse
                         "Unexpected subelement " + reader.getName());
                 }
             } catch (javax.xml.stream.XMLStreamException e) {
-                throw new java.lang.Exception(e);
+                throw new Exception(e);
             }
 
             return object;

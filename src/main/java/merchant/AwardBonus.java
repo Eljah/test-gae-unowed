@@ -42,7 +42,7 @@ public class AwardBonus implements org.apache.axis2.databinding.ADBBean {
      * field for PcId
      * This was an Attribute!
      */
-    protected java.lang.String localPcId;
+    protected String localPcId;
 
     /**
      * field for Successful
@@ -54,7 +54,7 @@ public class AwardBonus implements org.apache.axis2.databinding.ADBBean {
      * field for PaymentOperation
      * This was an Attribute!
      */
-    protected merchant.Operation localPaymentOperation;
+    protected Operation localPaymentOperation;
 
     /**
      * Auto generated getter method
@@ -108,7 +108,7 @@ public class AwardBonus implements org.apache.axis2.databinding.ADBBean {
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getPcId() {
+    public String getPcId() {
         return localPcId;
     }
 
@@ -116,7 +116,7 @@ public class AwardBonus implements org.apache.axis2.databinding.ADBBean {
      * Auto generated setter method
      * @param param PcId
      */
-    public void setPcId(java.lang.String param) {
+    public void setPcId(String param) {
         this.localPcId = param;
     }
 
@@ -138,9 +138,9 @@ public class AwardBonus implements org.apache.axis2.databinding.ADBBean {
 
     /**
      * Auto generated getter method
-     * @return merchant.Operation
+     * @return ru.paymentgate.engine.webservices.merchant.Operation
      */
-    public merchant.Operation getPaymentOperation() {
+    public Operation getPaymentOperation() {
         return localPaymentOperation;
     }
 
@@ -149,7 +149,7 @@ public class AwardBonus implements org.apache.axis2.databinding.ADBBean {
      * @param param PaymentOperation
      */
     public void setPaymentOperation(
-        merchant.Operation param) {
+        Operation param) {
         this.localPaymentOperation = param;
     }
 
@@ -178,8 +178,8 @@ public class AwardBonus implements org.apache.axis2.databinding.ADBBean {
         javax.xml.stream.XMLStreamWriter xmlWriter, boolean serializeType)
         throws javax.xml.stream.XMLStreamException,
             org.apache.axis2.databinding.ADBException {
-        java.lang.String prefix = null;
-        java.lang.String namespace = null;
+        String prefix = null;
+        String namespace = null;
 
         prefix = parentQName.getPrefix();
         namespace = parentQName.getNamespaceURI();
@@ -187,7 +187,7 @@ public class AwardBonus implements org.apache.axis2.databinding.ADBBean {
             xmlWriter);
 
         if (serializeType) {
-            java.lang.String namespacePrefix = registerPrefix(xmlWriter,
+            String namespacePrefix = registerPrefix(xmlWriter,
                     "http://engine.paymentgate.ru/webservices/merchant");
 
             if ((namespacePrefix != null) &&
@@ -202,19 +202,19 @@ public class AwardBonus implements org.apache.axis2.databinding.ADBBean {
             }
         }
 
-        if (localApprovedAmountAward != java.lang.Integer.MIN_VALUE) {
+        if (localApprovedAmountAward != Integer.MIN_VALUE) {
             writeAttribute("", "approvedAmountAward",
                 org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                     localApprovedAmountAward), xmlWriter);
         }
 
-        if (localDepositedAmountAward != java.lang.Integer.MIN_VALUE) {
+        if (localDepositedAmountAward != Integer.MIN_VALUE) {
             writeAttribute("", "depositedAmountAward",
                 org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                     localDepositedAmountAward), xmlWriter);
         }
 
-        if (localRefundedAmountAward != java.lang.Integer.MIN_VALUE) {
+        if (localRefundedAmountAward != Integer.MIN_VALUE) {
             writeAttribute("", "refundedAmountAward",
                 org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                     localRefundedAmountAward), xmlWriter);
@@ -240,7 +240,7 @@ public class AwardBonus implements org.apache.axis2.databinding.ADBBean {
         xmlWriter.writeEndElement();
     }
 
-    private static java.lang.String generatePrefix(java.lang.String namespace) {
+    private static String generatePrefix(String namespace) {
         if (namespace.equals(
                     "http://engine.paymentgate.ru/webservices/merchant")) {
             return "ns1";
@@ -252,11 +252,11 @@ public class AwardBonus implements org.apache.axis2.databinding.ADBBean {
     /**
      * Utility method to write an element start tag.
      */
-    private void writeStartElement(java.lang.String prefix,
-        java.lang.String namespace, java.lang.String localPart,
+    private void writeStartElement(String prefix,
+        String namespace, String localPart,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String writerPrefix = xmlWriter.getPrefix(namespace);
+        String writerPrefix = xmlWriter.getPrefix(namespace);
 
         if (writerPrefix != null) {
             xmlWriter.writeStartElement(writerPrefix, localPart, namespace);
@@ -276,11 +276,11 @@ public class AwardBonus implements org.apache.axis2.databinding.ADBBean {
     /**
      * Util method to write an attribute with the ns prefix
      */
-    private void writeAttribute(java.lang.String prefix,
-        java.lang.String namespace, java.lang.String attName,
-        java.lang.String attValue, javax.xml.stream.XMLStreamWriter xmlWriter)
+    private void writeAttribute(String prefix,
+        String namespace, String attName,
+        String attValue, javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String writerPrefix = xmlWriter.getPrefix(namespace);
+        String writerPrefix = xmlWriter.getPrefix(namespace);
 
         if (writerPrefix != null) {
             xmlWriter.writeAttribute(writerPrefix, namespace, attName, attValue);
@@ -294,8 +294,8 @@ public class AwardBonus implements org.apache.axis2.databinding.ADBBean {
     /**
      * Util method to write an attribute without the ns prefix
      */
-    private void writeAttribute(java.lang.String namespace,
-        java.lang.String attName, java.lang.String attValue,
+    private void writeAttribute(String namespace,
+        String attName, String attValue,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
         if (namespace.equals("")) {
@@ -309,18 +309,18 @@ public class AwardBonus implements org.apache.axis2.databinding.ADBBean {
     /**
      * Util method to write an attribute without the ns prefix
      */
-    private void writeQNameAttribute(java.lang.String namespace,
-        java.lang.String attName, javax.xml.namespace.QName qname,
+    private void writeQNameAttribute(String namespace,
+        String attName, javax.xml.namespace.QName qname,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String attributeNamespace = qname.getNamespaceURI();
-        java.lang.String attributePrefix = xmlWriter.getPrefix(attributeNamespace);
+        String attributeNamespace = qname.getNamespaceURI();
+        String attributePrefix = xmlWriter.getPrefix(attributeNamespace);
 
         if (attributePrefix == null) {
             attributePrefix = registerPrefix(xmlWriter, attributeNamespace);
         }
 
-        java.lang.String attributeValue;
+        String attributeValue;
 
         if (attributePrefix.trim().length() > 0) {
             attributeValue = attributePrefix + ":" + qname.getLocalPart();
@@ -343,10 +343,10 @@ public class AwardBonus implements org.apache.axis2.databinding.ADBBean {
     private void writeQName(javax.xml.namespace.QName qname,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String namespaceURI = qname.getNamespaceURI();
+        String namespaceURI = qname.getNamespaceURI();
 
         if (namespaceURI != null) {
-            java.lang.String prefix = xmlWriter.getPrefix(namespaceURI);
+            String prefix = xmlWriter.getPrefix(namespaceURI);
 
             if (prefix == null) {
                 prefix = generatePrefix(namespaceURI);
@@ -375,9 +375,9 @@ public class AwardBonus implements org.apache.axis2.databinding.ADBBean {
         if (qnames != null) {
             // we have to store this data until last moment since it is not possible to write any
             // namespace data after writing the charactor data
-            java.lang.StringBuffer stringToWrite = new java.lang.StringBuffer();
-            java.lang.String namespaceURI = null;
-            java.lang.String prefix = null;
+            StringBuffer stringToWrite = new StringBuffer();
+            String namespaceURI = null;
+            String prefix = null;
 
             for (int i = 0; i < qnames.length; i++) {
                 if (i > 0) {
@@ -416,10 +416,10 @@ public class AwardBonus implements org.apache.axis2.databinding.ADBBean {
     /**
      * Register a namespace prefix
      */
-    private java.lang.String registerPrefix(
-        javax.xml.stream.XMLStreamWriter xmlWriter, java.lang.String namespace)
+    private String registerPrefix(
+        javax.xml.stream.XMLStreamWriter xmlWriter, String namespace)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String prefix = xmlWriter.getPrefix(namespace);
+        String prefix = xmlWriter.getPrefix(namespace);
 
         if (prefix == null) {
             prefix = generatePrefix(namespace);
@@ -427,7 +427,7 @@ public class AwardBonus implements org.apache.axis2.databinding.ADBBean {
             javax.xml.namespace.NamespaceContext nsContext = xmlWriter.getNamespaceContext();
 
             while (true) {
-                java.lang.String uri = nsContext.getNamespaceURI(prefix);
+                String uri = nsContext.getNamespaceURI(prefix);
 
                 if ((uri == null) || (uri.length() == 0)) {
                     break;
@@ -457,14 +457,14 @@ public class AwardBonus implements org.apache.axis2.databinding.ADBBean {
          *                If this object is a complex type, the reader is positioned at the end element of its outer element
          */
         public static AwardBonus parse(javax.xml.stream.XMLStreamReader reader)
-            throws java.lang.Exception {
+            throws Exception {
             AwardBonus object = new AwardBonus();
 
             int event;
             javax.xml.namespace.QName currentQName = null;
-            java.lang.String nillableValue = null;
-            java.lang.String prefix = "";
-            java.lang.String namespaceuri = "";
+            String nillableValue = null;
+            String prefix = "";
+            String namespaceuri = "";
 
             try {
                 while (!reader.isStartElement() && !reader.isEndElement())
@@ -474,11 +474,11 @@ public class AwardBonus implements org.apache.axis2.databinding.ADBBean {
 
                 if (reader.getAttributeValue(
                             "http://www.w3.org/2001/XMLSchema-instance", "type") != null) {
-                    java.lang.String fullTypeName = reader.getAttributeValue("http://www.w3.org/2001/XMLSchema-instance",
+                    String fullTypeName = reader.getAttributeValue("http://www.w3.org/2001/XMLSchema-instance",
                             "type");
 
                     if (fullTypeName != null) {
-                        java.lang.String nsPrefix = null;
+                        String nsPrefix = null;
 
                         if (fullTypeName.indexOf(":") > -1) {
                             nsPrefix = fullTypeName.substring(0,
@@ -487,15 +487,15 @@ public class AwardBonus implements org.apache.axis2.databinding.ADBBean {
 
                         nsPrefix = (nsPrefix == null) ? "" : nsPrefix;
 
-                        java.lang.String type = fullTypeName.substring(fullTypeName.indexOf(
+                        String type = fullTypeName.substring(fullTypeName.indexOf(
                                     ":") + 1);
 
                         if (!"awardBonus".equals(type)) {
                             //find namespace for the prefix
-                            java.lang.String nsUri = reader.getNamespaceContext()
+                            String nsUri = reader.getNamespaceContext()
                                                            .getNamespaceURI(nsPrefix);
 
-                            return (AwardBonus) merchant.ExtensionMapper.getTypeObject(nsUri,
+                            return (AwardBonus) ExtensionMapper.getTypeObject(nsUri,
                                 type, reader);
                         }
                     }
@@ -506,56 +506,56 @@ public class AwardBonus implements org.apache.axis2.databinding.ADBBean {
                 java.util.Vector handledAttributes = new java.util.Vector();
 
                 // handle attribute "approvedAmountAward"
-                java.lang.String tempAttribApprovedAmountAward = reader.getAttributeValue(null,
+                String tempAttribApprovedAmountAward = reader.getAttributeValue(null,
                         "approvedAmountAward");
 
                 if (tempAttribApprovedAmountAward != null) {
-                    java.lang.String content = tempAttribApprovedAmountAward;
+                    String content = tempAttribApprovedAmountAward;
 
                     object.setApprovedAmountAward(org.apache.axis2.databinding.utils.ConverterUtil.convertToInt(
                             tempAttribApprovedAmountAward));
                 } else {
-                    object.setApprovedAmountAward(java.lang.Integer.MIN_VALUE);
+                    object.setApprovedAmountAward(Integer.MIN_VALUE);
                 }
 
                 handledAttributes.add("approvedAmountAward");
 
                 // handle attribute "depositedAmountAward"
-                java.lang.String tempAttribDepositedAmountAward = reader.getAttributeValue(null,
+                String tempAttribDepositedAmountAward = reader.getAttributeValue(null,
                         "depositedAmountAward");
 
                 if (tempAttribDepositedAmountAward != null) {
-                    java.lang.String content = tempAttribDepositedAmountAward;
+                    String content = tempAttribDepositedAmountAward;
 
                     object.setDepositedAmountAward(org.apache.axis2.databinding.utils.ConverterUtil.convertToInt(
                             tempAttribDepositedAmountAward));
                 } else {
-                    object.setDepositedAmountAward(java.lang.Integer.MIN_VALUE);
+                    object.setDepositedAmountAward(Integer.MIN_VALUE);
                 }
 
                 handledAttributes.add("depositedAmountAward");
 
                 // handle attribute "refundedAmountAward"
-                java.lang.String tempAttribRefundedAmountAward = reader.getAttributeValue(null,
+                String tempAttribRefundedAmountAward = reader.getAttributeValue(null,
                         "refundedAmountAward");
 
                 if (tempAttribRefundedAmountAward != null) {
-                    java.lang.String content = tempAttribRefundedAmountAward;
+                    String content = tempAttribRefundedAmountAward;
 
                     object.setRefundedAmountAward(org.apache.axis2.databinding.utils.ConverterUtil.convertToInt(
                             tempAttribRefundedAmountAward));
                 } else {
-                    object.setRefundedAmountAward(java.lang.Integer.MIN_VALUE);
+                    object.setRefundedAmountAward(Integer.MIN_VALUE);
                 }
 
                 handledAttributes.add("refundedAmountAward");
 
                 // handle attribute "pcId"
-                java.lang.String tempAttribPcId = reader.getAttributeValue(null,
+                String tempAttribPcId = reader.getAttributeValue(null,
                         "pcId");
 
                 if (tempAttribPcId != null) {
-                    java.lang.String content = tempAttribPcId;
+                    String content = tempAttribPcId;
 
                     object.setPcId(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribPcId));
@@ -565,11 +565,11 @@ public class AwardBonus implements org.apache.axis2.databinding.ADBBean {
                 handledAttributes.add("pcId");
 
                 // handle attribute "successful"
-                java.lang.String tempAttribSuccessful = reader.getAttributeValue(null,
+                String tempAttribSuccessful = reader.getAttributeValue(null,
                         "successful");
 
                 if (tempAttribSuccessful != null) {
-                    java.lang.String content = tempAttribSuccessful;
+                    String content = tempAttribSuccessful;
 
                     object.setSuccessful(org.apache.axis2.databinding.utils.ConverterUtil.convertToBoolean(
                             tempAttribSuccessful));
@@ -579,13 +579,13 @@ public class AwardBonus implements org.apache.axis2.databinding.ADBBean {
                 handledAttributes.add("successful");
 
                 // handle attribute "paymentOperation"
-                java.lang.String tempAttribPaymentOperation = reader.getAttributeValue(null,
+                String tempAttribPaymentOperation = reader.getAttributeValue(null,
                         "paymentOperation");
 
                 if (tempAttribPaymentOperation != null) {
-                    java.lang.String content = tempAttribPaymentOperation;
+                    String content = tempAttribPaymentOperation;
 
-                    object.setPaymentOperation(merchant.Operation.Factory.fromString(
+                    object.setPaymentOperation(Operation.Factory.fromString(
                             reader, tempAttribPaymentOperation));
                 } else {
                 }
@@ -603,7 +603,7 @@ public class AwardBonus implements org.apache.axis2.databinding.ADBBean {
                         "Unexpected subelement " + reader.getName());
                 }
             } catch (javax.xml.stream.XMLStreamException e) {
-                throw new java.lang.Exception(e);
+                throw new Exception(e);
             }
 
             return object;

@@ -23,7 +23,7 @@ public class CardAuthInfo implements org.apache.axis2.databinding.ADBBean {
     /**
      * field for SecureAuthInfo
      */
-    protected merchant.SecureAuthInfo localSecureAuthInfo;
+    protected SecureAuthInfo localSecureAuthInfo;
 
     /*  This tracker boolean wil be used to detect whether the user called the set method
      *   for this attribute. It will be used to determine whether to include this field
@@ -35,37 +35,37 @@ public class CardAuthInfo implements org.apache.axis2.databinding.ADBBean {
      * field for MaskedPan
      * This was an Attribute!
      */
-    protected java.lang.String localMaskedPan;
+    protected String localMaskedPan;
 
     /**
      * field for Expiration
      * This was an Attribute!
      */
-    protected java.lang.String localExpiration;
+    protected String localExpiration;
 
     /**
      * field for CardholderName
      * This was an Attribute!
      */
-    protected java.lang.String localCardholderName;
+    protected String localCardholderName;
 
     /**
      * field for ApprovalCode
      * This was an Attribute!
      */
-    protected java.lang.String localApprovalCode;
+    protected String localApprovalCode;
 
     /**
      * field for PaymentSystem
      * This was an Attribute!
      */
-    protected java.lang.String localPaymentSystem;
+    protected String localPaymentSystem;
 
     /**
      * field for Product
      * This was an Attribute!
      */
-    protected java.lang.String localProduct;
+    protected String localProduct;
 
     public boolean isSecureAuthInfoSpecified() {
         return localSecureAuthInfoTracker;
@@ -73,9 +73,9 @@ public class CardAuthInfo implements org.apache.axis2.databinding.ADBBean {
 
     /**
      * Auto generated getter method
-     * @return merchant.SecureAuthInfo
+     * @return ru.paymentgate.engine.webservices.merchant.SecureAuthInfo
      */
-    public merchant.SecureAuthInfo getSecureAuthInfo() {
+    public SecureAuthInfo getSecureAuthInfo() {
         return localSecureAuthInfo;
     }
 
@@ -84,7 +84,7 @@ public class CardAuthInfo implements org.apache.axis2.databinding.ADBBean {
      * @param param SecureAuthInfo
      */
     public void setSecureAuthInfo(
-        merchant.SecureAuthInfo param) {
+        SecureAuthInfo param) {
         localSecureAuthInfoTracker = param != null;
 
         this.localSecureAuthInfo = param;
@@ -94,7 +94,7 @@ public class CardAuthInfo implements org.apache.axis2.databinding.ADBBean {
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getMaskedPan() {
+    public String getMaskedPan() {
         return localMaskedPan;
     }
 
@@ -102,7 +102,7 @@ public class CardAuthInfo implements org.apache.axis2.databinding.ADBBean {
      * Auto generated setter method
      * @param param MaskedPan
      */
-    public void setMaskedPan(java.lang.String param) {
+    public void setMaskedPan(String param) {
         this.localMaskedPan = param;
     }
 
@@ -110,7 +110,7 @@ public class CardAuthInfo implements org.apache.axis2.databinding.ADBBean {
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getExpiration() {
+    public String getExpiration() {
         return localExpiration;
     }
 
@@ -118,7 +118,7 @@ public class CardAuthInfo implements org.apache.axis2.databinding.ADBBean {
      * Auto generated setter method
      * @param param Expiration
      */
-    public void setExpiration(java.lang.String param) {
+    public void setExpiration(String param) {
         this.localExpiration = param;
     }
 
@@ -126,7 +126,7 @@ public class CardAuthInfo implements org.apache.axis2.databinding.ADBBean {
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getCardholderName() {
+    public String getCardholderName() {
         return localCardholderName;
     }
 
@@ -134,7 +134,7 @@ public class CardAuthInfo implements org.apache.axis2.databinding.ADBBean {
      * Auto generated setter method
      * @param param CardholderName
      */
-    public void setCardholderName(java.lang.String param) {
+    public void setCardholderName(String param) {
         this.localCardholderName = param;
     }
 
@@ -142,7 +142,7 @@ public class CardAuthInfo implements org.apache.axis2.databinding.ADBBean {
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getApprovalCode() {
+    public String getApprovalCode() {
         return localApprovalCode;
     }
 
@@ -150,7 +150,7 @@ public class CardAuthInfo implements org.apache.axis2.databinding.ADBBean {
      * Auto generated setter method
      * @param param ApprovalCode
      */
-    public void setApprovalCode(java.lang.String param) {
+    public void setApprovalCode(String param) {
         this.localApprovalCode = param;
     }
 
@@ -158,7 +158,7 @@ public class CardAuthInfo implements org.apache.axis2.databinding.ADBBean {
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getPaymentSystem() {
+    public String getPaymentSystem() {
         return localPaymentSystem;
     }
 
@@ -166,7 +166,7 @@ public class CardAuthInfo implements org.apache.axis2.databinding.ADBBean {
      * Auto generated setter method
      * @param param PaymentSystem
      */
-    public void setPaymentSystem(java.lang.String param) {
+    public void setPaymentSystem(String param) {
         this.localPaymentSystem = param;
     }
 
@@ -174,7 +174,7 @@ public class CardAuthInfo implements org.apache.axis2.databinding.ADBBean {
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getProduct() {
+    public String getProduct() {
         return localProduct;
     }
 
@@ -182,7 +182,7 @@ public class CardAuthInfo implements org.apache.axis2.databinding.ADBBean {
      * Auto generated setter method
      * @param param Product
      */
-    public void setProduct(java.lang.String param) {
+    public void setProduct(String param) {
         this.localProduct = param;
     }
 
@@ -211,8 +211,8 @@ public class CardAuthInfo implements org.apache.axis2.databinding.ADBBean {
         javax.xml.stream.XMLStreamWriter xmlWriter, boolean serializeType)
         throws javax.xml.stream.XMLStreamException,
             org.apache.axis2.databinding.ADBException {
-        java.lang.String prefix = null;
-        java.lang.String namespace = null;
+        String prefix = null;
+        String namespace = null;
 
         prefix = parentQName.getPrefix();
         namespace = parentQName.getNamespaceURI();
@@ -220,7 +220,7 @@ public class CardAuthInfo implements org.apache.axis2.databinding.ADBBean {
             xmlWriter);
 
         if (serializeType) {
-            java.lang.String namespacePrefix = registerPrefix(xmlWriter,
+            String namespacePrefix = registerPrefix(xmlWriter,
                     "http://engine.paymentgate.ru/webservices/merchant");
 
             if ((namespacePrefix != null) &&
@@ -284,7 +284,7 @@ public class CardAuthInfo implements org.apache.axis2.databinding.ADBBean {
         xmlWriter.writeEndElement();
     }
 
-    private static java.lang.String generatePrefix(java.lang.String namespace) {
+    private static String generatePrefix(String namespace) {
         if (namespace.equals(
                     "http://engine.paymentgate.ru/webservices/merchant")) {
             return "ns1";
@@ -296,11 +296,11 @@ public class CardAuthInfo implements org.apache.axis2.databinding.ADBBean {
     /**
      * Utility method to write an element start tag.
      */
-    private void writeStartElement(java.lang.String prefix,
-        java.lang.String namespace, java.lang.String localPart,
+    private void writeStartElement(String prefix,
+        String namespace, String localPart,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String writerPrefix = xmlWriter.getPrefix(namespace);
+        String writerPrefix = xmlWriter.getPrefix(namespace);
 
         if (writerPrefix != null) {
             xmlWriter.writeStartElement(writerPrefix, localPart, namespace);
@@ -320,11 +320,11 @@ public class CardAuthInfo implements org.apache.axis2.databinding.ADBBean {
     /**
      * Util method to write an attribute with the ns prefix
      */
-    private void writeAttribute(java.lang.String prefix,
-        java.lang.String namespace, java.lang.String attName,
-        java.lang.String attValue, javax.xml.stream.XMLStreamWriter xmlWriter)
+    private void writeAttribute(String prefix,
+        String namespace, String attName,
+        String attValue, javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String writerPrefix = xmlWriter.getPrefix(namespace);
+        String writerPrefix = xmlWriter.getPrefix(namespace);
 
         if (writerPrefix != null) {
             xmlWriter.writeAttribute(writerPrefix, namespace, attName, attValue);
@@ -338,8 +338,8 @@ public class CardAuthInfo implements org.apache.axis2.databinding.ADBBean {
     /**
      * Util method to write an attribute without the ns prefix
      */
-    private void writeAttribute(java.lang.String namespace,
-        java.lang.String attName, java.lang.String attValue,
+    private void writeAttribute(String namespace,
+        String attName, String attValue,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
         if (namespace.equals("")) {
@@ -353,18 +353,18 @@ public class CardAuthInfo implements org.apache.axis2.databinding.ADBBean {
     /**
      * Util method to write an attribute without the ns prefix
      */
-    private void writeQNameAttribute(java.lang.String namespace,
-        java.lang.String attName, javax.xml.namespace.QName qname,
+    private void writeQNameAttribute(String namespace,
+        String attName, javax.xml.namespace.QName qname,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String attributeNamespace = qname.getNamespaceURI();
-        java.lang.String attributePrefix = xmlWriter.getPrefix(attributeNamespace);
+        String attributeNamespace = qname.getNamespaceURI();
+        String attributePrefix = xmlWriter.getPrefix(attributeNamespace);
 
         if (attributePrefix == null) {
             attributePrefix = registerPrefix(xmlWriter, attributeNamespace);
         }
 
-        java.lang.String attributeValue;
+        String attributeValue;
 
         if (attributePrefix.trim().length() > 0) {
             attributeValue = attributePrefix + ":" + qname.getLocalPart();
@@ -387,10 +387,10 @@ public class CardAuthInfo implements org.apache.axis2.databinding.ADBBean {
     private void writeQName(javax.xml.namespace.QName qname,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String namespaceURI = qname.getNamespaceURI();
+        String namespaceURI = qname.getNamespaceURI();
 
         if (namespaceURI != null) {
-            java.lang.String prefix = xmlWriter.getPrefix(namespaceURI);
+            String prefix = xmlWriter.getPrefix(namespaceURI);
 
             if (prefix == null) {
                 prefix = generatePrefix(namespaceURI);
@@ -419,9 +419,9 @@ public class CardAuthInfo implements org.apache.axis2.databinding.ADBBean {
         if (qnames != null) {
             // we have to store this data until last moment since it is not possible to write any
             // namespace data after writing the charactor data
-            java.lang.StringBuffer stringToWrite = new java.lang.StringBuffer();
-            java.lang.String namespaceURI = null;
-            java.lang.String prefix = null;
+            StringBuffer stringToWrite = new StringBuffer();
+            String namespaceURI = null;
+            String prefix = null;
 
             for (int i = 0; i < qnames.length; i++) {
                 if (i > 0) {
@@ -460,10 +460,10 @@ public class CardAuthInfo implements org.apache.axis2.databinding.ADBBean {
     /**
      * Register a namespace prefix
      */
-    private java.lang.String registerPrefix(
-        javax.xml.stream.XMLStreamWriter xmlWriter, java.lang.String namespace)
+    private String registerPrefix(
+        javax.xml.stream.XMLStreamWriter xmlWriter, String namespace)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String prefix = xmlWriter.getPrefix(namespace);
+        String prefix = xmlWriter.getPrefix(namespace);
 
         if (prefix == null) {
             prefix = generatePrefix(namespace);
@@ -471,7 +471,7 @@ public class CardAuthInfo implements org.apache.axis2.databinding.ADBBean {
             javax.xml.namespace.NamespaceContext nsContext = xmlWriter.getNamespaceContext();
 
             while (true) {
-                java.lang.String uri = nsContext.getNamespaceURI(prefix);
+                String uri = nsContext.getNamespaceURI(prefix);
 
                 if ((uri == null) || (uri.length() == 0)) {
                     break;
@@ -501,14 +501,14 @@ public class CardAuthInfo implements org.apache.axis2.databinding.ADBBean {
          *                If this object is a complex type, the reader is positioned at the end element of its outer element
          */
         public static CardAuthInfo parse(
-            javax.xml.stream.XMLStreamReader reader) throws java.lang.Exception {
+            javax.xml.stream.XMLStreamReader reader) throws Exception {
             CardAuthInfo object = new CardAuthInfo();
 
             int event;
             javax.xml.namespace.QName currentQName = null;
-            java.lang.String nillableValue = null;
-            java.lang.String prefix = "";
-            java.lang.String namespaceuri = "";
+            String nillableValue = null;
+            String prefix = "";
+            String namespaceuri = "";
 
             try {
                 while (!reader.isStartElement() && !reader.isEndElement())
@@ -518,11 +518,11 @@ public class CardAuthInfo implements org.apache.axis2.databinding.ADBBean {
 
                 if (reader.getAttributeValue(
                             "http://www.w3.org/2001/XMLSchema-instance", "type") != null) {
-                    java.lang.String fullTypeName = reader.getAttributeValue("http://www.w3.org/2001/XMLSchema-instance",
+                    String fullTypeName = reader.getAttributeValue("http://www.w3.org/2001/XMLSchema-instance",
                             "type");
 
                     if (fullTypeName != null) {
-                        java.lang.String nsPrefix = null;
+                        String nsPrefix = null;
 
                         if (fullTypeName.indexOf(":") > -1) {
                             nsPrefix = fullTypeName.substring(0,
@@ -531,15 +531,15 @@ public class CardAuthInfo implements org.apache.axis2.databinding.ADBBean {
 
                         nsPrefix = (nsPrefix == null) ? "" : nsPrefix;
 
-                        java.lang.String type = fullTypeName.substring(fullTypeName.indexOf(
+                        String type = fullTypeName.substring(fullTypeName.indexOf(
                                     ":") + 1);
 
                         if (!"cardAuthInfo".equals(type)) {
                             //find namespace for the prefix
-                            java.lang.String nsUri = reader.getNamespaceContext()
+                            String nsUri = reader.getNamespaceContext()
                                                            .getNamespaceURI(nsPrefix);
 
-                            return (CardAuthInfo) merchant.ExtensionMapper.getTypeObject(nsUri,
+                            return (CardAuthInfo) ExtensionMapper.getTypeObject(nsUri,
                                 type, reader);
                         }
                     }
@@ -550,11 +550,11 @@ public class CardAuthInfo implements org.apache.axis2.databinding.ADBBean {
                 java.util.Vector handledAttributes = new java.util.Vector();
 
                 // handle attribute "maskedPan"
-                java.lang.String tempAttribMaskedPan = reader.getAttributeValue(null,
+                String tempAttribMaskedPan = reader.getAttributeValue(null,
                         "maskedPan");
 
                 if (tempAttribMaskedPan != null) {
-                    java.lang.String content = tempAttribMaskedPan;
+                    String content = tempAttribMaskedPan;
 
                     object.setMaskedPan(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribMaskedPan));
@@ -564,11 +564,11 @@ public class CardAuthInfo implements org.apache.axis2.databinding.ADBBean {
                 handledAttributes.add("maskedPan");
 
                 // handle attribute "expiration"
-                java.lang.String tempAttribExpiration = reader.getAttributeValue(null,
+                String tempAttribExpiration = reader.getAttributeValue(null,
                         "expiration");
 
                 if (tempAttribExpiration != null) {
-                    java.lang.String content = tempAttribExpiration;
+                    String content = tempAttribExpiration;
 
                     object.setExpiration(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribExpiration));
@@ -578,11 +578,11 @@ public class CardAuthInfo implements org.apache.axis2.databinding.ADBBean {
                 handledAttributes.add("expiration");
 
                 // handle attribute "cardholderName"
-                java.lang.String tempAttribCardholderName = reader.getAttributeValue(null,
+                String tempAttribCardholderName = reader.getAttributeValue(null,
                         "cardholderName");
 
                 if (tempAttribCardholderName != null) {
-                    java.lang.String content = tempAttribCardholderName;
+                    String content = tempAttribCardholderName;
 
                     object.setCardholderName(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribCardholderName));
@@ -592,11 +592,11 @@ public class CardAuthInfo implements org.apache.axis2.databinding.ADBBean {
                 handledAttributes.add("cardholderName");
 
                 // handle attribute "approvalCode"
-                java.lang.String tempAttribApprovalCode = reader.getAttributeValue(null,
+                String tempAttribApprovalCode = reader.getAttributeValue(null,
                         "approvalCode");
 
                 if (tempAttribApprovalCode != null) {
-                    java.lang.String content = tempAttribApprovalCode;
+                    String content = tempAttribApprovalCode;
 
                     object.setApprovalCode(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribApprovalCode));
@@ -606,11 +606,11 @@ public class CardAuthInfo implements org.apache.axis2.databinding.ADBBean {
                 handledAttributes.add("approvalCode");
 
                 // handle attribute "paymentSystem"
-                java.lang.String tempAttribPaymentSystem = reader.getAttributeValue(null,
+                String tempAttribPaymentSystem = reader.getAttributeValue(null,
                         "paymentSystem");
 
                 if (tempAttribPaymentSystem != null) {
-                    java.lang.String content = tempAttribPaymentSystem;
+                    String content = tempAttribPaymentSystem;
 
                     object.setPaymentSystem(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribPaymentSystem));
@@ -620,11 +620,11 @@ public class CardAuthInfo implements org.apache.axis2.databinding.ADBBean {
                 handledAttributes.add("paymentSystem");
 
                 // handle attribute "product"
-                java.lang.String tempAttribProduct = reader.getAttributeValue(null,
+                String tempAttribProduct = reader.getAttributeValue(null,
                         "product");
 
                 if (tempAttribProduct != null) {
-                    java.lang.String content = tempAttribProduct;
+                    String content = tempAttribProduct;
 
                     object.setProduct(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribProduct));
@@ -641,7 +641,7 @@ public class CardAuthInfo implements org.apache.axis2.databinding.ADBBean {
                 if (reader.isStartElement() &&
                         new javax.xml.namespace.QName("", "secureAuthInfo").equals(
                             reader.getName())) {
-                    object.setSecureAuthInfo(merchant.SecureAuthInfo.Factory.parse(
+                    object.setSecureAuthInfo(SecureAuthInfo.Factory.parse(
                             reader));
 
                     reader.next();
@@ -659,7 +659,7 @@ public class CardAuthInfo implements org.apache.axis2.databinding.ADBBean {
                         "Unexpected subelement " + reader.getName());
                 }
             } catch (javax.xml.stream.XMLStreamException e) {
-                throw new java.lang.Exception(e);
+                throw new Exception(e);
             }
 
             return object;

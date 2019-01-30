@@ -24,7 +24,7 @@ public class PaymentOrderBindingParams implements org.apache.axis2.databinding.A
      * field for Params
      * This was an Array!
      */
-    protected merchant.ServiceParam[] localParams;
+    protected ServiceParam[] localParams;
 
     /*  This tracker boolean wil be used to detect whether the user called the set method
      *   for this attribute. It will be used to determine whether to include this field
@@ -36,55 +36,55 @@ public class PaymentOrderBindingParams implements org.apache.axis2.databinding.A
      * field for MdOrder
      * This was an Attribute!
      */
-    protected java.lang.String localMdOrder;
+    protected String localMdOrder;
 
     /**
      * field for BindingId
      * This was an Attribute!
      */
-    protected java.lang.String localBindingId;
+    protected String localBindingId;
 
     /**
      * field for Language
      * This was an Attribute!
      */
-    protected java.lang.String localLanguage;
+    protected String localLanguage;
 
     /**
      * field for Ip
      * This was an Attribute!
      */
-    protected java.lang.String localIp;
+    protected String localIp;
 
     /**
      * field for Cvc
      * This was an Attribute!
      */
-    protected java.lang.String localCvc;
+    protected String localCvc;
 
     /**
      * field for Email
      * This was an Attribute!
      */
-    protected java.lang.String localEmail;
+    protected String localEmail;
 
     /**
      * field for PostAddress
      * This was an Attribute!
      */
-    protected java.lang.String localPostAddress;
+    protected String localPostAddress;
 
     /**
      * field for PointsAmount
      * This was an Attribute!
      */
-    protected java.lang.String localPointsAmount;
+    protected String localPointsAmount;
 
     /**
      * field for LoyaltyId
      * This was an Attribute!
      */
-    protected java.lang.String localLoyaltyId;
+    protected String localLoyaltyId;
 
     public boolean isParamsSpecified() {
         return localParamsTracker;
@@ -92,9 +92,9 @@ public class PaymentOrderBindingParams implements org.apache.axis2.databinding.A
 
     /**
      * Auto generated getter method
-     * @return merchant.ServiceParam[]
+     * @return ru.paymentgate.engine.webservices.merchant.ServiceParam[]
      */
-    public merchant.ServiceParam[] getParams() {
+    public ServiceParam[] getParams() {
         return localParams;
     }
 
@@ -102,7 +102,7 @@ public class PaymentOrderBindingParams implements org.apache.axis2.databinding.A
      * validate the array for Params
      */
     protected void validateParams(
-        merchant.ServiceParam[] param) {
+        ServiceParam[] param) {
     }
 
     /**
@@ -110,7 +110,7 @@ public class PaymentOrderBindingParams implements org.apache.axis2.databinding.A
      * @param param Params
      */
     public void setParams(
-        merchant.ServiceParam[] param) {
+        ServiceParam[] param) {
         validateParams(param);
 
         localParamsTracker = param != null;
@@ -120,13 +120,13 @@ public class PaymentOrderBindingParams implements org.apache.axis2.databinding.A
 
     /**
      * Auto generated add method for the array for convenience
-     * @param param merchant.ServiceParam
+     * @param param ru.paymentgate.engine.webservices.merchant.ServiceParam
      */
     public void addParams(
-        merchant.ServiceParam param) {
+        ServiceParam param) {
         if (localParams == null) {
-            localParams = new merchant.ServiceParam[] {
-                    
+            localParams = new ServiceParam[] {
+
                 };
         }
 
@@ -135,14 +135,14 @@ public class PaymentOrderBindingParams implements org.apache.axis2.databinding.A
 
         java.util.List list = org.apache.axis2.databinding.utils.ConverterUtil.toList(localParams);
         list.add(param);
-        this.localParams = (merchant.ServiceParam[]) list.toArray(new merchant.ServiceParam[list.size()]);
+        this.localParams = (ServiceParam[]) list.toArray(new ServiceParam[list.size()]);
     }
 
     /**
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getMdOrder() {
+    public String getMdOrder() {
         return localMdOrder;
     }
 
@@ -150,7 +150,7 @@ public class PaymentOrderBindingParams implements org.apache.axis2.databinding.A
      * Auto generated setter method
      * @param param MdOrder
      */
-    public void setMdOrder(java.lang.String param) {
+    public void setMdOrder(String param) {
         this.localMdOrder = param;
     }
 
@@ -158,7 +158,7 @@ public class PaymentOrderBindingParams implements org.apache.axis2.databinding.A
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getBindingId() {
+    public String getBindingId() {
         return localBindingId;
     }
 
@@ -166,7 +166,7 @@ public class PaymentOrderBindingParams implements org.apache.axis2.databinding.A
      * Auto generated setter method
      * @param param BindingId
      */
-    public void setBindingId(java.lang.String param) {
+    public void setBindingId(String param) {
         this.localBindingId = param;
     }
 
@@ -174,7 +174,7 @@ public class PaymentOrderBindingParams implements org.apache.axis2.databinding.A
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getLanguage() {
+    public String getLanguage() {
         return localLanguage;
     }
 
@@ -182,7 +182,7 @@ public class PaymentOrderBindingParams implements org.apache.axis2.databinding.A
      * Auto generated setter method
      * @param param Language
      */
-    public void setLanguage(java.lang.String param) {
+    public void setLanguage(String param) {
         this.localLanguage = param;
     }
 
@@ -190,7 +190,7 @@ public class PaymentOrderBindingParams implements org.apache.axis2.databinding.A
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getIp() {
+    public String getIp() {
         return localIp;
     }
 
@@ -198,7 +198,7 @@ public class PaymentOrderBindingParams implements org.apache.axis2.databinding.A
      * Auto generated setter method
      * @param param Ip
      */
-    public void setIp(java.lang.String param) {
+    public void setIp(String param) {
         this.localIp = param;
     }
 
@@ -206,7 +206,7 @@ public class PaymentOrderBindingParams implements org.apache.axis2.databinding.A
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getCvc() {
+    public String getCvc() {
         return localCvc;
     }
 
@@ -214,7 +214,7 @@ public class PaymentOrderBindingParams implements org.apache.axis2.databinding.A
      * Auto generated setter method
      * @param param Cvc
      */
-    public void setCvc(java.lang.String param) {
+    public void setCvc(String param) {
         this.localCvc = param;
     }
 
@@ -222,7 +222,7 @@ public class PaymentOrderBindingParams implements org.apache.axis2.databinding.A
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getEmail() {
+    public String getEmail() {
         return localEmail;
     }
 
@@ -230,7 +230,7 @@ public class PaymentOrderBindingParams implements org.apache.axis2.databinding.A
      * Auto generated setter method
      * @param param Email
      */
-    public void setEmail(java.lang.String param) {
+    public void setEmail(String param) {
         this.localEmail = param;
     }
 
@@ -238,7 +238,7 @@ public class PaymentOrderBindingParams implements org.apache.axis2.databinding.A
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getPostAddress() {
+    public String getPostAddress() {
         return localPostAddress;
     }
 
@@ -246,7 +246,7 @@ public class PaymentOrderBindingParams implements org.apache.axis2.databinding.A
      * Auto generated setter method
      * @param param PostAddress
      */
-    public void setPostAddress(java.lang.String param) {
+    public void setPostAddress(String param) {
         this.localPostAddress = param;
     }
 
@@ -254,7 +254,7 @@ public class PaymentOrderBindingParams implements org.apache.axis2.databinding.A
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getPointsAmount() {
+    public String getPointsAmount() {
         return localPointsAmount;
     }
 
@@ -262,7 +262,7 @@ public class PaymentOrderBindingParams implements org.apache.axis2.databinding.A
      * Auto generated setter method
      * @param param PointsAmount
      */
-    public void setPointsAmount(java.lang.String param) {
+    public void setPointsAmount(String param) {
         this.localPointsAmount = param;
     }
 
@@ -270,7 +270,7 @@ public class PaymentOrderBindingParams implements org.apache.axis2.databinding.A
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getLoyaltyId() {
+    public String getLoyaltyId() {
         return localLoyaltyId;
     }
 
@@ -278,7 +278,7 @@ public class PaymentOrderBindingParams implements org.apache.axis2.databinding.A
      * Auto generated setter method
      * @param param LoyaltyId
      */
-    public void setLoyaltyId(java.lang.String param) {
+    public void setLoyaltyId(String param) {
         this.localLoyaltyId = param;
     }
 
@@ -307,8 +307,8 @@ public class PaymentOrderBindingParams implements org.apache.axis2.databinding.A
         javax.xml.stream.XMLStreamWriter xmlWriter, boolean serializeType)
         throws javax.xml.stream.XMLStreamException,
             org.apache.axis2.databinding.ADBException {
-        java.lang.String prefix = null;
-        java.lang.String namespace = null;
+        String prefix = null;
+        String namespace = null;
 
         prefix = parentQName.getPrefix();
         namespace = parentQName.getNamespaceURI();
@@ -316,7 +316,7 @@ public class PaymentOrderBindingParams implements org.apache.axis2.databinding.A
             xmlWriter);
 
         if (serializeType) {
-            java.lang.String namespacePrefix = registerPrefix(xmlWriter,
+            String namespacePrefix = registerPrefix(xmlWriter,
                     "http://engine.paymentgate.ru/webservices/merchant");
 
             if ((namespacePrefix != null) &&
@@ -404,7 +404,7 @@ public class PaymentOrderBindingParams implements org.apache.axis2.databinding.A
         xmlWriter.writeEndElement();
     }
 
-    private static java.lang.String generatePrefix(java.lang.String namespace) {
+    private static String generatePrefix(String namespace) {
         if (namespace.equals(
                     "http://engine.paymentgate.ru/webservices/merchant")) {
             return "ns1";
@@ -416,11 +416,11 @@ public class PaymentOrderBindingParams implements org.apache.axis2.databinding.A
     /**
      * Utility method to write an element start tag.
      */
-    private void writeStartElement(java.lang.String prefix,
-        java.lang.String namespace, java.lang.String localPart,
+    private void writeStartElement(String prefix,
+        String namespace, String localPart,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String writerPrefix = xmlWriter.getPrefix(namespace);
+        String writerPrefix = xmlWriter.getPrefix(namespace);
 
         if (writerPrefix != null) {
             xmlWriter.writeStartElement(writerPrefix, localPart, namespace);
@@ -440,11 +440,11 @@ public class PaymentOrderBindingParams implements org.apache.axis2.databinding.A
     /**
      * Util method to write an attribute with the ns prefix
      */
-    private void writeAttribute(java.lang.String prefix,
-        java.lang.String namespace, java.lang.String attName,
-        java.lang.String attValue, javax.xml.stream.XMLStreamWriter xmlWriter)
+    private void writeAttribute(String prefix,
+        String namespace, String attName,
+        String attValue, javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String writerPrefix = xmlWriter.getPrefix(namespace);
+        String writerPrefix = xmlWriter.getPrefix(namespace);
 
         if (writerPrefix != null) {
             xmlWriter.writeAttribute(writerPrefix, namespace, attName, attValue);
@@ -458,8 +458,8 @@ public class PaymentOrderBindingParams implements org.apache.axis2.databinding.A
     /**
      * Util method to write an attribute without the ns prefix
      */
-    private void writeAttribute(java.lang.String namespace,
-        java.lang.String attName, java.lang.String attValue,
+    private void writeAttribute(String namespace,
+        String attName, String attValue,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
         if (namespace.equals("")) {
@@ -473,18 +473,18 @@ public class PaymentOrderBindingParams implements org.apache.axis2.databinding.A
     /**
      * Util method to write an attribute without the ns prefix
      */
-    private void writeQNameAttribute(java.lang.String namespace,
-        java.lang.String attName, javax.xml.namespace.QName qname,
+    private void writeQNameAttribute(String namespace,
+        String attName, javax.xml.namespace.QName qname,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String attributeNamespace = qname.getNamespaceURI();
-        java.lang.String attributePrefix = xmlWriter.getPrefix(attributeNamespace);
+        String attributeNamespace = qname.getNamespaceURI();
+        String attributePrefix = xmlWriter.getPrefix(attributeNamespace);
 
         if (attributePrefix == null) {
             attributePrefix = registerPrefix(xmlWriter, attributeNamespace);
         }
 
-        java.lang.String attributeValue;
+        String attributeValue;
 
         if (attributePrefix.trim().length() > 0) {
             attributeValue = attributePrefix + ":" + qname.getLocalPart();
@@ -507,10 +507,10 @@ public class PaymentOrderBindingParams implements org.apache.axis2.databinding.A
     private void writeQName(javax.xml.namespace.QName qname,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String namespaceURI = qname.getNamespaceURI();
+        String namespaceURI = qname.getNamespaceURI();
 
         if (namespaceURI != null) {
-            java.lang.String prefix = xmlWriter.getPrefix(namespaceURI);
+            String prefix = xmlWriter.getPrefix(namespaceURI);
 
             if (prefix == null) {
                 prefix = generatePrefix(namespaceURI);
@@ -539,9 +539,9 @@ public class PaymentOrderBindingParams implements org.apache.axis2.databinding.A
         if (qnames != null) {
             // we have to store this data until last moment since it is not possible to write any
             // namespace data after writing the charactor data
-            java.lang.StringBuffer stringToWrite = new java.lang.StringBuffer();
-            java.lang.String namespaceURI = null;
-            java.lang.String prefix = null;
+            StringBuffer stringToWrite = new StringBuffer();
+            String namespaceURI = null;
+            String prefix = null;
 
             for (int i = 0; i < qnames.length; i++) {
                 if (i > 0) {
@@ -580,10 +580,10 @@ public class PaymentOrderBindingParams implements org.apache.axis2.databinding.A
     /**
      * Register a namespace prefix
      */
-    private java.lang.String registerPrefix(
-        javax.xml.stream.XMLStreamWriter xmlWriter, java.lang.String namespace)
+    private String registerPrefix(
+        javax.xml.stream.XMLStreamWriter xmlWriter, String namespace)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String prefix = xmlWriter.getPrefix(namespace);
+        String prefix = xmlWriter.getPrefix(namespace);
 
         if (prefix == null) {
             prefix = generatePrefix(namespace);
@@ -591,7 +591,7 @@ public class PaymentOrderBindingParams implements org.apache.axis2.databinding.A
             javax.xml.namespace.NamespaceContext nsContext = xmlWriter.getNamespaceContext();
 
             while (true) {
-                java.lang.String uri = nsContext.getNamespaceURI(prefix);
+                String uri = nsContext.getNamespaceURI(prefix);
 
                 if ((uri == null) || (uri.length() == 0)) {
                     break;
@@ -621,14 +621,14 @@ public class PaymentOrderBindingParams implements org.apache.axis2.databinding.A
          *                If this object is a complex type, the reader is positioned at the end element of its outer element
          */
         public static PaymentOrderBindingParams parse(
-            javax.xml.stream.XMLStreamReader reader) throws java.lang.Exception {
+            javax.xml.stream.XMLStreamReader reader) throws Exception {
             PaymentOrderBindingParams object = new PaymentOrderBindingParams();
 
             int event;
             javax.xml.namespace.QName currentQName = null;
-            java.lang.String nillableValue = null;
-            java.lang.String prefix = "";
-            java.lang.String namespaceuri = "";
+            String nillableValue = null;
+            String prefix = "";
+            String namespaceuri = "";
 
             try {
                 while (!reader.isStartElement() && !reader.isEndElement())
@@ -638,11 +638,11 @@ public class PaymentOrderBindingParams implements org.apache.axis2.databinding.A
 
                 if (reader.getAttributeValue(
                             "http://www.w3.org/2001/XMLSchema-instance", "type") != null) {
-                    java.lang.String fullTypeName = reader.getAttributeValue("http://www.w3.org/2001/XMLSchema-instance",
+                    String fullTypeName = reader.getAttributeValue("http://www.w3.org/2001/XMLSchema-instance",
                             "type");
 
                     if (fullTypeName != null) {
-                        java.lang.String nsPrefix = null;
+                        String nsPrefix = null;
 
                         if (fullTypeName.indexOf(":") > -1) {
                             nsPrefix = fullTypeName.substring(0,
@@ -651,15 +651,15 @@ public class PaymentOrderBindingParams implements org.apache.axis2.databinding.A
 
                         nsPrefix = (nsPrefix == null) ? "" : nsPrefix;
 
-                        java.lang.String type = fullTypeName.substring(fullTypeName.indexOf(
+                        String type = fullTypeName.substring(fullTypeName.indexOf(
                                     ":") + 1);
 
                         if (!"paymentOrderBindingParams".equals(type)) {
                             //find namespace for the prefix
-                            java.lang.String nsUri = reader.getNamespaceContext()
+                            String nsUri = reader.getNamespaceContext()
                                                            .getNamespaceURI(nsPrefix);
 
-                            return (PaymentOrderBindingParams) merchant.ExtensionMapper.getTypeObject(nsUri,
+                            return (PaymentOrderBindingParams) ExtensionMapper.getTypeObject(nsUri,
                                 type, reader);
                         }
                     }
@@ -670,11 +670,11 @@ public class PaymentOrderBindingParams implements org.apache.axis2.databinding.A
                 java.util.Vector handledAttributes = new java.util.Vector();
 
                 // handle attribute "mdOrder"
-                java.lang.String tempAttribMdOrder = reader.getAttributeValue(null,
+                String tempAttribMdOrder = reader.getAttributeValue(null,
                         "mdOrder");
 
                 if (tempAttribMdOrder != null) {
-                    java.lang.String content = tempAttribMdOrder;
+                    String content = tempAttribMdOrder;
 
                     object.setMdOrder(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribMdOrder));
@@ -684,11 +684,11 @@ public class PaymentOrderBindingParams implements org.apache.axis2.databinding.A
                 handledAttributes.add("mdOrder");
 
                 // handle attribute "bindingId"
-                java.lang.String tempAttribBindingId = reader.getAttributeValue(null,
+                String tempAttribBindingId = reader.getAttributeValue(null,
                         "bindingId");
 
                 if (tempAttribBindingId != null) {
-                    java.lang.String content = tempAttribBindingId;
+                    String content = tempAttribBindingId;
 
                     object.setBindingId(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribBindingId));
@@ -698,11 +698,11 @@ public class PaymentOrderBindingParams implements org.apache.axis2.databinding.A
                 handledAttributes.add("bindingId");
 
                 // handle attribute "language"
-                java.lang.String tempAttribLanguage = reader.getAttributeValue(null,
+                String tempAttribLanguage = reader.getAttributeValue(null,
                         "language");
 
                 if (tempAttribLanguage != null) {
-                    java.lang.String content = tempAttribLanguage;
+                    String content = tempAttribLanguage;
 
                     object.setLanguage(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribLanguage));
@@ -712,11 +712,11 @@ public class PaymentOrderBindingParams implements org.apache.axis2.databinding.A
                 handledAttributes.add("language");
 
                 // handle attribute "ip"
-                java.lang.String tempAttribIp = reader.getAttributeValue(null,
+                String tempAttribIp = reader.getAttributeValue(null,
                         "ip");
 
                 if (tempAttribIp != null) {
-                    java.lang.String content = tempAttribIp;
+                    String content = tempAttribIp;
 
                     object.setIp(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribIp));
@@ -726,11 +726,11 @@ public class PaymentOrderBindingParams implements org.apache.axis2.databinding.A
                 handledAttributes.add("ip");
 
                 // handle attribute "cvc"
-                java.lang.String tempAttribCvc = reader.getAttributeValue(null,
+                String tempAttribCvc = reader.getAttributeValue(null,
                         "cvc");
 
                 if (tempAttribCvc != null) {
-                    java.lang.String content = tempAttribCvc;
+                    String content = tempAttribCvc;
 
                     object.setCvc(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribCvc));
@@ -740,11 +740,11 @@ public class PaymentOrderBindingParams implements org.apache.axis2.databinding.A
                 handledAttributes.add("cvc");
 
                 // handle attribute "email"
-                java.lang.String tempAttribEmail = reader.getAttributeValue(null,
+                String tempAttribEmail = reader.getAttributeValue(null,
                         "email");
 
                 if (tempAttribEmail != null) {
-                    java.lang.String content = tempAttribEmail;
+                    String content = tempAttribEmail;
 
                     object.setEmail(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribEmail));
@@ -754,11 +754,11 @@ public class PaymentOrderBindingParams implements org.apache.axis2.databinding.A
                 handledAttributes.add("email");
 
                 // handle attribute "postAddress"
-                java.lang.String tempAttribPostAddress = reader.getAttributeValue(null,
+                String tempAttribPostAddress = reader.getAttributeValue(null,
                         "postAddress");
 
                 if (tempAttribPostAddress != null) {
-                    java.lang.String content = tempAttribPostAddress;
+                    String content = tempAttribPostAddress;
 
                     object.setPostAddress(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribPostAddress));
@@ -768,11 +768,11 @@ public class PaymentOrderBindingParams implements org.apache.axis2.databinding.A
                 handledAttributes.add("postAddress");
 
                 // handle attribute "pointsAmount"
-                java.lang.String tempAttribPointsAmount = reader.getAttributeValue(null,
+                String tempAttribPointsAmount = reader.getAttributeValue(null,
                         "pointsAmount");
 
                 if (tempAttribPointsAmount != null) {
-                    java.lang.String content = tempAttribPointsAmount;
+                    String content = tempAttribPointsAmount;
 
                     object.setPointsAmount(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribPointsAmount));
@@ -782,11 +782,11 @@ public class PaymentOrderBindingParams implements org.apache.axis2.databinding.A
                 handledAttributes.add("pointsAmount");
 
                 // handle attribute "loyaltyId"
-                java.lang.String tempAttribLoyaltyId = reader.getAttributeValue(null,
+                String tempAttribLoyaltyId = reader.getAttributeValue(null,
                         "loyaltyId");
 
                 if (tempAttribLoyaltyId != null) {
-                    java.lang.String content = tempAttribLoyaltyId;
+                    String content = tempAttribLoyaltyId;
 
                     object.setLoyaltyId(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribLoyaltyId));
@@ -806,7 +806,7 @@ public class PaymentOrderBindingParams implements org.apache.axis2.databinding.A
                         new javax.xml.namespace.QName("", "params").equals(
                             reader.getName())) {
                     // Process the array and step past its final element's end.
-                    list1.add(merchant.ServiceParam.Factory.parse(
+                    list1.add(ServiceParam.Factory.parse(
                             reader));
 
                     //loop until we find a start element that is not part of this array
@@ -831,7 +831,7 @@ public class PaymentOrderBindingParams implements org.apache.axis2.databinding.A
                         } else {
                             if (new javax.xml.namespace.QName("", "params").equals(
                                         reader.getName())) {
-                                list1.add(merchant.ServiceParam.Factory.parse(
+                                list1.add(ServiceParam.Factory.parse(
                                         reader));
                             } else {
                                 loopDone1 = true;
@@ -840,8 +840,8 @@ public class PaymentOrderBindingParams implements org.apache.axis2.databinding.A
                     }
 
                     // call the converter utility  to convert and set the array
-                    object.setParams((merchant.ServiceParam[]) org.apache.axis2.databinding.utils.ConverterUtil.convertToArray(
-                            merchant.ServiceParam.class,
+                    object.setParams((ServiceParam[]) org.apache.axis2.databinding.utils.ConverterUtil.convertToArray(
+                            ServiceParam.class,
                             list1));
                 } // End of if for expected property start element
 
@@ -857,7 +857,7 @@ public class PaymentOrderBindingParams implements org.apache.axis2.databinding.A
                         "Unexpected subelement " + reader.getName());
                 }
             } catch (javax.xml.stream.XMLStreamException e) {
-                throw new java.lang.Exception(e);
+                throw new Exception(e);
             }
 
             return object;

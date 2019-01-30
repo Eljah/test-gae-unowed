@@ -23,7 +23,7 @@ public class Agent implements org.apache.axis2.databinding.ADBBean {
     /**
      * field for AgentType
      */
-    protected merchant.AgentType localAgentType;
+    protected AgentType localAgentType;
 
     /*  This tracker boolean wil be used to detect whether the user called the set method
      *   for this attribute. It will be used to determine whether to include this field
@@ -34,7 +34,7 @@ public class Agent implements org.apache.axis2.databinding.ADBBean {
     /**
      * field for PayingOperation
      */
-    protected java.lang.String localPayingOperation;
+    protected String localPayingOperation;
 
     /*  This tracker boolean wil be used to detect whether the user called the set method
      *   for this attribute. It will be used to determine whether to include this field
@@ -45,7 +45,7 @@ public class Agent implements org.apache.axis2.databinding.ADBBean {
     /**
      * field for PayingPhones
      */
-    protected java.lang.String localPayingPhones;
+    protected String localPayingPhones;
 
     /*  This tracker boolean wil be used to detect whether the user called the set method
      *   for this attribute. It will be used to determine whether to include this field
@@ -56,7 +56,7 @@ public class Agent implements org.apache.axis2.databinding.ADBBean {
     /**
      * field for PaymentsOperatorPhones
      */
-    protected java.lang.String localPaymentsOperatorPhones;
+    protected String localPaymentsOperatorPhones;
 
     /*  This tracker boolean wil be used to detect whether the user called the set method
      *   for this attribute. It will be used to determine whether to include this field
@@ -67,7 +67,7 @@ public class Agent implements org.apache.axis2.databinding.ADBBean {
     /**
      * field for MtOperatorPhones
      */
-    protected java.lang.String localMtOperatorPhones;
+    protected String localMtOperatorPhones;
 
     /*  This tracker boolean wil be used to detect whether the user called the set method
      *   for this attribute. It will be used to determine whether to include this field
@@ -78,7 +78,7 @@ public class Agent implements org.apache.axis2.databinding.ADBBean {
     /**
      * field for MtOperatorName
      */
-    protected java.lang.String localMtOperatorName;
+    protected String localMtOperatorName;
 
     /*  This tracker boolean wil be used to detect whether the user called the set method
      *   for this attribute. It will be used to determine whether to include this field
@@ -89,7 +89,7 @@ public class Agent implements org.apache.axis2.databinding.ADBBean {
     /**
      * field for MtOperatorAddress
      */
-    protected java.lang.String localMtOperatorAddress;
+    protected String localMtOperatorAddress;
 
     /*  This tracker boolean wil be used to detect whether the user called the set method
      *   for this attribute. It will be used to determine whether to include this field
@@ -100,7 +100,7 @@ public class Agent implements org.apache.axis2.databinding.ADBBean {
     /**
      * field for MtOperatorInn
      */
-    protected java.lang.String localMtOperatorInn;
+    protected String localMtOperatorInn;
 
     /*  This tracker boolean wil be used to detect whether the user called the set method
      *   for this attribute. It will be used to determine whether to include this field
@@ -114,9 +114,9 @@ public class Agent implements org.apache.axis2.databinding.ADBBean {
 
     /**
      * Auto generated getter method
-     * @return merchant.AgentType
+     * @return ru.paymentgate.engine.webservices.merchant.AgentType
      */
-    public merchant.AgentType getAgentType() {
+    public AgentType getAgentType() {
         return localAgentType;
     }
 
@@ -125,7 +125,7 @@ public class Agent implements org.apache.axis2.databinding.ADBBean {
      * @param param AgentType
      */
     public void setAgentType(
-        merchant.AgentType param) {
+        AgentType param) {
         localAgentTypeTracker = param != null;
 
         this.localAgentType = param;
@@ -139,7 +139,7 @@ public class Agent implements org.apache.axis2.databinding.ADBBean {
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getPayingOperation() {
+    public String getPayingOperation() {
         return localPayingOperation;
     }
 
@@ -147,7 +147,7 @@ public class Agent implements org.apache.axis2.databinding.ADBBean {
      * Auto generated setter method
      * @param param PayingOperation
      */
-    public void setPayingOperation(java.lang.String param) {
+    public void setPayingOperation(String param) {
         localPayingOperationTracker = param != null;
 
         this.localPayingOperation = param;
@@ -161,7 +161,7 @@ public class Agent implements org.apache.axis2.databinding.ADBBean {
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getPayingPhones() {
+    public String getPayingPhones() {
         return localPayingPhones;
     }
 
@@ -169,7 +169,7 @@ public class Agent implements org.apache.axis2.databinding.ADBBean {
      * Auto generated setter method
      * @param param PayingPhones
      */
-    public void setPayingPhones(java.lang.String param) {
+    public void setPayingPhones(String param) {
         localPayingPhonesTracker = param != null;
 
         this.localPayingPhones = param;
@@ -183,7 +183,7 @@ public class Agent implements org.apache.axis2.databinding.ADBBean {
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getPaymentsOperatorPhones() {
+    public String getPaymentsOperatorPhones() {
         return localPaymentsOperatorPhones;
     }
 
@@ -191,7 +191,7 @@ public class Agent implements org.apache.axis2.databinding.ADBBean {
      * Auto generated setter method
      * @param param PaymentsOperatorPhones
      */
-    public void setPaymentsOperatorPhones(java.lang.String param) {
+    public void setPaymentsOperatorPhones(String param) {
         localPaymentsOperatorPhonesTracker = param != null;
 
         this.localPaymentsOperatorPhones = param;
@@ -205,7 +205,7 @@ public class Agent implements org.apache.axis2.databinding.ADBBean {
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getMtOperatorPhones() {
+    public String getMtOperatorPhones() {
         return localMtOperatorPhones;
     }
 
@@ -213,7 +213,7 @@ public class Agent implements org.apache.axis2.databinding.ADBBean {
      * Auto generated setter method
      * @param param MtOperatorPhones
      */
-    public void setMtOperatorPhones(java.lang.String param) {
+    public void setMtOperatorPhones(String param) {
         localMtOperatorPhonesTracker = param != null;
 
         this.localMtOperatorPhones = param;
@@ -227,7 +227,7 @@ public class Agent implements org.apache.axis2.databinding.ADBBean {
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getMtOperatorName() {
+    public String getMtOperatorName() {
         return localMtOperatorName;
     }
 
@@ -235,7 +235,7 @@ public class Agent implements org.apache.axis2.databinding.ADBBean {
      * Auto generated setter method
      * @param param MtOperatorName
      */
-    public void setMtOperatorName(java.lang.String param) {
+    public void setMtOperatorName(String param) {
         localMtOperatorNameTracker = param != null;
 
         this.localMtOperatorName = param;
@@ -249,7 +249,7 @@ public class Agent implements org.apache.axis2.databinding.ADBBean {
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getMtOperatorAddress() {
+    public String getMtOperatorAddress() {
         return localMtOperatorAddress;
     }
 
@@ -257,7 +257,7 @@ public class Agent implements org.apache.axis2.databinding.ADBBean {
      * Auto generated setter method
      * @param param MtOperatorAddress
      */
-    public void setMtOperatorAddress(java.lang.String param) {
+    public void setMtOperatorAddress(String param) {
         localMtOperatorAddressTracker = param != null;
 
         this.localMtOperatorAddress = param;
@@ -271,7 +271,7 @@ public class Agent implements org.apache.axis2.databinding.ADBBean {
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getMtOperatorInn() {
+    public String getMtOperatorInn() {
         return localMtOperatorInn;
     }
 
@@ -279,7 +279,7 @@ public class Agent implements org.apache.axis2.databinding.ADBBean {
      * Auto generated setter method
      * @param param MtOperatorInn
      */
-    public void setMtOperatorInn(java.lang.String param) {
+    public void setMtOperatorInn(String param) {
         localMtOperatorInnTracker = param != null;
 
         this.localMtOperatorInn = param;
@@ -310,8 +310,8 @@ public class Agent implements org.apache.axis2.databinding.ADBBean {
         javax.xml.stream.XMLStreamWriter xmlWriter, boolean serializeType)
         throws javax.xml.stream.XMLStreamException,
             org.apache.axis2.databinding.ADBException {
-        java.lang.String prefix = null;
-        java.lang.String namespace = null;
+        String prefix = null;
+        String namespace = null;
 
         prefix = parentQName.getPrefix();
         namespace = parentQName.getNamespaceURI();
@@ -319,7 +319,7 @@ public class Agent implements org.apache.axis2.databinding.ADBBean {
             xmlWriter);
 
         if (serializeType) {
-            java.lang.String namespacePrefix = registerPrefix(xmlWriter,
+            String namespacePrefix = registerPrefix(xmlWriter,
                     "http://engine.paymentgate.ru/webservices/merchant");
 
             if ((namespacePrefix != null) &&
@@ -453,7 +453,7 @@ public class Agent implements org.apache.axis2.databinding.ADBBean {
         xmlWriter.writeEndElement();
     }
 
-    private static java.lang.String generatePrefix(java.lang.String namespace) {
+    private static String generatePrefix(String namespace) {
         if (namespace.equals(
                     "http://engine.paymentgate.ru/webservices/merchant")) {
             return "ns1";
@@ -465,11 +465,11 @@ public class Agent implements org.apache.axis2.databinding.ADBBean {
     /**
      * Utility method to write an element start tag.
      */
-    private void writeStartElement(java.lang.String prefix,
-        java.lang.String namespace, java.lang.String localPart,
+    private void writeStartElement(String prefix,
+        String namespace, String localPart,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String writerPrefix = xmlWriter.getPrefix(namespace);
+        String writerPrefix = xmlWriter.getPrefix(namespace);
 
         if (writerPrefix != null) {
             xmlWriter.writeStartElement(writerPrefix, localPart, namespace);
@@ -489,11 +489,11 @@ public class Agent implements org.apache.axis2.databinding.ADBBean {
     /**
      * Util method to write an attribute with the ns prefix
      */
-    private void writeAttribute(java.lang.String prefix,
-        java.lang.String namespace, java.lang.String attName,
-        java.lang.String attValue, javax.xml.stream.XMLStreamWriter xmlWriter)
+    private void writeAttribute(String prefix,
+        String namespace, String attName,
+        String attValue, javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String writerPrefix = xmlWriter.getPrefix(namespace);
+        String writerPrefix = xmlWriter.getPrefix(namespace);
 
         if (writerPrefix != null) {
             xmlWriter.writeAttribute(writerPrefix, namespace, attName, attValue);
@@ -507,8 +507,8 @@ public class Agent implements org.apache.axis2.databinding.ADBBean {
     /**
      * Util method to write an attribute without the ns prefix
      */
-    private void writeAttribute(java.lang.String namespace,
-        java.lang.String attName, java.lang.String attValue,
+    private void writeAttribute(String namespace,
+        String attName, String attValue,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
         if (namespace.equals("")) {
@@ -522,18 +522,18 @@ public class Agent implements org.apache.axis2.databinding.ADBBean {
     /**
      * Util method to write an attribute without the ns prefix
      */
-    private void writeQNameAttribute(java.lang.String namespace,
-        java.lang.String attName, javax.xml.namespace.QName qname,
+    private void writeQNameAttribute(String namespace,
+        String attName, javax.xml.namespace.QName qname,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String attributeNamespace = qname.getNamespaceURI();
-        java.lang.String attributePrefix = xmlWriter.getPrefix(attributeNamespace);
+        String attributeNamespace = qname.getNamespaceURI();
+        String attributePrefix = xmlWriter.getPrefix(attributeNamespace);
 
         if (attributePrefix == null) {
             attributePrefix = registerPrefix(xmlWriter, attributeNamespace);
         }
 
-        java.lang.String attributeValue;
+        String attributeValue;
 
         if (attributePrefix.trim().length() > 0) {
             attributeValue = attributePrefix + ":" + qname.getLocalPart();
@@ -556,10 +556,10 @@ public class Agent implements org.apache.axis2.databinding.ADBBean {
     private void writeQName(javax.xml.namespace.QName qname,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String namespaceURI = qname.getNamespaceURI();
+        String namespaceURI = qname.getNamespaceURI();
 
         if (namespaceURI != null) {
-            java.lang.String prefix = xmlWriter.getPrefix(namespaceURI);
+            String prefix = xmlWriter.getPrefix(namespaceURI);
 
             if (prefix == null) {
                 prefix = generatePrefix(namespaceURI);
@@ -588,9 +588,9 @@ public class Agent implements org.apache.axis2.databinding.ADBBean {
         if (qnames != null) {
             // we have to store this data until last moment since it is not possible to write any
             // namespace data after writing the charactor data
-            java.lang.StringBuffer stringToWrite = new java.lang.StringBuffer();
-            java.lang.String namespaceURI = null;
-            java.lang.String prefix = null;
+            StringBuffer stringToWrite = new StringBuffer();
+            String namespaceURI = null;
+            String prefix = null;
 
             for (int i = 0; i < qnames.length; i++) {
                 if (i > 0) {
@@ -629,10 +629,10 @@ public class Agent implements org.apache.axis2.databinding.ADBBean {
     /**
      * Register a namespace prefix
      */
-    private java.lang.String registerPrefix(
-        javax.xml.stream.XMLStreamWriter xmlWriter, java.lang.String namespace)
+    private String registerPrefix(
+        javax.xml.stream.XMLStreamWriter xmlWriter, String namespace)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String prefix = xmlWriter.getPrefix(namespace);
+        String prefix = xmlWriter.getPrefix(namespace);
 
         if (prefix == null) {
             prefix = generatePrefix(namespace);
@@ -640,7 +640,7 @@ public class Agent implements org.apache.axis2.databinding.ADBBean {
             javax.xml.namespace.NamespaceContext nsContext = xmlWriter.getNamespaceContext();
 
             while (true) {
-                java.lang.String uri = nsContext.getNamespaceURI(prefix);
+                String uri = nsContext.getNamespaceURI(prefix);
 
                 if ((uri == null) || (uri.length() == 0)) {
                     break;
@@ -670,14 +670,14 @@ public class Agent implements org.apache.axis2.databinding.ADBBean {
          *                If this object is a complex type, the reader is positioned at the end element of its outer element
          */
         public static Agent parse(javax.xml.stream.XMLStreamReader reader)
-            throws java.lang.Exception {
+            throws Exception {
             Agent object = new Agent();
 
             int event;
             javax.xml.namespace.QName currentQName = null;
-            java.lang.String nillableValue = null;
-            java.lang.String prefix = "";
-            java.lang.String namespaceuri = "";
+            String nillableValue = null;
+            String prefix = "";
+            String namespaceuri = "";
 
             try {
                 while (!reader.isStartElement() && !reader.isEndElement())
@@ -687,11 +687,11 @@ public class Agent implements org.apache.axis2.databinding.ADBBean {
 
                 if (reader.getAttributeValue(
                             "http://www.w3.org/2001/XMLSchema-instance", "type") != null) {
-                    java.lang.String fullTypeName = reader.getAttributeValue("http://www.w3.org/2001/XMLSchema-instance",
+                    String fullTypeName = reader.getAttributeValue("http://www.w3.org/2001/XMLSchema-instance",
                             "type");
 
                     if (fullTypeName != null) {
-                        java.lang.String nsPrefix = null;
+                        String nsPrefix = null;
 
                         if (fullTypeName.indexOf(":") > -1) {
                             nsPrefix = fullTypeName.substring(0,
@@ -700,15 +700,15 @@ public class Agent implements org.apache.axis2.databinding.ADBBean {
 
                         nsPrefix = (nsPrefix == null) ? "" : nsPrefix;
 
-                        java.lang.String type = fullTypeName.substring(fullTypeName.indexOf(
+                        String type = fullTypeName.substring(fullTypeName.indexOf(
                                     ":") + 1);
 
                         if (!"agent".equals(type)) {
                             //find namespace for the prefix
-                            java.lang.String nsUri = reader.getNamespaceContext()
+                            String nsUri = reader.getNamespaceContext()
                                                            .getNamespaceURI(nsPrefix);
 
-                            return (Agent) merchant.ExtensionMapper.getTypeObject(nsUri,
+                            return (Agent) ExtensionMapper.getTypeObject(nsUri,
                                 type, reader);
                         }
                     }
@@ -726,7 +726,7 @@ public class Agent implements org.apache.axis2.databinding.ADBBean {
                 if (reader.isStartElement() &&
                         new javax.xml.namespace.QName("", "agentType").equals(
                             reader.getName())) {
-                    object.setAgentType(merchant.AgentType.Factory.parse(
+                    object.setAgentType(AgentType.Factory.parse(
                             reader));
 
                     reader.next();
@@ -751,7 +751,7 @@ public class Agent implements org.apache.axis2.databinding.ADBBean {
                             "  cannot be null");
                     }
 
-                    java.lang.String content = reader.getElementText();
+                    String content = reader.getElementText();
 
                     object.setPayingOperation(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             content));
@@ -778,7 +778,7 @@ public class Agent implements org.apache.axis2.databinding.ADBBean {
                             "  cannot be null");
                     }
 
-                    java.lang.String content = reader.getElementText();
+                    String content = reader.getElementText();
 
                     object.setPayingPhones(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             content));
@@ -805,7 +805,7 @@ public class Agent implements org.apache.axis2.databinding.ADBBean {
                             "  cannot be null");
                     }
 
-                    java.lang.String content = reader.getElementText();
+                    String content = reader.getElementText();
 
                     object.setPaymentsOperatorPhones(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             content));
@@ -832,7 +832,7 @@ public class Agent implements org.apache.axis2.databinding.ADBBean {
                             "  cannot be null");
                     }
 
-                    java.lang.String content = reader.getElementText();
+                    String content = reader.getElementText();
 
                     object.setMtOperatorPhones(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             content));
@@ -859,7 +859,7 @@ public class Agent implements org.apache.axis2.databinding.ADBBean {
                             "  cannot be null");
                     }
 
-                    java.lang.String content = reader.getElementText();
+                    String content = reader.getElementText();
 
                     object.setMtOperatorName(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             content));
@@ -886,7 +886,7 @@ public class Agent implements org.apache.axis2.databinding.ADBBean {
                             "  cannot be null");
                     }
 
-                    java.lang.String content = reader.getElementText();
+                    String content = reader.getElementText();
 
                     object.setMtOperatorAddress(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             content));
@@ -913,7 +913,7 @@ public class Agent implements org.apache.axis2.databinding.ADBBean {
                             "  cannot be null");
                     }
 
-                    java.lang.String content = reader.getElementText();
+                    String content = reader.getElementText();
 
                     object.setMtOperatorInn(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             content));
@@ -933,7 +933,7 @@ public class Agent implements org.apache.axis2.databinding.ADBBean {
                         "Unexpected subelement " + reader.getName());
                 }
             } catch (javax.xml.stream.XMLStreamException e) {
-                throw new java.lang.Exception(e);
+                throw new Exception(e);
             }
 
             return object;

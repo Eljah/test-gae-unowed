@@ -1,6 +1,7 @@
 package merchant;
 
 import org.apache.axis2.AxisFault;
+import sberbank.MerchantServiceImplServiceStub;
 
 import java.rmi.RemoteException;
 
@@ -9,7 +10,7 @@ import java.rmi.RemoteException;
  */
 public class Testing {
     public static void main(String[] args) {
-        MerchantServiceImplServiceCallbackHandler merchantServiceImplServiceCallbackHandler=new MerchantServiceImplServiceCallbackHandler() {
+        sberbank.MerchantServiceImplServiceCallbackHandler merchantServiceImplServiceCallbackHandler=new sberbank.MerchantServiceImplServiceCallbackHandler() {
             @Override
             public Object getClientData() {
                 return super.getClientData();

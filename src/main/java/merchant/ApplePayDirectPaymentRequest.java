@@ -23,7 +23,7 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
     /**
      * field for OrderNumber
      */
-    protected java.lang.String localOrderNumber;
+    protected String localOrderNumber;
 
     /*  This tracker boolean wil be used to detect whether the user called the set method
      *   for this attribute. It will be used to determine whether to include this field
@@ -34,7 +34,7 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
     /**
      * field for Description
      */
-    protected java.lang.String localDescription;
+    protected String localDescription;
 
     /*  This tracker boolean wil be used to detect whether the user called the set method
      *   for this attribute. It will be used to determine whether to include this field
@@ -45,7 +45,7 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
     /**
      * field for PaymentToken
      */
-    protected java.lang.String localPaymentToken;
+    protected String localPaymentToken;
 
     /*  This tracker boolean wil be used to detect whether the user called the set method
      *   for this attribute. It will be used to determine whether to include this field
@@ -56,7 +56,7 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
     /**
      * field for Language
      */
-    protected java.lang.String localLanguage;
+    protected String localLanguage;
 
     /*  This tracker boolean wil be used to detect whether the user called the set method
      *   for this attribute. It will be used to determine whether to include this field
@@ -67,7 +67,7 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
     /**
      * field for AdditionalParameters
      */
-    protected merchant.AdditionalParameters_type4 localAdditionalParameters;
+    protected AdditionalParameters_type4 localAdditionalParameters;
 
     /**
      * field for PreAuth
@@ -77,7 +77,7 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
     /**
      * field for ClientId
      */
-    protected java.lang.String localClientId;
+    protected String localClientId;
 
     /*  This tracker boolean wil be used to detect whether the user called the set method
      *   for this attribute. It will be used to determine whether to include this field
@@ -88,7 +88,7 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
     /**
      * field for Ip
      */
-    protected java.lang.String localIp;
+    protected String localIp;
 
     /*  This tracker boolean wil be used to detect whether the user called the set method
      *   for this attribute. It will be used to determine whether to include this field
@@ -99,7 +99,7 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
     /**
      * field for Phone
      */
-    protected java.lang.String localPhone;
+    protected String localPhone;
 
     /*  This tracker boolean wil be used to detect whether the user called the set method
      *   for this attribute. It will be used to determine whether to include this field
@@ -110,7 +110,7 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
     /**
      * field for Email
      */
-    protected java.lang.String localEmail;
+    protected String localEmail;
 
     /*  This tracker boolean wil be used to detect whether the user called the set method
      *   for this attribute. It will be used to determine whether to include this field
@@ -121,7 +121,7 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
     /**
      * field for PostAddress
      */
-    protected java.lang.String localPostAddress;
+    protected String localPostAddress;
 
     /*  This tracker boolean wil be used to detect whether the user called the set method
      *   for this attribute. It will be used to determine whether to include this field
@@ -132,7 +132,7 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
     /**
      * field for OrderBundle
      */
-    protected merchant.OrderBundle localOrderBundle;
+    protected OrderBundle localOrderBundle;
 
     /*  This tracker boolean wil be used to detect whether the user called the set method
      *   for this attribute. It will be used to determine whether to include this field
@@ -148,7 +148,7 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getOrderNumber() {
+    public String getOrderNumber() {
         return localOrderNumber;
     }
 
@@ -156,7 +156,7 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
      * Auto generated setter method
      * @param param OrderNumber
      */
-    public void setOrderNumber(java.lang.String param) {
+    public void setOrderNumber(String param) {
         localOrderNumberTracker = param != null;
 
         this.localOrderNumber = param;
@@ -170,7 +170,7 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getDescription() {
+    public String getDescription() {
         return localDescription;
     }
 
@@ -178,7 +178,7 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
      * Auto generated setter method
      * @param param Description
      */
-    public void setDescription(java.lang.String param) {
+    public void setDescription(String param) {
         localDescriptionTracker = param != null;
 
         this.localDescription = param;
@@ -192,7 +192,7 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getPaymentToken() {
+    public String getPaymentToken() {
         return localPaymentToken;
     }
 
@@ -200,7 +200,7 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
      * Auto generated setter method
      * @param param PaymentToken
      */
-    public void setPaymentToken(java.lang.String param) {
+    public void setPaymentToken(String param) {
         localPaymentTokenTracker = param != null;
 
         this.localPaymentToken = param;
@@ -214,7 +214,7 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getLanguage() {
+    public String getLanguage() {
         return localLanguage;
     }
 
@@ -222,7 +222,7 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
      * Auto generated setter method
      * @param param Language
      */
-    public void setLanguage(java.lang.String param) {
+    public void setLanguage(String param) {
         localLanguageTracker = param != null;
 
         this.localLanguage = param;
@@ -230,9 +230,9 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
 
     /**
      * Auto generated getter method
-     * @return merchant.AdditionalParameters_type4
+     * @return ru.paymentgate.engine.webservices.merchant.AdditionalParameters_type4
      */
-    public merchant.AdditionalParameters_type4 getAdditionalParameters() {
+    public AdditionalParameters_type4 getAdditionalParameters() {
         return localAdditionalParameters;
     }
 
@@ -241,7 +241,7 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
      * @param param AdditionalParameters
      */
     public void setAdditionalParameters(
-        merchant.AdditionalParameters_type4 param) {
+        AdditionalParameters_type4 param) {
         this.localAdditionalParameters = param;
     }
 
@@ -269,7 +269,7 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getClientId() {
+    public String getClientId() {
         return localClientId;
     }
 
@@ -277,7 +277,7 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
      * Auto generated setter method
      * @param param ClientId
      */
-    public void setClientId(java.lang.String param) {
+    public void setClientId(String param) {
         localClientIdTracker = param != null;
 
         this.localClientId = param;
@@ -291,7 +291,7 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getIp() {
+    public String getIp() {
         return localIp;
     }
 
@@ -299,7 +299,7 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
      * Auto generated setter method
      * @param param Ip
      */
-    public void setIp(java.lang.String param) {
+    public void setIp(String param) {
         localIpTracker = param != null;
 
         this.localIp = param;
@@ -313,7 +313,7 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getPhone() {
+    public String getPhone() {
         return localPhone;
     }
 
@@ -321,7 +321,7 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
      * Auto generated setter method
      * @param param Phone
      */
-    public void setPhone(java.lang.String param) {
+    public void setPhone(String param) {
         localPhoneTracker = param != null;
 
         this.localPhone = param;
@@ -335,7 +335,7 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getEmail() {
+    public String getEmail() {
         return localEmail;
     }
 
@@ -343,7 +343,7 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
      * Auto generated setter method
      * @param param Email
      */
-    public void setEmail(java.lang.String param) {
+    public void setEmail(String param) {
         localEmailTracker = param != null;
 
         this.localEmail = param;
@@ -357,7 +357,7 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getPostAddress() {
+    public String getPostAddress() {
         return localPostAddress;
     }
 
@@ -365,7 +365,7 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
      * Auto generated setter method
      * @param param PostAddress
      */
-    public void setPostAddress(java.lang.String param) {
+    public void setPostAddress(String param) {
         localPostAddressTracker = param != null;
 
         this.localPostAddress = param;
@@ -377,9 +377,9 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
 
     /**
      * Auto generated getter method
-     * @return merchant.OrderBundle
+     * @return ru.paymentgate.engine.webservices.merchant.OrderBundle
      */
-    public merchant.OrderBundle getOrderBundle() {
+    public OrderBundle getOrderBundle() {
         return localOrderBundle;
     }
 
@@ -388,7 +388,7 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
      * @param param OrderBundle
      */
     public void setOrderBundle(
-        merchant.OrderBundle param) {
+        OrderBundle param) {
         localOrderBundleTracker = param != null;
 
         this.localOrderBundle = param;
@@ -419,8 +419,8 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
         javax.xml.stream.XMLStreamWriter xmlWriter, boolean serializeType)
         throws javax.xml.stream.XMLStreamException,
             org.apache.axis2.databinding.ADBException {
-        java.lang.String prefix = null;
-        java.lang.String namespace = null;
+        String prefix = null;
+        String namespace = null;
 
         prefix = parentQName.getPrefix();
         namespace = parentQName.getNamespaceURI();
@@ -428,7 +428,7 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
             xmlWriter);
 
         if (serializeType) {
-            java.lang.String namespacePrefix = registerPrefix(xmlWriter,
+            String namespacePrefix = registerPrefix(xmlWriter,
                     "http://engine.paymentgate.ru/webservices/merchant");
 
             if ((namespacePrefix != null) &&
@@ -612,7 +612,7 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
         xmlWriter.writeEndElement();
     }
 
-    private static java.lang.String generatePrefix(java.lang.String namespace) {
+    private static String generatePrefix(String namespace) {
         if (namespace.equals(
                     "http://engine.paymentgate.ru/webservices/merchant")) {
             return "ns1";
@@ -624,11 +624,11 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
     /**
      * Utility method to write an element start tag.
      */
-    private void writeStartElement(java.lang.String prefix,
-        java.lang.String namespace, java.lang.String localPart,
+    private void writeStartElement(String prefix,
+        String namespace, String localPart,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String writerPrefix = xmlWriter.getPrefix(namespace);
+        String writerPrefix = xmlWriter.getPrefix(namespace);
 
         if (writerPrefix != null) {
             xmlWriter.writeStartElement(writerPrefix, localPart, namespace);
@@ -648,11 +648,11 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
     /**
      * Util method to write an attribute with the ns prefix
      */
-    private void writeAttribute(java.lang.String prefix,
-        java.lang.String namespace, java.lang.String attName,
-        java.lang.String attValue, javax.xml.stream.XMLStreamWriter xmlWriter)
+    private void writeAttribute(String prefix,
+        String namespace, String attName,
+        String attValue, javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String writerPrefix = xmlWriter.getPrefix(namespace);
+        String writerPrefix = xmlWriter.getPrefix(namespace);
 
         if (writerPrefix != null) {
             xmlWriter.writeAttribute(writerPrefix, namespace, attName, attValue);
@@ -666,8 +666,8 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
     /**
      * Util method to write an attribute without the ns prefix
      */
-    private void writeAttribute(java.lang.String namespace,
-        java.lang.String attName, java.lang.String attValue,
+    private void writeAttribute(String namespace,
+        String attName, String attValue,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
         if (namespace.equals("")) {
@@ -681,18 +681,18 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
     /**
      * Util method to write an attribute without the ns prefix
      */
-    private void writeQNameAttribute(java.lang.String namespace,
-        java.lang.String attName, javax.xml.namespace.QName qname,
+    private void writeQNameAttribute(String namespace,
+        String attName, javax.xml.namespace.QName qname,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String attributeNamespace = qname.getNamespaceURI();
-        java.lang.String attributePrefix = xmlWriter.getPrefix(attributeNamespace);
+        String attributeNamespace = qname.getNamespaceURI();
+        String attributePrefix = xmlWriter.getPrefix(attributeNamespace);
 
         if (attributePrefix == null) {
             attributePrefix = registerPrefix(xmlWriter, attributeNamespace);
         }
 
-        java.lang.String attributeValue;
+        String attributeValue;
 
         if (attributePrefix.trim().length() > 0) {
             attributeValue = attributePrefix + ":" + qname.getLocalPart();
@@ -715,10 +715,10 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
     private void writeQName(javax.xml.namespace.QName qname,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String namespaceURI = qname.getNamespaceURI();
+        String namespaceURI = qname.getNamespaceURI();
 
         if (namespaceURI != null) {
-            java.lang.String prefix = xmlWriter.getPrefix(namespaceURI);
+            String prefix = xmlWriter.getPrefix(namespaceURI);
 
             if (prefix == null) {
                 prefix = generatePrefix(namespaceURI);
@@ -747,9 +747,9 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
         if (qnames != null) {
             // we have to store this data until last moment since it is not possible to write any
             // namespace data after writing the charactor data
-            java.lang.StringBuffer stringToWrite = new java.lang.StringBuffer();
-            java.lang.String namespaceURI = null;
-            java.lang.String prefix = null;
+            StringBuffer stringToWrite = new StringBuffer();
+            String namespaceURI = null;
+            String prefix = null;
 
             for (int i = 0; i < qnames.length; i++) {
                 if (i > 0) {
@@ -788,10 +788,10 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
     /**
      * Register a namespace prefix
      */
-    private java.lang.String registerPrefix(
-        javax.xml.stream.XMLStreamWriter xmlWriter, java.lang.String namespace)
+    private String registerPrefix(
+        javax.xml.stream.XMLStreamWriter xmlWriter, String namespace)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String prefix = xmlWriter.getPrefix(namespace);
+        String prefix = xmlWriter.getPrefix(namespace);
 
         if (prefix == null) {
             prefix = generatePrefix(namespace);
@@ -799,7 +799,7 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
             javax.xml.namespace.NamespaceContext nsContext = xmlWriter.getNamespaceContext();
 
             while (true) {
-                java.lang.String uri = nsContext.getNamespaceURI(prefix);
+                String uri = nsContext.getNamespaceURI(prefix);
 
                 if ((uri == null) || (uri.length() == 0)) {
                     break;
@@ -829,14 +829,14 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
          *                If this object is a complex type, the reader is positioned at the end element of its outer element
          */
         public static ApplePayDirectPaymentRequest parse(
-            javax.xml.stream.XMLStreamReader reader) throws java.lang.Exception {
+            javax.xml.stream.XMLStreamReader reader) throws Exception {
             ApplePayDirectPaymentRequest object = new ApplePayDirectPaymentRequest();
 
             int event;
             javax.xml.namespace.QName currentQName = null;
-            java.lang.String nillableValue = null;
-            java.lang.String prefix = "";
-            java.lang.String namespaceuri = "";
+            String nillableValue = null;
+            String prefix = "";
+            String namespaceuri = "";
 
             try {
                 while (!reader.isStartElement() && !reader.isEndElement())
@@ -846,11 +846,11 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
 
                 if (reader.getAttributeValue(
                             "http://www.w3.org/2001/XMLSchema-instance", "type") != null) {
-                    java.lang.String fullTypeName = reader.getAttributeValue("http://www.w3.org/2001/XMLSchema-instance",
+                    String fullTypeName = reader.getAttributeValue("http://www.w3.org/2001/XMLSchema-instance",
                             "type");
 
                     if (fullTypeName != null) {
-                        java.lang.String nsPrefix = null;
+                        String nsPrefix = null;
 
                         if (fullTypeName.indexOf(":") > -1) {
                             nsPrefix = fullTypeName.substring(0,
@@ -859,15 +859,15 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
 
                         nsPrefix = (nsPrefix == null) ? "" : nsPrefix;
 
-                        java.lang.String type = fullTypeName.substring(fullTypeName.indexOf(
+                        String type = fullTypeName.substring(fullTypeName.indexOf(
                                     ":") + 1);
 
                         if (!"applePayDirectPaymentRequest".equals(type)) {
                             //find namespace for the prefix
-                            java.lang.String nsUri = reader.getNamespaceContext()
+                            String nsUri = reader.getNamespaceContext()
                                                            .getNamespaceURI(nsPrefix);
 
-                            return (ApplePayDirectPaymentRequest) merchant.ExtensionMapper.getTypeObject(nsUri,
+                            return (ApplePayDirectPaymentRequest) ExtensionMapper.getTypeObject(nsUri,
                                 type, reader);
                         }
                     }
@@ -895,7 +895,7 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
                             "  cannot be null");
                     }
 
-                    java.lang.String content = reader.getElementText();
+                    String content = reader.getElementText();
 
                     object.setOrderNumber(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             content));
@@ -922,7 +922,7 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
                             "  cannot be null");
                     }
 
-                    java.lang.String content = reader.getElementText();
+                    String content = reader.getElementText();
 
                     object.setDescription(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             content));
@@ -949,7 +949,7 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
                             "  cannot be null");
                     }
 
-                    java.lang.String content = reader.getElementText();
+                    String content = reader.getElementText();
 
                     object.setPaymentToken(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             content));
@@ -975,7 +975,7 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
                             "The element: " + "language" + "  cannot be null");
                     }
 
-                    java.lang.String content = reader.getElementText();
+                    String content = reader.getElementText();
 
                     object.setLanguage(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             content));
@@ -992,7 +992,7 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
                 if (reader.isStartElement() &&
                         new javax.xml.namespace.QName("", "additionalParameters").equals(
                             reader.getName())) {
-                    object.setAdditionalParameters(merchant.AdditionalParameters_type4.Factory.parse(
+                    object.setAdditionalParameters(AdditionalParameters_type4.Factory.parse(
                             reader));
 
                     reader.next();
@@ -1019,7 +1019,7 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
                             "The element: " + "preAuth" + "  cannot be null");
                     }
 
-                    java.lang.String content = reader.getElementText();
+                    String content = reader.getElementText();
 
                     object.setPreAuth(org.apache.axis2.databinding.utils.ConverterUtil.convertToBoolean(
                             content));
@@ -1048,7 +1048,7 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
                             "The element: " + "clientId" + "  cannot be null");
                     }
 
-                    java.lang.String content = reader.getElementText();
+                    String content = reader.getElementText();
 
                     object.setClientId(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             content));
@@ -1074,7 +1074,7 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
                             "The element: " + "ip" + "  cannot be null");
                     }
 
-                    java.lang.String content = reader.getElementText();
+                    String content = reader.getElementText();
 
                     object.setIp(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             content));
@@ -1100,7 +1100,7 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
                             "The element: " + "phone" + "  cannot be null");
                     }
 
-                    java.lang.String content = reader.getElementText();
+                    String content = reader.getElementText();
 
                     object.setPhone(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             content));
@@ -1126,7 +1126,7 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
                             "The element: " + "email" + "  cannot be null");
                     }
 
-                    java.lang.String content = reader.getElementText();
+                    String content = reader.getElementText();
 
                     object.setEmail(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             content));
@@ -1153,7 +1153,7 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
                             "  cannot be null");
                     }
 
-                    java.lang.String content = reader.getElementText();
+                    String content = reader.getElementText();
 
                     object.setPostAddress(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             content));
@@ -1170,7 +1170,7 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
                 if (reader.isStartElement() &&
                         new javax.xml.namespace.QName("", "orderBundle").equals(
                             reader.getName())) {
-                    object.setOrderBundle(merchant.OrderBundle.Factory.parse(
+                    object.setOrderBundle(OrderBundle.Factory.parse(
                             reader));
 
                     reader.next();
@@ -1188,7 +1188,7 @@ public class ApplePayDirectPaymentRequest implements org.apache.axis2.databindin
                         "Unexpected subelement " + reader.getName());
                 }
             } catch (javax.xml.stream.XMLStreamException e) {
-                throw new java.lang.Exception(e);
+                throw new Exception(e);
             }
 
             return object;

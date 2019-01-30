@@ -13,7 +13,7 @@ package merchant;
 @SuppressWarnings({"unchecked",
     "unused"
 })
-public class PaymentOrderOtherWayResult extends merchant.AbstractResponse
+public class PaymentOrderOtherWayResult extends AbstractResponse
     implements org.apache.axis2.databinding.ADBBean {
     /* This type was generated from the piece of schema that had
        name = paymentOrderOtherWayResult
@@ -25,19 +25,19 @@ public class PaymentOrderOtherWayResult extends merchant.AbstractResponse
      * field for Info
      * This was an Attribute!
      */
-    protected java.lang.String localInfo;
+    protected String localInfo;
 
     /**
      * field for Redirect
      * This was an Attribute!
      */
-    protected java.lang.String localRedirect;
+    protected String localRedirect;
 
     /**
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getInfo() {
+    public String getInfo() {
         return localInfo;
     }
 
@@ -45,7 +45,7 @@ public class PaymentOrderOtherWayResult extends merchant.AbstractResponse
      * Auto generated setter method
      * @param param Info
      */
-    public void setInfo(java.lang.String param) {
+    public void setInfo(String param) {
         this.localInfo = param;
     }
 
@@ -53,7 +53,7 @@ public class PaymentOrderOtherWayResult extends merchant.AbstractResponse
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getRedirect() {
+    public String getRedirect() {
         return localRedirect;
     }
 
@@ -61,7 +61,7 @@ public class PaymentOrderOtherWayResult extends merchant.AbstractResponse
      * Auto generated setter method
      * @param param Redirect
      */
-    public void setRedirect(java.lang.String param) {
+    public void setRedirect(String param) {
         this.localRedirect = param;
     }
 
@@ -90,15 +90,15 @@ public class PaymentOrderOtherWayResult extends merchant.AbstractResponse
         javax.xml.stream.XMLStreamWriter xmlWriter, boolean serializeType)
         throws javax.xml.stream.XMLStreamException,
             org.apache.axis2.databinding.ADBException {
-        java.lang.String prefix = null;
-        java.lang.String namespace = null;
+        String prefix = null;
+        String namespace = null;
 
         prefix = parentQName.getPrefix();
         namespace = parentQName.getNamespaceURI();
         writeStartElement(prefix, namespace, parentQName.getLocalPart(),
             xmlWriter);
 
-        java.lang.String namespacePrefix = registerPrefix(xmlWriter,
+        String namespacePrefix = registerPrefix(xmlWriter,
                 "http://engine.paymentgate.ru/webservices/merchant");
 
         if ((namespacePrefix != null) && (namespacePrefix.trim().length() > 0)) {
@@ -110,7 +110,7 @@ public class PaymentOrderOtherWayResult extends merchant.AbstractResponse
                 "type", "paymentOrderOtherWayResult", xmlWriter);
         }
 
-        if (localErrorCode != java.lang.Integer.MIN_VALUE) {
+        if (localErrorCode != Integer.MIN_VALUE) {
             writeAttribute("", "errorCode",
                 org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                     localErrorCode), xmlWriter);
@@ -168,7 +168,7 @@ public class PaymentOrderOtherWayResult extends merchant.AbstractResponse
         xmlWriter.writeEndElement();
     }
 
-    private static java.lang.String generatePrefix(java.lang.String namespace) {
+    private static String generatePrefix(String namespace) {
         if (namespace.equals(
                     "http://engine.paymentgate.ru/webservices/merchant")) {
             return "ns1";
@@ -180,11 +180,11 @@ public class PaymentOrderOtherWayResult extends merchant.AbstractResponse
     /**
      * Utility method to write an element start tag.
      */
-    private void writeStartElement(java.lang.String prefix,
-        java.lang.String namespace, java.lang.String localPart,
+    private void writeStartElement(String prefix,
+        String namespace, String localPart,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String writerPrefix = xmlWriter.getPrefix(namespace);
+        String writerPrefix = xmlWriter.getPrefix(namespace);
 
         if (writerPrefix != null) {
             xmlWriter.writeStartElement(writerPrefix, localPart, namespace);
@@ -204,11 +204,11 @@ public class PaymentOrderOtherWayResult extends merchant.AbstractResponse
     /**
      * Util method to write an attribute with the ns prefix
      */
-    private void writeAttribute(java.lang.String prefix,
-        java.lang.String namespace, java.lang.String attName,
-        java.lang.String attValue, javax.xml.stream.XMLStreamWriter xmlWriter)
+    private void writeAttribute(String prefix,
+        String namespace, String attName,
+        String attValue, javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String writerPrefix = xmlWriter.getPrefix(namespace);
+        String writerPrefix = xmlWriter.getPrefix(namespace);
 
         if (writerPrefix != null) {
             xmlWriter.writeAttribute(writerPrefix, namespace, attName, attValue);
@@ -222,8 +222,8 @@ public class PaymentOrderOtherWayResult extends merchant.AbstractResponse
     /**
      * Util method to write an attribute without the ns prefix
      */
-    private void writeAttribute(java.lang.String namespace,
-        java.lang.String attName, java.lang.String attValue,
+    private void writeAttribute(String namespace,
+        String attName, String attValue,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
         if (namespace.equals("")) {
@@ -237,18 +237,18 @@ public class PaymentOrderOtherWayResult extends merchant.AbstractResponse
     /**
      * Util method to write an attribute without the ns prefix
      */
-    private void writeQNameAttribute(java.lang.String namespace,
-        java.lang.String attName, javax.xml.namespace.QName qname,
+    private void writeQNameAttribute(String namespace,
+        String attName, javax.xml.namespace.QName qname,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String attributeNamespace = qname.getNamespaceURI();
-        java.lang.String attributePrefix = xmlWriter.getPrefix(attributeNamespace);
+        String attributeNamespace = qname.getNamespaceURI();
+        String attributePrefix = xmlWriter.getPrefix(attributeNamespace);
 
         if (attributePrefix == null) {
             attributePrefix = registerPrefix(xmlWriter, attributeNamespace);
         }
 
-        java.lang.String attributeValue;
+        String attributeValue;
 
         if (attributePrefix.trim().length() > 0) {
             attributeValue = attributePrefix + ":" + qname.getLocalPart();
@@ -271,10 +271,10 @@ public class PaymentOrderOtherWayResult extends merchant.AbstractResponse
     private void writeQName(javax.xml.namespace.QName qname,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String namespaceURI = qname.getNamespaceURI();
+        String namespaceURI = qname.getNamespaceURI();
 
         if (namespaceURI != null) {
-            java.lang.String prefix = xmlWriter.getPrefix(namespaceURI);
+            String prefix = xmlWriter.getPrefix(namespaceURI);
 
             if (prefix == null) {
                 prefix = generatePrefix(namespaceURI);
@@ -303,9 +303,9 @@ public class PaymentOrderOtherWayResult extends merchant.AbstractResponse
         if (qnames != null) {
             // we have to store this data until last moment since it is not possible to write any
             // namespace data after writing the charactor data
-            java.lang.StringBuffer stringToWrite = new java.lang.StringBuffer();
-            java.lang.String namespaceURI = null;
-            java.lang.String prefix = null;
+            StringBuffer stringToWrite = new StringBuffer();
+            String namespaceURI = null;
+            String prefix = null;
 
             for (int i = 0; i < qnames.length; i++) {
                 if (i > 0) {
@@ -344,10 +344,10 @@ public class PaymentOrderOtherWayResult extends merchant.AbstractResponse
     /**
      * Register a namespace prefix
      */
-    private java.lang.String registerPrefix(
-        javax.xml.stream.XMLStreamWriter xmlWriter, java.lang.String namespace)
+    private String registerPrefix(
+        javax.xml.stream.XMLStreamWriter xmlWriter, String namespace)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String prefix = xmlWriter.getPrefix(namespace);
+        String prefix = xmlWriter.getPrefix(namespace);
 
         if (prefix == null) {
             prefix = generatePrefix(namespace);
@@ -355,7 +355,7 @@ public class PaymentOrderOtherWayResult extends merchant.AbstractResponse
             javax.xml.namespace.NamespaceContext nsContext = xmlWriter.getNamespaceContext();
 
             while (true) {
-                java.lang.String uri = nsContext.getNamespaceURI(prefix);
+                String uri = nsContext.getNamespaceURI(prefix);
 
                 if ((uri == null) || (uri.length() == 0)) {
                     break;
@@ -385,14 +385,14 @@ public class PaymentOrderOtherWayResult extends merchant.AbstractResponse
          *                If this object is a complex type, the reader is positioned at the end element of its outer element
          */
         public static PaymentOrderOtherWayResult parse(
-            javax.xml.stream.XMLStreamReader reader) throws java.lang.Exception {
+            javax.xml.stream.XMLStreamReader reader) throws Exception {
             PaymentOrderOtherWayResult object = new PaymentOrderOtherWayResult();
 
             int event;
             javax.xml.namespace.QName currentQName = null;
-            java.lang.String nillableValue = null;
-            java.lang.String prefix = "";
-            java.lang.String namespaceuri = "";
+            String nillableValue = null;
+            String prefix = "";
+            String namespaceuri = "";
 
             try {
                 while (!reader.isStartElement() && !reader.isEndElement())
@@ -402,11 +402,11 @@ public class PaymentOrderOtherWayResult extends merchant.AbstractResponse
 
                 if (reader.getAttributeValue(
                             "http://www.w3.org/2001/XMLSchema-instance", "type") != null) {
-                    java.lang.String fullTypeName = reader.getAttributeValue("http://www.w3.org/2001/XMLSchema-instance",
+                    String fullTypeName = reader.getAttributeValue("http://www.w3.org/2001/XMLSchema-instance",
                             "type");
 
                     if (fullTypeName != null) {
-                        java.lang.String nsPrefix = null;
+                        String nsPrefix = null;
 
                         if (fullTypeName.indexOf(":") > -1) {
                             nsPrefix = fullTypeName.substring(0,
@@ -415,15 +415,15 @@ public class PaymentOrderOtherWayResult extends merchant.AbstractResponse
 
                         nsPrefix = (nsPrefix == null) ? "" : nsPrefix;
 
-                        java.lang.String type = fullTypeName.substring(fullTypeName.indexOf(
+                        String type = fullTypeName.substring(fullTypeName.indexOf(
                                     ":") + 1);
 
                         if (!"paymentOrderOtherWayResult".equals(type)) {
                             //find namespace for the prefix
-                            java.lang.String nsUri = reader.getNamespaceContext()
+                            String nsUri = reader.getNamespaceContext()
                                                            .getNamespaceURI(nsPrefix);
 
-                            return (PaymentOrderOtherWayResult) merchant.ExtensionMapper.getTypeObject(nsUri,
+                            return (PaymentOrderOtherWayResult) ExtensionMapper.getTypeObject(nsUri,
                                 type, reader);
                         }
                     }
@@ -434,11 +434,11 @@ public class PaymentOrderOtherWayResult extends merchant.AbstractResponse
                 java.util.Vector handledAttributes = new java.util.Vector();
 
                 // handle attribute "errorCode"
-                java.lang.String tempAttribErrorCode = reader.getAttributeValue(null,
+                String tempAttribErrorCode = reader.getAttributeValue(null,
                         "errorCode");
 
                 if (tempAttribErrorCode != null) {
-                    java.lang.String content = tempAttribErrorCode;
+                    String content = tempAttribErrorCode;
 
                     object.setErrorCode(org.apache.axis2.databinding.utils.ConverterUtil.convertToInt(
                             tempAttribErrorCode));
@@ -450,11 +450,11 @@ public class PaymentOrderOtherWayResult extends merchant.AbstractResponse
                 handledAttributes.add("errorCode");
 
                 // handle attribute "errorMessage"
-                java.lang.String tempAttribErrorMessage = reader.getAttributeValue(null,
+                String tempAttribErrorMessage = reader.getAttributeValue(null,
                         "errorMessage");
 
                 if (tempAttribErrorMessage != null) {
-                    java.lang.String content = tempAttribErrorMessage;
+                    String content = tempAttribErrorMessage;
 
                     object.setErrorMessage(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribErrorMessage));
@@ -464,11 +464,11 @@ public class PaymentOrderOtherWayResult extends merchant.AbstractResponse
                 handledAttributes.add("errorMessage");
 
                 // handle attribute "info"
-                java.lang.String tempAttribInfo = reader.getAttributeValue(null,
+                String tempAttribInfo = reader.getAttributeValue(null,
                         "info");
 
                 if (tempAttribInfo != null) {
-                    java.lang.String content = tempAttribInfo;
+                    String content = tempAttribInfo;
 
                     object.setInfo(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribInfo));
@@ -478,11 +478,11 @@ public class PaymentOrderOtherWayResult extends merchant.AbstractResponse
                 handledAttributes.add("info");
 
                 // handle attribute "redirect"
-                java.lang.String tempAttribRedirect = reader.getAttributeValue(null,
+                String tempAttribRedirect = reader.getAttributeValue(null,
                         "redirect");
 
                 if (tempAttribRedirect != null) {
-                    java.lang.String content = tempAttribRedirect;
+                    String content = tempAttribRedirect;
 
                     object.setRedirect(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribRedirect));
@@ -510,7 +510,7 @@ public class PaymentOrderOtherWayResult extends merchant.AbstractResponse
                         list1.add(null);
                         reader.next();
                     } else {
-                        list1.add(merchant.LoyaltyOperation.Factory.parse(
+                        list1.add(LoyaltyOperation.Factory.parse(
                                 reader));
                     }
 
@@ -544,7 +544,7 @@ public class PaymentOrderOtherWayResult extends merchant.AbstractResponse
                                     list1.add(null);
                                     reader.next();
                                 } else {
-                                    list1.add(merchant.LoyaltyOperation.Factory.parse(
+                                    list1.add(LoyaltyOperation.Factory.parse(
                                             reader));
                                 }
                             } else {
@@ -554,8 +554,8 @@ public class PaymentOrderOtherWayResult extends merchant.AbstractResponse
                     }
 
                     // call the converter utility  to convert and set the array
-                    object.setOperations((merchant.LoyaltyOperation[]) org.apache.axis2.databinding.utils.ConverterUtil.convertToArray(
-                            merchant.LoyaltyOperation.class,
+                    object.setOperations((LoyaltyOperation[]) org.apache.axis2.databinding.utils.ConverterUtil.convertToArray(
+                            LoyaltyOperation.class,
                             list1));
                 } // End of if for expected property start element
 
@@ -571,7 +571,7 @@ public class PaymentOrderOtherWayResult extends merchant.AbstractResponse
                         "Unexpected subelement " + reader.getName());
                 }
             } catch (javax.xml.stream.XMLStreamException e) {
-                throw new java.lang.Exception(e);
+                throw new Exception(e);
             }
 
             return object;

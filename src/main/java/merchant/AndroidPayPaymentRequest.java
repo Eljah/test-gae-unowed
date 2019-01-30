@@ -23,7 +23,7 @@ public class AndroidPayPaymentRequest implements org.apache.axis2.databinding.AD
     /**
      * field for Merchant
      */
-    protected java.lang.String localMerchant;
+    protected String localMerchant;
 
     /*  This tracker boolean wil be used to detect whether the user called the set method
      *   for this attribute. It will be used to determine whether to include this field
@@ -34,7 +34,7 @@ public class AndroidPayPaymentRequest implements org.apache.axis2.databinding.AD
     /**
      * field for OrderNumber
      */
-    protected java.lang.String localOrderNumber;
+    protected String localOrderNumber;
 
     /*  This tracker boolean wil be used to detect whether the user called the set method
      *   for this attribute. It will be used to determine whether to include this field
@@ -45,7 +45,7 @@ public class AndroidPayPaymentRequest implements org.apache.axis2.databinding.AD
     /**
      * field for Description
      */
-    protected java.lang.String localDescription;
+    protected String localDescription;
 
     /*  This tracker boolean wil be used to detect whether the user called the set method
      *   for this attribute. It will be used to determine whether to include this field
@@ -56,7 +56,7 @@ public class AndroidPayPaymentRequest implements org.apache.axis2.databinding.AD
     /**
      * field for Language
      */
-    protected java.lang.String localLanguage;
+    protected String localLanguage;
 
     /*  This tracker boolean wil be used to detect whether the user called the set method
      *   for this attribute. It will be used to determine whether to include this field
@@ -67,7 +67,7 @@ public class AndroidPayPaymentRequest implements org.apache.axis2.databinding.AD
     /**
      * field for AdditionalParameters
      */
-    protected merchant.AdditionalParameters_type0 localAdditionalParameters;
+    protected AdditionalParameters_type0 localAdditionalParameters;
 
     /**
      * field for PreAuth
@@ -77,7 +77,7 @@ public class AndroidPayPaymentRequest implements org.apache.axis2.databinding.AD
     /**
      * field for PaymentToken
      */
-    protected java.lang.String localPaymentToken;
+    protected String localPaymentToken;
 
     /*  This tracker boolean wil be used to detect whether the user called the set method
      *   for this attribute. It will be used to determine whether to include this field
@@ -88,7 +88,7 @@ public class AndroidPayPaymentRequest implements org.apache.axis2.databinding.AD
     /**
      * field for Ip
      */
-    protected java.lang.String localIp;
+    protected String localIp;
 
     /*  This tracker boolean wil be used to detect whether the user called the set method
      *   for this attribute. It will be used to determine whether to include this field
@@ -110,7 +110,7 @@ public class AndroidPayPaymentRequest implements org.apache.axis2.databinding.AD
     /**
      * field for CurrencyCode
      */
-    protected java.lang.String localCurrencyCode;
+    protected String localCurrencyCode;
 
     /*  This tracker boolean wil be used to detect whether the user called the set method
      *   for this attribute. It will be used to determine whether to include this field
@@ -121,7 +121,7 @@ public class AndroidPayPaymentRequest implements org.apache.axis2.databinding.AD
     /**
      * field for ClientId
      */
-    protected java.lang.String localClientId;
+    protected String localClientId;
 
     /*  This tracker boolean wil be used to detect whether the user called the set method
      *   for this attribute. It will be used to determine whether to include this field
@@ -137,7 +137,7 @@ public class AndroidPayPaymentRequest implements org.apache.axis2.databinding.AD
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getMerchant() {
+    public String getMerchant() {
         return localMerchant;
     }
 
@@ -145,7 +145,7 @@ public class AndroidPayPaymentRequest implements org.apache.axis2.databinding.AD
      * Auto generated setter method
      * @param param Merchant
      */
-    public void setMerchant(java.lang.String param) {
+    public void setMerchant(String param) {
         localMerchantTracker = param != null;
 
         this.localMerchant = param;
@@ -159,7 +159,7 @@ public class AndroidPayPaymentRequest implements org.apache.axis2.databinding.AD
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getOrderNumber() {
+    public String getOrderNumber() {
         return localOrderNumber;
     }
 
@@ -167,7 +167,7 @@ public class AndroidPayPaymentRequest implements org.apache.axis2.databinding.AD
      * Auto generated setter method
      * @param param OrderNumber
      */
-    public void setOrderNumber(java.lang.String param) {
+    public void setOrderNumber(String param) {
         localOrderNumberTracker = param != null;
 
         this.localOrderNumber = param;
@@ -181,7 +181,7 @@ public class AndroidPayPaymentRequest implements org.apache.axis2.databinding.AD
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getDescription() {
+    public String getDescription() {
         return localDescription;
     }
 
@@ -189,7 +189,7 @@ public class AndroidPayPaymentRequest implements org.apache.axis2.databinding.AD
      * Auto generated setter method
      * @param param Description
      */
-    public void setDescription(java.lang.String param) {
+    public void setDescription(String param) {
         localDescriptionTracker = param != null;
 
         this.localDescription = param;
@@ -203,7 +203,7 @@ public class AndroidPayPaymentRequest implements org.apache.axis2.databinding.AD
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getLanguage() {
+    public String getLanguage() {
         return localLanguage;
     }
 
@@ -211,7 +211,7 @@ public class AndroidPayPaymentRequest implements org.apache.axis2.databinding.AD
      * Auto generated setter method
      * @param param Language
      */
-    public void setLanguage(java.lang.String param) {
+    public void setLanguage(String param) {
         localLanguageTracker = param != null;
 
         this.localLanguage = param;
@@ -219,9 +219,9 @@ public class AndroidPayPaymentRequest implements org.apache.axis2.databinding.AD
 
     /**
      * Auto generated getter method
-     * @return merchant.AdditionalParameters_type0
+     * @return ru.paymentgate.engine.webservices.merchant.AdditionalParameters_type0
      */
-    public merchant.AdditionalParameters_type0 getAdditionalParameters() {
+    public AdditionalParameters_type0 getAdditionalParameters() {
         return localAdditionalParameters;
     }
 
@@ -230,7 +230,7 @@ public class AndroidPayPaymentRequest implements org.apache.axis2.databinding.AD
      * @param param AdditionalParameters
      */
     public void setAdditionalParameters(
-        merchant.AdditionalParameters_type0 param) {
+        AdditionalParameters_type0 param) {
         this.localAdditionalParameters = param;
     }
 
@@ -258,7 +258,7 @@ public class AndroidPayPaymentRequest implements org.apache.axis2.databinding.AD
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getPaymentToken() {
+    public String getPaymentToken() {
         return localPaymentToken;
     }
 
@@ -266,7 +266,7 @@ public class AndroidPayPaymentRequest implements org.apache.axis2.databinding.AD
      * Auto generated setter method
      * @param param PaymentToken
      */
-    public void setPaymentToken(java.lang.String param) {
+    public void setPaymentToken(String param) {
         localPaymentTokenTracker = param != null;
 
         this.localPaymentToken = param;
@@ -280,7 +280,7 @@ public class AndroidPayPaymentRequest implements org.apache.axis2.databinding.AD
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getIp() {
+    public String getIp() {
         return localIp;
     }
 
@@ -288,7 +288,7 @@ public class AndroidPayPaymentRequest implements org.apache.axis2.databinding.AD
      * Auto generated setter method
      * @param param Ip
      */
-    public void setIp(java.lang.String param) {
+    public void setIp(String param) {
         localIpTracker = param != null;
 
         this.localIp = param;
@@ -312,7 +312,7 @@ public class AndroidPayPaymentRequest implements org.apache.axis2.databinding.AD
      */
     public void setAmount(long param) {
         // setting primitive attribute tracker to true
-        localAmountTracker = param != java.lang.Long.MIN_VALUE;
+        localAmountTracker = param != Long.MIN_VALUE;
 
         this.localAmount = param;
     }
@@ -325,7 +325,7 @@ public class AndroidPayPaymentRequest implements org.apache.axis2.databinding.AD
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getCurrencyCode() {
+    public String getCurrencyCode() {
         return localCurrencyCode;
     }
 
@@ -333,7 +333,7 @@ public class AndroidPayPaymentRequest implements org.apache.axis2.databinding.AD
      * Auto generated setter method
      * @param param CurrencyCode
      */
-    public void setCurrencyCode(java.lang.String param) {
+    public void setCurrencyCode(String param) {
         localCurrencyCodeTracker = param != null;
 
         this.localCurrencyCode = param;
@@ -347,7 +347,7 @@ public class AndroidPayPaymentRequest implements org.apache.axis2.databinding.AD
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getClientId() {
+    public String getClientId() {
         return localClientId;
     }
 
@@ -355,7 +355,7 @@ public class AndroidPayPaymentRequest implements org.apache.axis2.databinding.AD
      * Auto generated setter method
      * @param param ClientId
      */
-    public void setClientId(java.lang.String param) {
+    public void setClientId(String param) {
         localClientIdTracker = param != null;
 
         this.localClientId = param;
@@ -386,8 +386,8 @@ public class AndroidPayPaymentRequest implements org.apache.axis2.databinding.AD
         javax.xml.stream.XMLStreamWriter xmlWriter, boolean serializeType)
         throws javax.xml.stream.XMLStreamException,
             org.apache.axis2.databinding.ADBException {
-        java.lang.String prefix = null;
-        java.lang.String namespace = null;
+        String prefix = null;
+        String namespace = null;
 
         prefix = parentQName.getPrefix();
         namespace = parentQName.getNamespaceURI();
@@ -395,7 +395,7 @@ public class AndroidPayPaymentRequest implements org.apache.axis2.databinding.AD
             xmlWriter);
 
         if (serializeType) {
-            java.lang.String namespacePrefix = registerPrefix(xmlWriter,
+            String namespacePrefix = registerPrefix(xmlWriter,
                     "http://engine.paymentgate.ru/webservices/merchant");
 
             if ((namespacePrefix != null) &&
@@ -525,7 +525,7 @@ public class AndroidPayPaymentRequest implements org.apache.axis2.databinding.AD
             namespace = "";
             writeStartElement(null, namespace, "amount", xmlWriter);
 
-            if (localAmount == java.lang.Long.MIN_VALUE) {
+            if (localAmount == Long.MIN_VALUE) {
                 throw new org.apache.axis2.databinding.ADBException(
                     "amount cannot be null!!");
             } else {
@@ -569,7 +569,7 @@ public class AndroidPayPaymentRequest implements org.apache.axis2.databinding.AD
         xmlWriter.writeEndElement();
     }
 
-    private static java.lang.String generatePrefix(java.lang.String namespace) {
+    private static String generatePrefix(String namespace) {
         if (namespace.equals(
                     "http://engine.paymentgate.ru/webservices/merchant")) {
             return "ns1";
@@ -581,11 +581,11 @@ public class AndroidPayPaymentRequest implements org.apache.axis2.databinding.AD
     /**
      * Utility method to write an element start tag.
      */
-    private void writeStartElement(java.lang.String prefix,
-        java.lang.String namespace, java.lang.String localPart,
+    private void writeStartElement(String prefix,
+        String namespace, String localPart,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String writerPrefix = xmlWriter.getPrefix(namespace);
+        String writerPrefix = xmlWriter.getPrefix(namespace);
 
         if (writerPrefix != null) {
             xmlWriter.writeStartElement(writerPrefix, localPart, namespace);
@@ -605,11 +605,11 @@ public class AndroidPayPaymentRequest implements org.apache.axis2.databinding.AD
     /**
      * Util method to write an attribute with the ns prefix
      */
-    private void writeAttribute(java.lang.String prefix,
-        java.lang.String namespace, java.lang.String attName,
-        java.lang.String attValue, javax.xml.stream.XMLStreamWriter xmlWriter)
+    private void writeAttribute(String prefix,
+        String namespace, String attName,
+        String attValue, javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String writerPrefix = xmlWriter.getPrefix(namespace);
+        String writerPrefix = xmlWriter.getPrefix(namespace);
 
         if (writerPrefix != null) {
             xmlWriter.writeAttribute(writerPrefix, namespace, attName, attValue);
@@ -623,8 +623,8 @@ public class AndroidPayPaymentRequest implements org.apache.axis2.databinding.AD
     /**
      * Util method to write an attribute without the ns prefix
      */
-    private void writeAttribute(java.lang.String namespace,
-        java.lang.String attName, java.lang.String attValue,
+    private void writeAttribute(String namespace,
+        String attName, String attValue,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
         if (namespace.equals("")) {
@@ -638,18 +638,18 @@ public class AndroidPayPaymentRequest implements org.apache.axis2.databinding.AD
     /**
      * Util method to write an attribute without the ns prefix
      */
-    private void writeQNameAttribute(java.lang.String namespace,
-        java.lang.String attName, javax.xml.namespace.QName qname,
+    private void writeQNameAttribute(String namespace,
+        String attName, javax.xml.namespace.QName qname,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String attributeNamespace = qname.getNamespaceURI();
-        java.lang.String attributePrefix = xmlWriter.getPrefix(attributeNamespace);
+        String attributeNamespace = qname.getNamespaceURI();
+        String attributePrefix = xmlWriter.getPrefix(attributeNamespace);
 
         if (attributePrefix == null) {
             attributePrefix = registerPrefix(xmlWriter, attributeNamespace);
         }
 
-        java.lang.String attributeValue;
+        String attributeValue;
 
         if (attributePrefix.trim().length() > 0) {
             attributeValue = attributePrefix + ":" + qname.getLocalPart();
@@ -672,10 +672,10 @@ public class AndroidPayPaymentRequest implements org.apache.axis2.databinding.AD
     private void writeQName(javax.xml.namespace.QName qname,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String namespaceURI = qname.getNamespaceURI();
+        String namespaceURI = qname.getNamespaceURI();
 
         if (namespaceURI != null) {
-            java.lang.String prefix = xmlWriter.getPrefix(namespaceURI);
+            String prefix = xmlWriter.getPrefix(namespaceURI);
 
             if (prefix == null) {
                 prefix = generatePrefix(namespaceURI);
@@ -704,9 +704,9 @@ public class AndroidPayPaymentRequest implements org.apache.axis2.databinding.AD
         if (qnames != null) {
             // we have to store this data until last moment since it is not possible to write any
             // namespace data after writing the charactor data
-            java.lang.StringBuffer stringToWrite = new java.lang.StringBuffer();
-            java.lang.String namespaceURI = null;
-            java.lang.String prefix = null;
+            StringBuffer stringToWrite = new StringBuffer();
+            String namespaceURI = null;
+            String prefix = null;
 
             for (int i = 0; i < qnames.length; i++) {
                 if (i > 0) {
@@ -745,10 +745,10 @@ public class AndroidPayPaymentRequest implements org.apache.axis2.databinding.AD
     /**
      * Register a namespace prefix
      */
-    private java.lang.String registerPrefix(
-        javax.xml.stream.XMLStreamWriter xmlWriter, java.lang.String namespace)
+    private String registerPrefix(
+        javax.xml.stream.XMLStreamWriter xmlWriter, String namespace)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String prefix = xmlWriter.getPrefix(namespace);
+        String prefix = xmlWriter.getPrefix(namespace);
 
         if (prefix == null) {
             prefix = generatePrefix(namespace);
@@ -756,7 +756,7 @@ public class AndroidPayPaymentRequest implements org.apache.axis2.databinding.AD
             javax.xml.namespace.NamespaceContext nsContext = xmlWriter.getNamespaceContext();
 
             while (true) {
-                java.lang.String uri = nsContext.getNamespaceURI(prefix);
+                String uri = nsContext.getNamespaceURI(prefix);
 
                 if ((uri == null) || (uri.length() == 0)) {
                     break;
@@ -786,14 +786,14 @@ public class AndroidPayPaymentRequest implements org.apache.axis2.databinding.AD
          *                If this object is a complex type, the reader is positioned at the end element of its outer element
          */
         public static AndroidPayPaymentRequest parse(
-            javax.xml.stream.XMLStreamReader reader) throws java.lang.Exception {
+            javax.xml.stream.XMLStreamReader reader) throws Exception {
             AndroidPayPaymentRequest object = new AndroidPayPaymentRequest();
 
             int event;
             javax.xml.namespace.QName currentQName = null;
-            java.lang.String nillableValue = null;
-            java.lang.String prefix = "";
-            java.lang.String namespaceuri = "";
+            String nillableValue = null;
+            String prefix = "";
+            String namespaceuri = "";
 
             try {
                 while (!reader.isStartElement() && !reader.isEndElement())
@@ -803,11 +803,11 @@ public class AndroidPayPaymentRequest implements org.apache.axis2.databinding.AD
 
                 if (reader.getAttributeValue(
                             "http://www.w3.org/2001/XMLSchema-instance", "type") != null) {
-                    java.lang.String fullTypeName = reader.getAttributeValue("http://www.w3.org/2001/XMLSchema-instance",
+                    String fullTypeName = reader.getAttributeValue("http://www.w3.org/2001/XMLSchema-instance",
                             "type");
 
                     if (fullTypeName != null) {
-                        java.lang.String nsPrefix = null;
+                        String nsPrefix = null;
 
                         if (fullTypeName.indexOf(":") > -1) {
                             nsPrefix = fullTypeName.substring(0,
@@ -816,15 +816,15 @@ public class AndroidPayPaymentRequest implements org.apache.axis2.databinding.AD
 
                         nsPrefix = (nsPrefix == null) ? "" : nsPrefix;
 
-                        java.lang.String type = fullTypeName.substring(fullTypeName.indexOf(
+                        String type = fullTypeName.substring(fullTypeName.indexOf(
                                     ":") + 1);
 
                         if (!"androidPayPaymentRequest".equals(type)) {
                             //find namespace for the prefix
-                            java.lang.String nsUri = reader.getNamespaceContext()
+                            String nsUri = reader.getNamespaceContext()
                                                            .getNamespaceURI(nsPrefix);
 
-                            return (AndroidPayPaymentRequest) merchant.ExtensionMapper.getTypeObject(nsUri,
+                            return (AndroidPayPaymentRequest) ExtensionMapper.getTypeObject(nsUri,
                                 type, reader);
                         }
                     }
@@ -851,7 +851,7 @@ public class AndroidPayPaymentRequest implements org.apache.axis2.databinding.AD
                             "The element: " + "merchant" + "  cannot be null");
                     }
 
-                    java.lang.String content = reader.getElementText();
+                    String content = reader.getElementText();
 
                     object.setMerchant(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             content));
@@ -878,7 +878,7 @@ public class AndroidPayPaymentRequest implements org.apache.axis2.databinding.AD
                             "  cannot be null");
                     }
 
-                    java.lang.String content = reader.getElementText();
+                    String content = reader.getElementText();
 
                     object.setOrderNumber(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             content));
@@ -905,7 +905,7 @@ public class AndroidPayPaymentRequest implements org.apache.axis2.databinding.AD
                             "  cannot be null");
                     }
 
-                    java.lang.String content = reader.getElementText();
+                    String content = reader.getElementText();
 
                     object.setDescription(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             content));
@@ -931,7 +931,7 @@ public class AndroidPayPaymentRequest implements org.apache.axis2.databinding.AD
                             "The element: " + "language" + "  cannot be null");
                     }
 
-                    java.lang.String content = reader.getElementText();
+                    String content = reader.getElementText();
 
                     object.setLanguage(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             content));
@@ -948,7 +948,7 @@ public class AndroidPayPaymentRequest implements org.apache.axis2.databinding.AD
                 if (reader.isStartElement() &&
                         new javax.xml.namespace.QName("", "additionalParameters").equals(
                             reader.getName())) {
-                    object.setAdditionalParameters(merchant.AdditionalParameters_type0.Factory.parse(
+                    object.setAdditionalParameters(AdditionalParameters_type0.Factory.parse(
                             reader));
 
                     reader.next();
@@ -975,7 +975,7 @@ public class AndroidPayPaymentRequest implements org.apache.axis2.databinding.AD
                             "The element: " + "preAuth" + "  cannot be null");
                     }
 
-                    java.lang.String content = reader.getElementText();
+                    String content = reader.getElementText();
 
                     object.setPreAuth(org.apache.axis2.databinding.utils.ConverterUtil.convertToBoolean(
                             content));
@@ -1005,7 +1005,7 @@ public class AndroidPayPaymentRequest implements org.apache.axis2.databinding.AD
                             "  cannot be null");
                     }
 
-                    java.lang.String content = reader.getElementText();
+                    String content = reader.getElementText();
 
                     object.setPaymentToken(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             content));
@@ -1031,7 +1031,7 @@ public class AndroidPayPaymentRequest implements org.apache.axis2.databinding.AD
                             "The element: " + "ip" + "  cannot be null");
                     }
 
-                    java.lang.String content = reader.getElementText();
+                    String content = reader.getElementText();
 
                     object.setIp(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             content));
@@ -1057,7 +1057,7 @@ public class AndroidPayPaymentRequest implements org.apache.axis2.databinding.AD
                             "The element: " + "amount" + "  cannot be null");
                     }
 
-                    java.lang.String content = reader.getElementText();
+                    String content = reader.getElementText();
 
                     object.setAmount(org.apache.axis2.databinding.utils.ConverterUtil.convertToLong(
                             content));
@@ -1066,7 +1066,7 @@ public class AndroidPayPaymentRequest implements org.apache.axis2.databinding.AD
                 } // End of if for expected property start element
 
                 else {
-                    object.setAmount(java.lang.Long.MIN_VALUE);
+                    object.setAmount(Long.MIN_VALUE);
                 }
 
                 while (!reader.isStartElement() && !reader.isEndElement())
@@ -1085,7 +1085,7 @@ public class AndroidPayPaymentRequest implements org.apache.axis2.databinding.AD
                             "  cannot be null");
                     }
 
-                    java.lang.String content = reader.getElementText();
+                    String content = reader.getElementText();
 
                     object.setCurrencyCode(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             content));
@@ -1111,7 +1111,7 @@ public class AndroidPayPaymentRequest implements org.apache.axis2.databinding.AD
                             "The element: " + "clientId" + "  cannot be null");
                     }
 
-                    java.lang.String content = reader.getElementText();
+                    String content = reader.getElementText();
 
                     object.setClientId(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             content));
@@ -1131,7 +1131,7 @@ public class AndroidPayPaymentRequest implements org.apache.axis2.databinding.AD
                         "Unexpected subelement " + reader.getName());
                 }
             } catch (javax.xml.stream.XMLStreamException e) {
-                throw new java.lang.Exception(e);
+                throw new Exception(e);
             }
 
             return object;

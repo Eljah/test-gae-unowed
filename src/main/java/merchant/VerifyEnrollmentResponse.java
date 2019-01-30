@@ -13,7 +13,7 @@ package merchant;
 @SuppressWarnings({"unchecked",
     "unused"
 })
-public class VerifyEnrollmentResponse extends merchant.AbstractResponse
+public class VerifyEnrollmentResponse extends AbstractResponse
     implements org.apache.axis2.databinding.ADBBean {
     /* This type was generated from the piece of schema that had
        name = verifyEnrollmentResponse
@@ -25,25 +25,25 @@ public class VerifyEnrollmentResponse extends merchant.AbstractResponse
      * field for IsEnrolled
      * This was an Attribute!
      */
-    protected java.lang.String localIsEnrolled;
+    protected String localIsEnrolled;
 
     /**
      * field for EmitterName
      * This was an Attribute!
      */
-    protected java.lang.String localEmitterName;
+    protected String localEmitterName;
 
     /**
      * field for EmitterCountryCode
      * This was an Attribute!
      */
-    protected java.lang.String localEmitterCountryCode;
+    protected String localEmitterCountryCode;
 
     /**
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getIsEnrolled() {
+    public String getIsEnrolled() {
         return localIsEnrolled;
     }
 
@@ -51,7 +51,7 @@ public class VerifyEnrollmentResponse extends merchant.AbstractResponse
      * Auto generated setter method
      * @param param IsEnrolled
      */
-    public void setIsEnrolled(java.lang.String param) {
+    public void setIsEnrolled(String param) {
         this.localIsEnrolled = param;
     }
 
@@ -59,7 +59,7 @@ public class VerifyEnrollmentResponse extends merchant.AbstractResponse
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getEmitterName() {
+    public String getEmitterName() {
         return localEmitterName;
     }
 
@@ -67,7 +67,7 @@ public class VerifyEnrollmentResponse extends merchant.AbstractResponse
      * Auto generated setter method
      * @param param EmitterName
      */
-    public void setEmitterName(java.lang.String param) {
+    public void setEmitterName(String param) {
         this.localEmitterName = param;
     }
 
@@ -75,7 +75,7 @@ public class VerifyEnrollmentResponse extends merchant.AbstractResponse
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getEmitterCountryCode() {
+    public String getEmitterCountryCode() {
         return localEmitterCountryCode;
     }
 
@@ -83,7 +83,7 @@ public class VerifyEnrollmentResponse extends merchant.AbstractResponse
      * Auto generated setter method
      * @param param EmitterCountryCode
      */
-    public void setEmitterCountryCode(java.lang.String param) {
+    public void setEmitterCountryCode(String param) {
         this.localEmitterCountryCode = param;
     }
 
@@ -112,15 +112,15 @@ public class VerifyEnrollmentResponse extends merchant.AbstractResponse
         javax.xml.stream.XMLStreamWriter xmlWriter, boolean serializeType)
         throws javax.xml.stream.XMLStreamException,
             org.apache.axis2.databinding.ADBException {
-        java.lang.String prefix = null;
-        java.lang.String namespace = null;
+        String prefix = null;
+        String namespace = null;
 
         prefix = parentQName.getPrefix();
         namespace = parentQName.getNamespaceURI();
         writeStartElement(prefix, namespace, parentQName.getLocalPart(),
             xmlWriter);
 
-        java.lang.String namespacePrefix = registerPrefix(xmlWriter,
+        String namespacePrefix = registerPrefix(xmlWriter,
                 "http://engine.paymentgate.ru/webservices/merchant");
 
         if ((namespacePrefix != null) && (namespacePrefix.trim().length() > 0)) {
@@ -131,7 +131,7 @@ public class VerifyEnrollmentResponse extends merchant.AbstractResponse
                 "type", "verifyEnrollmentResponse", xmlWriter);
         }
 
-        if (localErrorCode != java.lang.Integer.MIN_VALUE) {
+        if (localErrorCode != Integer.MIN_VALUE) {
             writeAttribute("", "errorCode",
                 org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                     localErrorCode), xmlWriter);
@@ -195,7 +195,7 @@ public class VerifyEnrollmentResponse extends merchant.AbstractResponse
         xmlWriter.writeEndElement();
     }
 
-    private static java.lang.String generatePrefix(java.lang.String namespace) {
+    private static String generatePrefix(String namespace) {
         if (namespace.equals(
                     "http://engine.paymentgate.ru/webservices/merchant")) {
             return "ns1";
@@ -207,11 +207,11 @@ public class VerifyEnrollmentResponse extends merchant.AbstractResponse
     /**
      * Utility method to write an element start tag.
      */
-    private void writeStartElement(java.lang.String prefix,
-        java.lang.String namespace, java.lang.String localPart,
+    private void writeStartElement(String prefix,
+        String namespace, String localPart,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String writerPrefix = xmlWriter.getPrefix(namespace);
+        String writerPrefix = xmlWriter.getPrefix(namespace);
 
         if (writerPrefix != null) {
             xmlWriter.writeStartElement(writerPrefix, localPart, namespace);
@@ -231,11 +231,11 @@ public class VerifyEnrollmentResponse extends merchant.AbstractResponse
     /**
      * Util method to write an attribute with the ns prefix
      */
-    private void writeAttribute(java.lang.String prefix,
-        java.lang.String namespace, java.lang.String attName,
-        java.lang.String attValue, javax.xml.stream.XMLStreamWriter xmlWriter)
+    private void writeAttribute(String prefix,
+        String namespace, String attName,
+        String attValue, javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String writerPrefix = xmlWriter.getPrefix(namespace);
+        String writerPrefix = xmlWriter.getPrefix(namespace);
 
         if (writerPrefix != null) {
             xmlWriter.writeAttribute(writerPrefix, namespace, attName, attValue);
@@ -249,8 +249,8 @@ public class VerifyEnrollmentResponse extends merchant.AbstractResponse
     /**
      * Util method to write an attribute without the ns prefix
      */
-    private void writeAttribute(java.lang.String namespace,
-        java.lang.String attName, java.lang.String attValue,
+    private void writeAttribute(String namespace,
+        String attName, String attValue,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
         if (namespace.equals("")) {
@@ -264,18 +264,18 @@ public class VerifyEnrollmentResponse extends merchant.AbstractResponse
     /**
      * Util method to write an attribute without the ns prefix
      */
-    private void writeQNameAttribute(java.lang.String namespace,
-        java.lang.String attName, javax.xml.namespace.QName qname,
+    private void writeQNameAttribute(String namespace,
+        String attName, javax.xml.namespace.QName qname,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String attributeNamespace = qname.getNamespaceURI();
-        java.lang.String attributePrefix = xmlWriter.getPrefix(attributeNamespace);
+        String attributeNamespace = qname.getNamespaceURI();
+        String attributePrefix = xmlWriter.getPrefix(attributeNamespace);
 
         if (attributePrefix == null) {
             attributePrefix = registerPrefix(xmlWriter, attributeNamespace);
         }
 
-        java.lang.String attributeValue;
+        String attributeValue;
 
         if (attributePrefix.trim().length() > 0) {
             attributeValue = attributePrefix + ":" + qname.getLocalPart();
@@ -298,10 +298,10 @@ public class VerifyEnrollmentResponse extends merchant.AbstractResponse
     private void writeQName(javax.xml.namespace.QName qname,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String namespaceURI = qname.getNamespaceURI();
+        String namespaceURI = qname.getNamespaceURI();
 
         if (namespaceURI != null) {
-            java.lang.String prefix = xmlWriter.getPrefix(namespaceURI);
+            String prefix = xmlWriter.getPrefix(namespaceURI);
 
             if (prefix == null) {
                 prefix = generatePrefix(namespaceURI);
@@ -330,9 +330,9 @@ public class VerifyEnrollmentResponse extends merchant.AbstractResponse
         if (qnames != null) {
             // we have to store this data until last moment since it is not possible to write any
             // namespace data after writing the charactor data
-            java.lang.StringBuffer stringToWrite = new java.lang.StringBuffer();
-            java.lang.String namespaceURI = null;
-            java.lang.String prefix = null;
+            StringBuffer stringToWrite = new StringBuffer();
+            String namespaceURI = null;
+            String prefix = null;
 
             for (int i = 0; i < qnames.length; i++) {
                 if (i > 0) {
@@ -371,10 +371,10 @@ public class VerifyEnrollmentResponse extends merchant.AbstractResponse
     /**
      * Register a namespace prefix
      */
-    private java.lang.String registerPrefix(
-        javax.xml.stream.XMLStreamWriter xmlWriter, java.lang.String namespace)
+    private String registerPrefix(
+        javax.xml.stream.XMLStreamWriter xmlWriter, String namespace)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String prefix = xmlWriter.getPrefix(namespace);
+        String prefix = xmlWriter.getPrefix(namespace);
 
         if (prefix == null) {
             prefix = generatePrefix(namespace);
@@ -382,7 +382,7 @@ public class VerifyEnrollmentResponse extends merchant.AbstractResponse
             javax.xml.namespace.NamespaceContext nsContext = xmlWriter.getNamespaceContext();
 
             while (true) {
-                java.lang.String uri = nsContext.getNamespaceURI(prefix);
+                String uri = nsContext.getNamespaceURI(prefix);
 
                 if ((uri == null) || (uri.length() == 0)) {
                     break;
@@ -412,14 +412,14 @@ public class VerifyEnrollmentResponse extends merchant.AbstractResponse
          *                If this object is a complex type, the reader is positioned at the end element of its outer element
          */
         public static VerifyEnrollmentResponse parse(
-            javax.xml.stream.XMLStreamReader reader) throws java.lang.Exception {
+            javax.xml.stream.XMLStreamReader reader) throws Exception {
             VerifyEnrollmentResponse object = new VerifyEnrollmentResponse();
 
             int event;
             javax.xml.namespace.QName currentQName = null;
-            java.lang.String nillableValue = null;
-            java.lang.String prefix = "";
-            java.lang.String namespaceuri = "";
+            String nillableValue = null;
+            String prefix = "";
+            String namespaceuri = "";
 
             try {
                 while (!reader.isStartElement() && !reader.isEndElement())
@@ -429,11 +429,11 @@ public class VerifyEnrollmentResponse extends merchant.AbstractResponse
 
                 if (reader.getAttributeValue(
                             "http://www.w3.org/2001/XMLSchema-instance", "type") != null) {
-                    java.lang.String fullTypeName = reader.getAttributeValue("http://www.w3.org/2001/XMLSchema-instance",
+                    String fullTypeName = reader.getAttributeValue("http://www.w3.org/2001/XMLSchema-instance",
                             "type");
 
                     if (fullTypeName != null) {
-                        java.lang.String nsPrefix = null;
+                        String nsPrefix = null;
 
                         if (fullTypeName.indexOf(":") > -1) {
                             nsPrefix = fullTypeName.substring(0,
@@ -442,15 +442,15 @@ public class VerifyEnrollmentResponse extends merchant.AbstractResponse
 
                         nsPrefix = (nsPrefix == null) ? "" : nsPrefix;
 
-                        java.lang.String type = fullTypeName.substring(fullTypeName.indexOf(
+                        String type = fullTypeName.substring(fullTypeName.indexOf(
                                     ":") + 1);
 
                         if (!"verifyEnrollmentResponse".equals(type)) {
                             //find namespace for the prefix
-                            java.lang.String nsUri = reader.getNamespaceContext()
+                            String nsUri = reader.getNamespaceContext()
                                                            .getNamespaceURI(nsPrefix);
 
-                            return (VerifyEnrollmentResponse) merchant.ExtensionMapper.getTypeObject(nsUri,
+                            return (VerifyEnrollmentResponse) ExtensionMapper.getTypeObject(nsUri,
                                 type, reader);
                         }
                     }
@@ -461,11 +461,11 @@ public class VerifyEnrollmentResponse extends merchant.AbstractResponse
                 java.util.Vector handledAttributes = new java.util.Vector();
 
                 // handle attribute "errorCode"
-                java.lang.String tempAttribErrorCode = reader.getAttributeValue(null,
+                String tempAttribErrorCode = reader.getAttributeValue(null,
                         "errorCode");
 
                 if (tempAttribErrorCode != null) {
-                    java.lang.String content = tempAttribErrorCode;
+                    String content = tempAttribErrorCode;
 
                     object.setErrorCode(org.apache.axis2.databinding.utils.ConverterUtil.convertToInt(
                             tempAttribErrorCode));
@@ -477,11 +477,11 @@ public class VerifyEnrollmentResponse extends merchant.AbstractResponse
                 handledAttributes.add("errorCode");
 
                 // handle attribute "errorMessage"
-                java.lang.String tempAttribErrorMessage = reader.getAttributeValue(null,
+                String tempAttribErrorMessage = reader.getAttributeValue(null,
                         "errorMessage");
 
                 if (tempAttribErrorMessage != null) {
-                    java.lang.String content = tempAttribErrorMessage;
+                    String content = tempAttribErrorMessage;
 
                     object.setErrorMessage(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribErrorMessage));
@@ -491,11 +491,11 @@ public class VerifyEnrollmentResponse extends merchant.AbstractResponse
                 handledAttributes.add("errorMessage");
 
                 // handle attribute "isEnrolled"
-                java.lang.String tempAttribIsEnrolled = reader.getAttributeValue(null,
+                String tempAttribIsEnrolled = reader.getAttributeValue(null,
                         "isEnrolled");
 
                 if (tempAttribIsEnrolled != null) {
-                    java.lang.String content = tempAttribIsEnrolled;
+                    String content = tempAttribIsEnrolled;
 
                     object.setIsEnrolled(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribIsEnrolled));
@@ -505,11 +505,11 @@ public class VerifyEnrollmentResponse extends merchant.AbstractResponse
                 handledAttributes.add("isEnrolled");
 
                 // handle attribute "emitterName"
-                java.lang.String tempAttribEmitterName = reader.getAttributeValue(null,
+                String tempAttribEmitterName = reader.getAttributeValue(null,
                         "emitterName");
 
                 if (tempAttribEmitterName != null) {
-                    java.lang.String content = tempAttribEmitterName;
+                    String content = tempAttribEmitterName;
 
                     object.setEmitterName(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribEmitterName));
@@ -519,11 +519,11 @@ public class VerifyEnrollmentResponse extends merchant.AbstractResponse
                 handledAttributes.add("emitterName");
 
                 // handle attribute "emitterCountryCode"
-                java.lang.String tempAttribEmitterCountryCode = reader.getAttributeValue(null,
+                String tempAttribEmitterCountryCode = reader.getAttributeValue(null,
                         "emitterCountryCode");
 
                 if (tempAttribEmitterCountryCode != null) {
-                    java.lang.String content = tempAttribEmitterCountryCode;
+                    String content = tempAttribEmitterCountryCode;
 
                     object.setEmitterCountryCode(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribEmitterCountryCode));
@@ -551,7 +551,7 @@ public class VerifyEnrollmentResponse extends merchant.AbstractResponse
                         list1.add(null);
                         reader.next();
                     } else {
-                        list1.add(merchant.LoyaltyOperation.Factory.parse(
+                        list1.add(LoyaltyOperation.Factory.parse(
                                 reader));
                     }
 
@@ -585,7 +585,7 @@ public class VerifyEnrollmentResponse extends merchant.AbstractResponse
                                     list1.add(null);
                                     reader.next();
                                 } else {
-                                    list1.add(merchant.LoyaltyOperation.Factory.parse(
+                                    list1.add(LoyaltyOperation.Factory.parse(
                                             reader));
                                 }
                             } else {
@@ -595,8 +595,8 @@ public class VerifyEnrollmentResponse extends merchant.AbstractResponse
                     }
 
                     // call the converter utility  to convert and set the array
-                    object.setOperations((merchant.LoyaltyOperation[]) org.apache.axis2.databinding.utils.ConverterUtil.convertToArray(
-                            merchant.LoyaltyOperation.class,
+                    object.setOperations((LoyaltyOperation[]) org.apache.axis2.databinding.utils.ConverterUtil.convertToArray(
+                            LoyaltyOperation.class,
                             list1));
                 } // End of if for expected property start element
 
@@ -612,7 +612,7 @@ public class VerifyEnrollmentResponse extends merchant.AbstractResponse
                         "Unexpected subelement " + reader.getName());
                 }
             } catch (javax.xml.stream.XMLStreamException e) {
-                throw new java.lang.Exception(e);
+                throw new Exception(e);
             }
 
             return object;

@@ -13,7 +13,7 @@ package merchant;
 @SuppressWarnings({"unchecked",
     "unused"
 })
-public class OrderStatusResponse extends merchant.AbstractResponse
+public class OrderStatusResponse extends AbstractResponse
     implements org.apache.axis2.databinding.ADBBean {
     /* This type was generated from the piece of schema that had
        name = orderStatusResponse
@@ -25,7 +25,7 @@ public class OrderStatusResponse extends merchant.AbstractResponse
      * field for Params
      * This was an Array!
      */
-    protected merchant.ServiceParam[] localParams;
+    protected ServiceParam[] localParams;
 
     /*  This tracker boolean wil be used to detect whether the user called the set method
      *   for this attribute. It will be used to determine whether to include this field
@@ -36,7 +36,7 @@ public class OrderStatusResponse extends merchant.AbstractResponse
     /**
      * field for OrderBundle
      */
-    protected merchant.OrderBundle localOrderBundle;
+    protected OrderBundle localOrderBundle;
 
     /*  This tracker boolean wil be used to detect whether the user called the set method
      *   for this attribute. It will be used to determine whether to include this field
@@ -54,31 +54,31 @@ public class OrderStatusResponse extends merchant.AbstractResponse
      * field for OrderNumber
      * This was an Attribute!
      */
-    protected java.lang.String localOrderNumber;
+    protected String localOrderNumber;
 
     /**
      * field for Pan
      * This was an Attribute!
      */
-    protected java.lang.String localPan;
+    protected String localPan;
 
     /**
      * field for Hpan
      * This was an Attribute!
      */
-    protected java.lang.String localHpan;
+    protected String localHpan;
 
     /**
      * field for Expiration
      * This was an Attribute!
      */
-    protected java.lang.String localExpiration;
+    protected String localExpiration;
 
     /**
      * field for CardholderName
      * This was an Attribute!
      */
-    protected java.lang.String localCardholderName;
+    protected String localCardholderName;
 
     /**
      * field for Amount
@@ -90,13 +90,13 @@ public class OrderStatusResponse extends merchant.AbstractResponse
      * field for Currency
      * This was an Attribute!
      */
-    protected java.lang.String localCurrency;
+    protected String localCurrency;
 
     /**
      * field for ApprovalCode
      * This was an Attribute!
      */
-    protected java.lang.String localApprovalCode;
+    protected String localApprovalCode;
 
     /**
      * field for AuthCode
@@ -108,7 +108,7 @@ public class OrderStatusResponse extends merchant.AbstractResponse
      * field for Ip
      * This was an Attribute!
      */
-    protected java.lang.String localIp;
+    protected String localIp;
 
     /**
      * field for Date
@@ -120,31 +120,31 @@ public class OrderStatusResponse extends merchant.AbstractResponse
      * field for OrderDescription
      * This was an Attribute!
      */
-    protected java.lang.String localOrderDescription;
+    protected String localOrderDescription;
 
     /**
      * field for MerchantLogin
      * This was an Attribute!
      */
-    protected java.lang.String localMerchantLogin;
+    protected String localMerchantLogin;
 
     /**
      * field for ActionCodeDescription
      * This was an Attribute!
      */
-    protected java.lang.String localActionCodeDescription;
+    protected String localActionCodeDescription;
 
     /**
      * field for ClientId
      * This was an Attribute!
      */
-    protected java.lang.String localClientId;
+    protected String localClientId;
 
     /**
      * field for BindingId
      * This was an Attribute!
      */
-    protected java.lang.String localBindingId;
+    protected String localBindingId;
 
     public boolean isParamsSpecified() {
         return localParamsTracker;
@@ -152,9 +152,9 @@ public class OrderStatusResponse extends merchant.AbstractResponse
 
     /**
      * Auto generated getter method
-     * @return merchant.ServiceParam[]
+     * @return ru.paymentgate.engine.webservices.merchant.ServiceParam[]
      */
-    public merchant.ServiceParam[] getParams() {
+    public ServiceParam[] getParams() {
         return localParams;
     }
 
@@ -162,7 +162,7 @@ public class OrderStatusResponse extends merchant.AbstractResponse
      * validate the array for Params
      */
     protected void validateParams(
-        merchant.ServiceParam[] param) {
+        ServiceParam[] param) {
     }
 
     /**
@@ -170,7 +170,7 @@ public class OrderStatusResponse extends merchant.AbstractResponse
      * @param param Params
      */
     public void setParams(
-        merchant.ServiceParam[] param) {
+        ServiceParam[] param) {
         validateParams(param);
 
         localParamsTracker = param != null;
@@ -180,13 +180,13 @@ public class OrderStatusResponse extends merchant.AbstractResponse
 
     /**
      * Auto generated add method for the array for convenience
-     * @param param merchant.ServiceParam
+     * @param param ru.paymentgate.engine.webservices.merchant.ServiceParam
      */
     public void addParams(
-        merchant.ServiceParam param) {
+        ServiceParam param) {
         if (localParams == null) {
-            localParams = new merchant.ServiceParam[] {
-                    
+            localParams = new ServiceParam[] {
+
                 };
         }
 
@@ -195,7 +195,7 @@ public class OrderStatusResponse extends merchant.AbstractResponse
 
         java.util.List list = org.apache.axis2.databinding.utils.ConverterUtil.toList(localParams);
         list.add(param);
-        this.localParams = (merchant.ServiceParam[]) list.toArray(new merchant.ServiceParam[list.size()]);
+        this.localParams = (ServiceParam[]) list.toArray(new ServiceParam[list.size()]);
     }
 
     public boolean isOrderBundleSpecified() {
@@ -204,9 +204,9 @@ public class OrderStatusResponse extends merchant.AbstractResponse
 
     /**
      * Auto generated getter method
-     * @return merchant.OrderBundle
+     * @return ru.paymentgate.engine.webservices.merchant.OrderBundle
      */
-    public merchant.OrderBundle getOrderBundle() {
+    public OrderBundle getOrderBundle() {
         return localOrderBundle;
     }
 
@@ -215,7 +215,7 @@ public class OrderStatusResponse extends merchant.AbstractResponse
      * @param param OrderBundle
      */
     public void setOrderBundle(
-        merchant.OrderBundle param) {
+        OrderBundle param) {
         localOrderBundleTracker = param != null;
 
         this.localOrderBundle = param;
@@ -241,7 +241,7 @@ public class OrderStatusResponse extends merchant.AbstractResponse
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getOrderNumber() {
+    public String getOrderNumber() {
         return localOrderNumber;
     }
 
@@ -249,7 +249,7 @@ public class OrderStatusResponse extends merchant.AbstractResponse
      * Auto generated setter method
      * @param param OrderNumber
      */
-    public void setOrderNumber(java.lang.String param) {
+    public void setOrderNumber(String param) {
         this.localOrderNumber = param;
     }
 
@@ -257,7 +257,7 @@ public class OrderStatusResponse extends merchant.AbstractResponse
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getPan() {
+    public String getPan() {
         return localPan;
     }
 
@@ -265,7 +265,7 @@ public class OrderStatusResponse extends merchant.AbstractResponse
      * Auto generated setter method
      * @param param Pan
      */
-    public void setPan(java.lang.String param) {
+    public void setPan(String param) {
         this.localPan = param;
     }
 
@@ -273,7 +273,7 @@ public class OrderStatusResponse extends merchant.AbstractResponse
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getHpan() {
+    public String getHpan() {
         return localHpan;
     }
 
@@ -281,7 +281,7 @@ public class OrderStatusResponse extends merchant.AbstractResponse
      * Auto generated setter method
      * @param param Hpan
      */
-    public void setHpan(java.lang.String param) {
+    public void setHpan(String param) {
         this.localHpan = param;
     }
 
@@ -289,7 +289,7 @@ public class OrderStatusResponse extends merchant.AbstractResponse
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getExpiration() {
+    public String getExpiration() {
         return localExpiration;
     }
 
@@ -297,7 +297,7 @@ public class OrderStatusResponse extends merchant.AbstractResponse
      * Auto generated setter method
      * @param param Expiration
      */
-    public void setExpiration(java.lang.String param) {
+    public void setExpiration(String param) {
         this.localExpiration = param;
     }
 
@@ -305,7 +305,7 @@ public class OrderStatusResponse extends merchant.AbstractResponse
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getCardholderName() {
+    public String getCardholderName() {
         return localCardholderName;
     }
 
@@ -313,7 +313,7 @@ public class OrderStatusResponse extends merchant.AbstractResponse
      * Auto generated setter method
      * @param param CardholderName
      */
-    public void setCardholderName(java.lang.String param) {
+    public void setCardholderName(String param) {
         this.localCardholderName = param;
     }
 
@@ -337,7 +337,7 @@ public class OrderStatusResponse extends merchant.AbstractResponse
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getCurrency() {
+    public String getCurrency() {
         return localCurrency;
     }
 
@@ -345,7 +345,7 @@ public class OrderStatusResponse extends merchant.AbstractResponse
      * Auto generated setter method
      * @param param Currency
      */
-    public void setCurrency(java.lang.String param) {
+    public void setCurrency(String param) {
         this.localCurrency = param;
     }
 
@@ -353,7 +353,7 @@ public class OrderStatusResponse extends merchant.AbstractResponse
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getApprovalCode() {
+    public String getApprovalCode() {
         return localApprovalCode;
     }
 
@@ -361,7 +361,7 @@ public class OrderStatusResponse extends merchant.AbstractResponse
      * Auto generated setter method
      * @param param ApprovalCode
      */
-    public void setApprovalCode(java.lang.String param) {
+    public void setApprovalCode(String param) {
         this.localApprovalCode = param;
     }
 
@@ -385,7 +385,7 @@ public class OrderStatusResponse extends merchant.AbstractResponse
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getIp() {
+    public String getIp() {
         return localIp;
     }
 
@@ -393,7 +393,7 @@ public class OrderStatusResponse extends merchant.AbstractResponse
      * Auto generated setter method
      * @param param Ip
      */
-    public void setIp(java.lang.String param) {
+    public void setIp(String param) {
         this.localIp = param;
     }
 
@@ -417,7 +417,7 @@ public class OrderStatusResponse extends merchant.AbstractResponse
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getOrderDescription() {
+    public String getOrderDescription() {
         return localOrderDescription;
     }
 
@@ -425,7 +425,7 @@ public class OrderStatusResponse extends merchant.AbstractResponse
      * Auto generated setter method
      * @param param OrderDescription
      */
-    public void setOrderDescription(java.lang.String param) {
+    public void setOrderDescription(String param) {
         this.localOrderDescription = param;
     }
 
@@ -433,7 +433,7 @@ public class OrderStatusResponse extends merchant.AbstractResponse
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getMerchantLogin() {
+    public String getMerchantLogin() {
         return localMerchantLogin;
     }
 
@@ -441,7 +441,7 @@ public class OrderStatusResponse extends merchant.AbstractResponse
      * Auto generated setter method
      * @param param MerchantLogin
      */
-    public void setMerchantLogin(java.lang.String param) {
+    public void setMerchantLogin(String param) {
         this.localMerchantLogin = param;
     }
 
@@ -449,7 +449,7 @@ public class OrderStatusResponse extends merchant.AbstractResponse
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getActionCodeDescription() {
+    public String getActionCodeDescription() {
         return localActionCodeDescription;
     }
 
@@ -457,7 +457,7 @@ public class OrderStatusResponse extends merchant.AbstractResponse
      * Auto generated setter method
      * @param param ActionCodeDescription
      */
-    public void setActionCodeDescription(java.lang.String param) {
+    public void setActionCodeDescription(String param) {
         this.localActionCodeDescription = param;
     }
 
@@ -465,7 +465,7 @@ public class OrderStatusResponse extends merchant.AbstractResponse
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getClientId() {
+    public String getClientId() {
         return localClientId;
     }
 
@@ -473,7 +473,7 @@ public class OrderStatusResponse extends merchant.AbstractResponse
      * Auto generated setter method
      * @param param ClientId
      */
-    public void setClientId(java.lang.String param) {
+    public void setClientId(String param) {
         this.localClientId = param;
     }
 
@@ -481,7 +481,7 @@ public class OrderStatusResponse extends merchant.AbstractResponse
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getBindingId() {
+    public String getBindingId() {
         return localBindingId;
     }
 
@@ -489,7 +489,7 @@ public class OrderStatusResponse extends merchant.AbstractResponse
      * Auto generated setter method
      * @param param BindingId
      */
-    public void setBindingId(java.lang.String param) {
+    public void setBindingId(String param) {
         this.localBindingId = param;
     }
 
@@ -518,15 +518,15 @@ public class OrderStatusResponse extends merchant.AbstractResponse
         javax.xml.stream.XMLStreamWriter xmlWriter, boolean serializeType)
         throws javax.xml.stream.XMLStreamException,
             org.apache.axis2.databinding.ADBException {
-        java.lang.String prefix = null;
-        java.lang.String namespace = null;
+        String prefix = null;
+        String namespace = null;
 
         prefix = parentQName.getPrefix();
         namespace = parentQName.getNamespaceURI();
         writeStartElement(prefix, namespace, parentQName.getLocalPart(),
             xmlWriter);
 
-        java.lang.String namespacePrefix = registerPrefix(xmlWriter,
+        String namespacePrefix = registerPrefix(xmlWriter,
                 "http://engine.paymentgate.ru/webservices/merchant");
 
         if ((namespacePrefix != null) && (namespacePrefix.trim().length() > 0)) {
@@ -537,7 +537,7 @@ public class OrderStatusResponse extends merchant.AbstractResponse
                 "type", "orderStatusResponse", xmlWriter);
         }
 
-        if (localErrorCode != java.lang.Integer.MIN_VALUE) {
+        if (localErrorCode != Integer.MIN_VALUE) {
             writeAttribute("", "errorCode",
                 org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                     localErrorCode), xmlWriter);
@@ -553,7 +553,7 @@ public class OrderStatusResponse extends merchant.AbstractResponse
                     localErrorMessage), xmlWriter);
         }
 
-        if (localOrderStatus != java.lang.Integer.MIN_VALUE) {
+        if (localOrderStatus != Integer.MIN_VALUE) {
             writeAttribute("", "orderStatus",
                 org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                     localOrderStatus), xmlWriter);
@@ -593,7 +593,7 @@ public class OrderStatusResponse extends merchant.AbstractResponse
                     localCardholderName), xmlWriter);
         }
 
-        if (localAmount != java.lang.Long.MIN_VALUE) {
+        if (localAmount != Long.MIN_VALUE) {
             writeAttribute("", "amount",
                 org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                     localAmount), xmlWriter);
@@ -615,7 +615,7 @@ public class OrderStatusResponse extends merchant.AbstractResponse
                     localApprovalCode), xmlWriter);
         }
 
-        if (localAuthCode != java.lang.Integer.MIN_VALUE) {
+        if (localAuthCode != Integer.MIN_VALUE) {
             writeAttribute("", "authCode",
                 org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                     localAuthCode), xmlWriter);
@@ -723,7 +723,7 @@ public class OrderStatusResponse extends merchant.AbstractResponse
         xmlWriter.writeEndElement();
     }
 
-    private static java.lang.String generatePrefix(java.lang.String namespace) {
+    private static String generatePrefix(String namespace) {
         if (namespace.equals(
                     "http://engine.paymentgate.ru/webservices/merchant")) {
             return "ns1";
@@ -735,11 +735,11 @@ public class OrderStatusResponse extends merchant.AbstractResponse
     /**
      * Utility method to write an element start tag.
      */
-    private void writeStartElement(java.lang.String prefix,
-        java.lang.String namespace, java.lang.String localPart,
+    private void writeStartElement(String prefix,
+        String namespace, String localPart,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String writerPrefix = xmlWriter.getPrefix(namespace);
+        String writerPrefix = xmlWriter.getPrefix(namespace);
 
         if (writerPrefix != null) {
             xmlWriter.writeStartElement(writerPrefix, localPart, namespace);
@@ -759,11 +759,11 @@ public class OrderStatusResponse extends merchant.AbstractResponse
     /**
      * Util method to write an attribute with the ns prefix
      */
-    private void writeAttribute(java.lang.String prefix,
-        java.lang.String namespace, java.lang.String attName,
-        java.lang.String attValue, javax.xml.stream.XMLStreamWriter xmlWriter)
+    private void writeAttribute(String prefix,
+        String namespace, String attName,
+        String attValue, javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String writerPrefix = xmlWriter.getPrefix(namespace);
+        String writerPrefix = xmlWriter.getPrefix(namespace);
 
         if (writerPrefix != null) {
             xmlWriter.writeAttribute(writerPrefix, namespace, attName, attValue);
@@ -777,8 +777,8 @@ public class OrderStatusResponse extends merchant.AbstractResponse
     /**
      * Util method to write an attribute without the ns prefix
      */
-    private void writeAttribute(java.lang.String namespace,
-        java.lang.String attName, java.lang.String attValue,
+    private void writeAttribute(String namespace,
+        String attName, String attValue,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
         if (namespace.equals("")) {
@@ -792,18 +792,18 @@ public class OrderStatusResponse extends merchant.AbstractResponse
     /**
      * Util method to write an attribute without the ns prefix
      */
-    private void writeQNameAttribute(java.lang.String namespace,
-        java.lang.String attName, javax.xml.namespace.QName qname,
+    private void writeQNameAttribute(String namespace,
+        String attName, javax.xml.namespace.QName qname,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String attributeNamespace = qname.getNamespaceURI();
-        java.lang.String attributePrefix = xmlWriter.getPrefix(attributeNamespace);
+        String attributeNamespace = qname.getNamespaceURI();
+        String attributePrefix = xmlWriter.getPrefix(attributeNamespace);
 
         if (attributePrefix == null) {
             attributePrefix = registerPrefix(xmlWriter, attributeNamespace);
         }
 
-        java.lang.String attributeValue;
+        String attributeValue;
 
         if (attributePrefix.trim().length() > 0) {
             attributeValue = attributePrefix + ":" + qname.getLocalPart();
@@ -826,10 +826,10 @@ public class OrderStatusResponse extends merchant.AbstractResponse
     private void writeQName(javax.xml.namespace.QName qname,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String namespaceURI = qname.getNamespaceURI();
+        String namespaceURI = qname.getNamespaceURI();
 
         if (namespaceURI != null) {
-            java.lang.String prefix = xmlWriter.getPrefix(namespaceURI);
+            String prefix = xmlWriter.getPrefix(namespaceURI);
 
             if (prefix == null) {
                 prefix = generatePrefix(namespaceURI);
@@ -858,9 +858,9 @@ public class OrderStatusResponse extends merchant.AbstractResponse
         if (qnames != null) {
             // we have to store this data until last moment since it is not possible to write any
             // namespace data after writing the charactor data
-            java.lang.StringBuffer stringToWrite = new java.lang.StringBuffer();
-            java.lang.String namespaceURI = null;
-            java.lang.String prefix = null;
+            StringBuffer stringToWrite = new StringBuffer();
+            String namespaceURI = null;
+            String prefix = null;
 
             for (int i = 0; i < qnames.length; i++) {
                 if (i > 0) {
@@ -899,10 +899,10 @@ public class OrderStatusResponse extends merchant.AbstractResponse
     /**
      * Register a namespace prefix
      */
-    private java.lang.String registerPrefix(
-        javax.xml.stream.XMLStreamWriter xmlWriter, java.lang.String namespace)
+    private String registerPrefix(
+        javax.xml.stream.XMLStreamWriter xmlWriter, String namespace)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String prefix = xmlWriter.getPrefix(namespace);
+        String prefix = xmlWriter.getPrefix(namespace);
 
         if (prefix == null) {
             prefix = generatePrefix(namespace);
@@ -910,7 +910,7 @@ public class OrderStatusResponse extends merchant.AbstractResponse
             javax.xml.namespace.NamespaceContext nsContext = xmlWriter.getNamespaceContext();
 
             while (true) {
-                java.lang.String uri = nsContext.getNamespaceURI(prefix);
+                String uri = nsContext.getNamespaceURI(prefix);
 
                 if ((uri == null) || (uri.length() == 0)) {
                     break;
@@ -940,14 +940,14 @@ public class OrderStatusResponse extends merchant.AbstractResponse
          *                If this object is a complex type, the reader is positioned at the end element of its outer element
          */
         public static OrderStatusResponse parse(
-            javax.xml.stream.XMLStreamReader reader) throws java.lang.Exception {
+            javax.xml.stream.XMLStreamReader reader) throws Exception {
             OrderStatusResponse object = new OrderStatusResponse();
 
             int event;
             javax.xml.namespace.QName currentQName = null;
-            java.lang.String nillableValue = null;
-            java.lang.String prefix = "";
-            java.lang.String namespaceuri = "";
+            String nillableValue = null;
+            String prefix = "";
+            String namespaceuri = "";
 
             try {
                 while (!reader.isStartElement() && !reader.isEndElement())
@@ -957,11 +957,11 @@ public class OrderStatusResponse extends merchant.AbstractResponse
 
                 if (reader.getAttributeValue(
                             "http://www.w3.org/2001/XMLSchema-instance", "type") != null) {
-                    java.lang.String fullTypeName = reader.getAttributeValue("http://www.w3.org/2001/XMLSchema-instance",
+                    String fullTypeName = reader.getAttributeValue("http://www.w3.org/2001/XMLSchema-instance",
                             "type");
 
                     if (fullTypeName != null) {
-                        java.lang.String nsPrefix = null;
+                        String nsPrefix = null;
 
                         if (fullTypeName.indexOf(":") > -1) {
                             nsPrefix = fullTypeName.substring(0,
@@ -970,15 +970,15 @@ public class OrderStatusResponse extends merchant.AbstractResponse
 
                         nsPrefix = (nsPrefix == null) ? "" : nsPrefix;
 
-                        java.lang.String type = fullTypeName.substring(fullTypeName.indexOf(
+                        String type = fullTypeName.substring(fullTypeName.indexOf(
                                     ":") + 1);
 
                         if (!"orderStatusResponse".equals(type)) {
                             //find namespace for the prefix
-                            java.lang.String nsUri = reader.getNamespaceContext()
+                            String nsUri = reader.getNamespaceContext()
                                                            .getNamespaceURI(nsPrefix);
 
-                            return (OrderStatusResponse) merchant.ExtensionMapper.getTypeObject(nsUri,
+                            return (OrderStatusResponse) ExtensionMapper.getTypeObject(nsUri,
                                 type, reader);
                         }
                     }
@@ -989,11 +989,11 @@ public class OrderStatusResponse extends merchant.AbstractResponse
                 java.util.Vector handledAttributes = new java.util.Vector();
 
                 // handle attribute "errorCode"
-                java.lang.String tempAttribErrorCode = reader.getAttributeValue(null,
+                String tempAttribErrorCode = reader.getAttributeValue(null,
                         "errorCode");
 
                 if (tempAttribErrorCode != null) {
-                    java.lang.String content = tempAttribErrorCode;
+                    String content = tempAttribErrorCode;
 
                     object.setErrorCode(org.apache.axis2.databinding.utils.ConverterUtil.convertToInt(
                             tempAttribErrorCode));
@@ -1005,11 +1005,11 @@ public class OrderStatusResponse extends merchant.AbstractResponse
                 handledAttributes.add("errorCode");
 
                 // handle attribute "errorMessage"
-                java.lang.String tempAttribErrorMessage = reader.getAttributeValue(null,
+                String tempAttribErrorMessage = reader.getAttributeValue(null,
                         "errorMessage");
 
                 if (tempAttribErrorMessage != null) {
-                    java.lang.String content = tempAttribErrorMessage;
+                    String content = tempAttribErrorMessage;
 
                     object.setErrorMessage(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribErrorMessage));
@@ -1019,11 +1019,11 @@ public class OrderStatusResponse extends merchant.AbstractResponse
                 handledAttributes.add("errorMessage");
 
                 // handle attribute "orderStatus"
-                java.lang.String tempAttribOrderStatus = reader.getAttributeValue(null,
+                String tempAttribOrderStatus = reader.getAttributeValue(null,
                         "orderStatus");
 
                 if (tempAttribOrderStatus != null) {
-                    java.lang.String content = tempAttribOrderStatus;
+                    String content = tempAttribOrderStatus;
 
                     object.setOrderStatus(org.apache.axis2.databinding.utils.ConverterUtil.convertToInt(
                             tempAttribOrderStatus));
@@ -1035,11 +1035,11 @@ public class OrderStatusResponse extends merchant.AbstractResponse
                 handledAttributes.add("orderStatus");
 
                 // handle attribute "orderNumber"
-                java.lang.String tempAttribOrderNumber = reader.getAttributeValue(null,
+                String tempAttribOrderNumber = reader.getAttributeValue(null,
                         "orderNumber");
 
                 if (tempAttribOrderNumber != null) {
-                    java.lang.String content = tempAttribOrderNumber;
+                    String content = tempAttribOrderNumber;
 
                     object.setOrderNumber(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribOrderNumber));
@@ -1049,11 +1049,11 @@ public class OrderStatusResponse extends merchant.AbstractResponse
                 handledAttributes.add("orderNumber");
 
                 // handle attribute "pan"
-                java.lang.String tempAttribPan = reader.getAttributeValue(null,
+                String tempAttribPan = reader.getAttributeValue(null,
                         "pan");
 
                 if (tempAttribPan != null) {
-                    java.lang.String content = tempAttribPan;
+                    String content = tempAttribPan;
 
                     object.setPan(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribPan));
@@ -1063,11 +1063,11 @@ public class OrderStatusResponse extends merchant.AbstractResponse
                 handledAttributes.add("pan");
 
                 // handle attribute "hpan"
-                java.lang.String tempAttribHpan = reader.getAttributeValue(null,
+                String tempAttribHpan = reader.getAttributeValue(null,
                         "hpan");
 
                 if (tempAttribHpan != null) {
-                    java.lang.String content = tempAttribHpan;
+                    String content = tempAttribHpan;
 
                     object.setHpan(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribHpan));
@@ -1077,11 +1077,11 @@ public class OrderStatusResponse extends merchant.AbstractResponse
                 handledAttributes.add("hpan");
 
                 // handle attribute "expiration"
-                java.lang.String tempAttribExpiration = reader.getAttributeValue(null,
+                String tempAttribExpiration = reader.getAttributeValue(null,
                         "expiration");
 
                 if (tempAttribExpiration != null) {
-                    java.lang.String content = tempAttribExpiration;
+                    String content = tempAttribExpiration;
 
                     object.setExpiration(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribExpiration));
@@ -1091,11 +1091,11 @@ public class OrderStatusResponse extends merchant.AbstractResponse
                 handledAttributes.add("expiration");
 
                 // handle attribute "cardholderName"
-                java.lang.String tempAttribCardholderName = reader.getAttributeValue(null,
+                String tempAttribCardholderName = reader.getAttributeValue(null,
                         "cardholderName");
 
                 if (tempAttribCardholderName != null) {
-                    java.lang.String content = tempAttribCardholderName;
+                    String content = tempAttribCardholderName;
 
                     object.setCardholderName(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribCardholderName));
@@ -1105,11 +1105,11 @@ public class OrderStatusResponse extends merchant.AbstractResponse
                 handledAttributes.add("cardholderName");
 
                 // handle attribute "amount"
-                java.lang.String tempAttribAmount = reader.getAttributeValue(null,
+                String tempAttribAmount = reader.getAttributeValue(null,
                         "amount");
 
                 if (tempAttribAmount != null) {
-                    java.lang.String content = tempAttribAmount;
+                    String content = tempAttribAmount;
 
                     object.setAmount(org.apache.axis2.databinding.utils.ConverterUtil.convertToLong(
                             tempAttribAmount));
@@ -1121,11 +1121,11 @@ public class OrderStatusResponse extends merchant.AbstractResponse
                 handledAttributes.add("amount");
 
                 // handle attribute "currency"
-                java.lang.String tempAttribCurrency = reader.getAttributeValue(null,
+                String tempAttribCurrency = reader.getAttributeValue(null,
                         "currency");
 
                 if (tempAttribCurrency != null) {
-                    java.lang.String content = tempAttribCurrency;
+                    String content = tempAttribCurrency;
 
                     object.setCurrency(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribCurrency));
@@ -1135,11 +1135,11 @@ public class OrderStatusResponse extends merchant.AbstractResponse
                 handledAttributes.add("currency");
 
                 // handle attribute "approvalCode"
-                java.lang.String tempAttribApprovalCode = reader.getAttributeValue(null,
+                String tempAttribApprovalCode = reader.getAttributeValue(null,
                         "approvalCode");
 
                 if (tempAttribApprovalCode != null) {
-                    java.lang.String content = tempAttribApprovalCode;
+                    String content = tempAttribApprovalCode;
 
                     object.setApprovalCode(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribApprovalCode));
@@ -1149,11 +1149,11 @@ public class OrderStatusResponse extends merchant.AbstractResponse
                 handledAttributes.add("approvalCode");
 
                 // handle attribute "authCode"
-                java.lang.String tempAttribAuthCode = reader.getAttributeValue(null,
+                String tempAttribAuthCode = reader.getAttributeValue(null,
                         "authCode");
 
                 if (tempAttribAuthCode != null) {
-                    java.lang.String content = tempAttribAuthCode;
+                    String content = tempAttribAuthCode;
 
                     object.setAuthCode(org.apache.axis2.databinding.utils.ConverterUtil.convertToInt(
                             tempAttribAuthCode));
@@ -1165,11 +1165,11 @@ public class OrderStatusResponse extends merchant.AbstractResponse
                 handledAttributes.add("authCode");
 
                 // handle attribute "ip"
-                java.lang.String tempAttribIp = reader.getAttributeValue(null,
+                String tempAttribIp = reader.getAttributeValue(null,
                         "ip");
 
                 if (tempAttribIp != null) {
-                    java.lang.String content = tempAttribIp;
+                    String content = tempAttribIp;
 
                     object.setIp(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribIp));
@@ -1179,11 +1179,11 @@ public class OrderStatusResponse extends merchant.AbstractResponse
                 handledAttributes.add("ip");
 
                 // handle attribute "date"
-                java.lang.String tempAttribDate = reader.getAttributeValue(null,
+                String tempAttribDate = reader.getAttributeValue(null,
                         "date");
 
                 if (tempAttribDate != null) {
-                    java.lang.String content = tempAttribDate;
+                    String content = tempAttribDate;
 
                     object.setDate(org.apache.axis2.databinding.utils.ConverterUtil.convertToDateTime(
                             tempAttribDate));
@@ -1193,11 +1193,11 @@ public class OrderStatusResponse extends merchant.AbstractResponse
                 handledAttributes.add("date");
 
                 // handle attribute "orderDescription"
-                java.lang.String tempAttribOrderDescription = reader.getAttributeValue(null,
+                String tempAttribOrderDescription = reader.getAttributeValue(null,
                         "orderDescription");
 
                 if (tempAttribOrderDescription != null) {
-                    java.lang.String content = tempAttribOrderDescription;
+                    String content = tempAttribOrderDescription;
 
                     object.setOrderDescription(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribOrderDescription));
@@ -1207,11 +1207,11 @@ public class OrderStatusResponse extends merchant.AbstractResponse
                 handledAttributes.add("orderDescription");
 
                 // handle attribute "merchantLogin"
-                java.lang.String tempAttribMerchantLogin = reader.getAttributeValue(null,
+                String tempAttribMerchantLogin = reader.getAttributeValue(null,
                         "merchantLogin");
 
                 if (tempAttribMerchantLogin != null) {
-                    java.lang.String content = tempAttribMerchantLogin;
+                    String content = tempAttribMerchantLogin;
 
                     object.setMerchantLogin(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribMerchantLogin));
@@ -1221,11 +1221,11 @@ public class OrderStatusResponse extends merchant.AbstractResponse
                 handledAttributes.add("merchantLogin");
 
                 // handle attribute "actionCodeDescription"
-                java.lang.String tempAttribActionCodeDescription = reader.getAttributeValue(null,
+                String tempAttribActionCodeDescription = reader.getAttributeValue(null,
                         "actionCodeDescription");
 
                 if (tempAttribActionCodeDescription != null) {
-                    java.lang.String content = tempAttribActionCodeDescription;
+                    String content = tempAttribActionCodeDescription;
 
                     object.setActionCodeDescription(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribActionCodeDescription));
@@ -1235,11 +1235,11 @@ public class OrderStatusResponse extends merchant.AbstractResponse
                 handledAttributes.add("actionCodeDescription");
 
                 // handle attribute "clientId"
-                java.lang.String tempAttribClientId = reader.getAttributeValue(null,
+                String tempAttribClientId = reader.getAttributeValue(null,
                         "clientId");
 
                 if (tempAttribClientId != null) {
-                    java.lang.String content = tempAttribClientId;
+                    String content = tempAttribClientId;
 
                     object.setClientId(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribClientId));
@@ -1249,11 +1249,11 @@ public class OrderStatusResponse extends merchant.AbstractResponse
                 handledAttributes.add("clientId");
 
                 // handle attribute "bindingId"
-                java.lang.String tempAttribBindingId = reader.getAttributeValue(null,
+                String tempAttribBindingId = reader.getAttributeValue(null,
                         "bindingId");
 
                 if (tempAttribBindingId != null) {
-                    java.lang.String content = tempAttribBindingId;
+                    String content = tempAttribBindingId;
 
                     object.setBindingId(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribBindingId));
@@ -1283,7 +1283,7 @@ public class OrderStatusResponse extends merchant.AbstractResponse
                         list1.add(null);
                         reader.next();
                     } else {
-                        list1.add(merchant.LoyaltyOperation.Factory.parse(
+                        list1.add(LoyaltyOperation.Factory.parse(
                                 reader));
                     }
 
@@ -1317,7 +1317,7 @@ public class OrderStatusResponse extends merchant.AbstractResponse
                                     list1.add(null);
                                     reader.next();
                                 } else {
-                                    list1.add(merchant.LoyaltyOperation.Factory.parse(
+                                    list1.add(LoyaltyOperation.Factory.parse(
                                             reader));
                                 }
                             } else {
@@ -1327,8 +1327,8 @@ public class OrderStatusResponse extends merchant.AbstractResponse
                     }
 
                     // call the converter utility  to convert and set the array
-                    object.setOperations((merchant.LoyaltyOperation[]) org.apache.axis2.databinding.utils.ConverterUtil.convertToArray(
-                            merchant.LoyaltyOperation.class,
+                    object.setOperations((LoyaltyOperation[]) org.apache.axis2.databinding.utils.ConverterUtil.convertToArray(
+                            LoyaltyOperation.class,
                             list1));
                 } // End of if for expected property start element
 
@@ -1342,7 +1342,7 @@ public class OrderStatusResponse extends merchant.AbstractResponse
                         new javax.xml.namespace.QName("", "params").equals(
                             reader.getName())) {
                     // Process the array and step past its final element's end.
-                    list2.add(merchant.ServiceParam.Factory.parse(
+                    list2.add(ServiceParam.Factory.parse(
                             reader));
 
                     //loop until we find a start element that is not part of this array
@@ -1367,7 +1367,7 @@ public class OrderStatusResponse extends merchant.AbstractResponse
                         } else {
                             if (new javax.xml.namespace.QName("", "params").equals(
                                         reader.getName())) {
-                                list2.add(merchant.ServiceParam.Factory.parse(
+                                list2.add(ServiceParam.Factory.parse(
                                         reader));
                             } else {
                                 loopDone2 = true;
@@ -1376,8 +1376,8 @@ public class OrderStatusResponse extends merchant.AbstractResponse
                     }
 
                     // call the converter utility  to convert and set the array
-                    object.setParams((merchant.ServiceParam[]) org.apache.axis2.databinding.utils.ConverterUtil.convertToArray(
-                            merchant.ServiceParam.class,
+                    object.setParams((ServiceParam[]) org.apache.axis2.databinding.utils.ConverterUtil.convertToArray(
+                            ServiceParam.class,
                             list2));
                 } // End of if for expected property start element
 
@@ -1390,7 +1390,7 @@ public class OrderStatusResponse extends merchant.AbstractResponse
                 if (reader.isStartElement() &&
                         new javax.xml.namespace.QName("", "orderBundle").equals(
                             reader.getName())) {
-                    object.setOrderBundle(merchant.OrderBundle.Factory.parse(
+                    object.setOrderBundle(OrderBundle.Factory.parse(
                             reader));
 
                     reader.next();
@@ -1408,7 +1408,7 @@ public class OrderStatusResponse extends merchant.AbstractResponse
                         "Unexpected subelement " + reader.getName());
                 }
             } catch (javax.xml.stream.XMLStreamException e) {
-                throw new java.lang.Exception(e);
+                throw new Exception(e);
             }
 
             return object;

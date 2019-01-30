@@ -24,7 +24,7 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
      * field for Params
      * This was an Array!
      */
-    protected merchant.ServiceParam[] localParams;
+    protected ServiceParam[] localParams;
 
     /*  This tracker boolean wil be used to detect whether the user called the set method
      *   for this attribute. It will be used to determine whether to include this field
@@ -36,7 +36,7 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
      * field for Ordernumber
      * This was an Attribute!
      */
-    protected java.lang.String localOrdernumber;
+    protected String localOrdernumber;
 
     /**
      * field for Amount
@@ -66,7 +66,7 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
      * field for State
      * This was an Attribute!
      */
-    protected merchant.TransactionState localState;
+    protected TransactionState localState;
 
     /**
      * field for FraudLevel
@@ -78,25 +78,25 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
      * field for Cardholder
      * This was an Attribute!
      */
-    protected java.lang.String localCardholder;
+    protected String localCardholder;
 
     /**
      * field for PanMasked
      * This was an Attribute!
      */
-    protected java.lang.String localPanMasked;
+    protected String localPanMasked;
 
     /**
      * field for Ip
      * This was an Attribute!
      */
-    protected java.lang.String localIp;
+    protected String localIp;
 
     /**
      * field for ActionCode
      * This was an Attribute!
      */
-    protected java.lang.String localActionCode;
+    protected String localActionCode;
 
     /**
      * field for Date
@@ -108,13 +108,13 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
      * field for BankName
      * This was an Attribute!
      */
-    protected java.lang.String localBankName;
+    protected String localBankName;
 
     /**
      * field for ApprovalCode
      * This was an Attribute!
      */
-    protected java.lang.String localApprovalCode;
+    protected String localApprovalCode;
 
     public boolean isParamsSpecified() {
         return localParamsTracker;
@@ -122,9 +122,9 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
 
     /**
      * Auto generated getter method
-     * @return merchant.ServiceParam[]
+     * @return ru.paymentgate.engine.webservices.merchant.ServiceParam[]
      */
-    public merchant.ServiceParam[] getParams() {
+    public ServiceParam[] getParams() {
         return localParams;
     }
 
@@ -132,7 +132,7 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
      * validate the array for Params
      */
     protected void validateParams(
-        merchant.ServiceParam[] param) {
+        ServiceParam[] param) {
     }
 
     /**
@@ -140,7 +140,7 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
      * @param param Params
      */
     public void setParams(
-        merchant.ServiceParam[] param) {
+        ServiceParam[] param) {
         validateParams(param);
 
         localParamsTracker = param != null;
@@ -150,13 +150,13 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
 
     /**
      * Auto generated add method for the array for convenience
-     * @param param merchant.ServiceParam
+     * @param param ru.paymentgate.engine.webservices.merchant.ServiceParam
      */
     public void addParams(
-        merchant.ServiceParam param) {
+        ServiceParam param) {
         if (localParams == null) {
-            localParams = new merchant.ServiceParam[] {
-                    
+            localParams = new ServiceParam[] {
+
                 };
         }
 
@@ -165,14 +165,14 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
 
         java.util.List list = org.apache.axis2.databinding.utils.ConverterUtil.toList(localParams);
         list.add(param);
-        this.localParams = (merchant.ServiceParam[]) list.toArray(new merchant.ServiceParam[list.size()]);
+        this.localParams = (ServiceParam[]) list.toArray(new ServiceParam[list.size()]);
     }
 
     /**
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getOrdernumber() {
+    public String getOrdernumber() {
         return localOrdernumber;
     }
 
@@ -180,7 +180,7 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
      * Auto generated setter method
      * @param param Ordernumber
      */
-    public void setOrdernumber(java.lang.String param) {
+    public void setOrdernumber(String param) {
         this.localOrdernumber = param;
     }
 
@@ -250,9 +250,9 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
 
     /**
      * Auto generated getter method
-     * @return merchant.TransactionState
+     * @return ru.paymentgate.engine.webservices.merchant.TransactionState
      */
-    public merchant.TransactionState getState() {
+    public TransactionState getState() {
         return localState;
     }
 
@@ -261,7 +261,7 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
      * @param param State
      */
     public void setState(
-        merchant.TransactionState param) {
+        TransactionState param) {
         this.localState = param;
     }
 
@@ -285,7 +285,7 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getCardholder() {
+    public String getCardholder() {
         return localCardholder;
     }
 
@@ -293,7 +293,7 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
      * Auto generated setter method
      * @param param Cardholder
      */
-    public void setCardholder(java.lang.String param) {
+    public void setCardholder(String param) {
         this.localCardholder = param;
     }
 
@@ -301,7 +301,7 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getPanMasked() {
+    public String getPanMasked() {
         return localPanMasked;
     }
 
@@ -309,7 +309,7 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
      * Auto generated setter method
      * @param param PanMasked
      */
-    public void setPanMasked(java.lang.String param) {
+    public void setPanMasked(String param) {
         this.localPanMasked = param;
     }
 
@@ -317,7 +317,7 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getIp() {
+    public String getIp() {
         return localIp;
     }
 
@@ -325,7 +325,7 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
      * Auto generated setter method
      * @param param Ip
      */
-    public void setIp(java.lang.String param) {
+    public void setIp(String param) {
         this.localIp = param;
     }
 
@@ -333,7 +333,7 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getActionCode() {
+    public String getActionCode() {
         return localActionCode;
     }
 
@@ -341,7 +341,7 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
      * Auto generated setter method
      * @param param ActionCode
      */
-    public void setActionCode(java.lang.String param) {
+    public void setActionCode(String param) {
         this.localActionCode = param;
     }
 
@@ -365,7 +365,7 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getBankName() {
+    public String getBankName() {
         return localBankName;
     }
 
@@ -373,7 +373,7 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
      * Auto generated setter method
      * @param param BankName
      */
-    public void setBankName(java.lang.String param) {
+    public void setBankName(String param) {
         this.localBankName = param;
     }
 
@@ -381,7 +381,7 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
      * Auto generated getter method
      * @return java.lang.String
      */
-    public java.lang.String getApprovalCode() {
+    public String getApprovalCode() {
         return localApprovalCode;
     }
 
@@ -389,7 +389,7 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
      * Auto generated setter method
      * @param param ApprovalCode
      */
-    public void setApprovalCode(java.lang.String param) {
+    public void setApprovalCode(String param) {
         this.localApprovalCode = param;
     }
 
@@ -418,8 +418,8 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
         javax.xml.stream.XMLStreamWriter xmlWriter, boolean serializeType)
         throws javax.xml.stream.XMLStreamException,
             org.apache.axis2.databinding.ADBException {
-        java.lang.String prefix = null;
-        java.lang.String namespace = null;
+        String prefix = null;
+        String namespace = null;
 
         prefix = parentQName.getPrefix();
         namespace = parentQName.getNamespaceURI();
@@ -427,7 +427,7 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
             xmlWriter);
 
         if (serializeType) {
-            java.lang.String namespacePrefix = registerPrefix(xmlWriter,
+            String namespacePrefix = registerPrefix(xmlWriter,
                     "http://engine.paymentgate.ru/webservices/merchant");
 
             if ((namespacePrefix != null) &&
@@ -448,7 +448,7 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
                     localOrdernumber), xmlWriter);
         }
 
-        if (localAmount != java.lang.Long.MIN_VALUE) {
+        if (localAmount != Long.MIN_VALUE) {
             writeAttribute("", "amount",
                 org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                     localAmount), xmlWriter);
@@ -458,7 +458,7 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
                 "required attribute localAmount is null");
         }
 
-        if (localApprovedAmount != java.lang.Long.MIN_VALUE) {
+        if (localApprovedAmount != Long.MIN_VALUE) {
             writeAttribute("", "approvedAmount",
                 org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                     localApprovedAmount), xmlWriter);
@@ -468,7 +468,7 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
                 "required attribute localApprovedAmount is null");
         }
 
-        if (localDepositedAmount != java.lang.Long.MIN_VALUE) {
+        if (localDepositedAmount != Long.MIN_VALUE) {
             writeAttribute("", "depositedAmount",
                 org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                     localDepositedAmount), xmlWriter);
@@ -478,7 +478,7 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
                 "required attribute localDepositedAmount is null");
         }
 
-        if (localCurrencyCode != java.lang.Short.MIN_VALUE) {
+        if (localCurrencyCode != Short.MIN_VALUE) {
             writeAttribute("", "currencyCode",
                 org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                     localCurrencyCode), xmlWriter);
@@ -492,7 +492,7 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
             writeAttribute("", "state", localState.toString(), xmlWriter);
         }
 
-        if (localFraudLevel != java.lang.Integer.MIN_VALUE) {
+        if (localFraudLevel != Integer.MIN_VALUE) {
             writeAttribute("", "fraudLevel",
                 org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                     localFraudLevel), xmlWriter);
@@ -563,7 +563,7 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
         xmlWriter.writeEndElement();
     }
 
-    private static java.lang.String generatePrefix(java.lang.String namespace) {
+    private static String generatePrefix(String namespace) {
         if (namespace.equals(
                     "http://engine.paymentgate.ru/webservices/merchant")) {
             return "ns1";
@@ -575,11 +575,11 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
     /**
      * Utility method to write an element start tag.
      */
-    private void writeStartElement(java.lang.String prefix,
-        java.lang.String namespace, java.lang.String localPart,
+    private void writeStartElement(String prefix,
+        String namespace, String localPart,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String writerPrefix = xmlWriter.getPrefix(namespace);
+        String writerPrefix = xmlWriter.getPrefix(namespace);
 
         if (writerPrefix != null) {
             xmlWriter.writeStartElement(writerPrefix, localPart, namespace);
@@ -599,11 +599,11 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
     /**
      * Util method to write an attribute with the ns prefix
      */
-    private void writeAttribute(java.lang.String prefix,
-        java.lang.String namespace, java.lang.String attName,
-        java.lang.String attValue, javax.xml.stream.XMLStreamWriter xmlWriter)
+    private void writeAttribute(String prefix,
+        String namespace, String attName,
+        String attValue, javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String writerPrefix = xmlWriter.getPrefix(namespace);
+        String writerPrefix = xmlWriter.getPrefix(namespace);
 
         if (writerPrefix != null) {
             xmlWriter.writeAttribute(writerPrefix, namespace, attName, attValue);
@@ -617,8 +617,8 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
     /**
      * Util method to write an attribute without the ns prefix
      */
-    private void writeAttribute(java.lang.String namespace,
-        java.lang.String attName, java.lang.String attValue,
+    private void writeAttribute(String namespace,
+        String attName, String attValue,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
         if (namespace.equals("")) {
@@ -632,18 +632,18 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
     /**
      * Util method to write an attribute without the ns prefix
      */
-    private void writeQNameAttribute(java.lang.String namespace,
-        java.lang.String attName, javax.xml.namespace.QName qname,
+    private void writeQNameAttribute(String namespace,
+        String attName, javax.xml.namespace.QName qname,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String attributeNamespace = qname.getNamespaceURI();
-        java.lang.String attributePrefix = xmlWriter.getPrefix(attributeNamespace);
+        String attributeNamespace = qname.getNamespaceURI();
+        String attributePrefix = xmlWriter.getPrefix(attributeNamespace);
 
         if (attributePrefix == null) {
             attributePrefix = registerPrefix(xmlWriter, attributeNamespace);
         }
 
-        java.lang.String attributeValue;
+        String attributeValue;
 
         if (attributePrefix.trim().length() > 0) {
             attributeValue = attributePrefix + ":" + qname.getLocalPart();
@@ -666,10 +666,10 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
     private void writeQName(javax.xml.namespace.QName qname,
         javax.xml.stream.XMLStreamWriter xmlWriter)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String namespaceURI = qname.getNamespaceURI();
+        String namespaceURI = qname.getNamespaceURI();
 
         if (namespaceURI != null) {
-            java.lang.String prefix = xmlWriter.getPrefix(namespaceURI);
+            String prefix = xmlWriter.getPrefix(namespaceURI);
 
             if (prefix == null) {
                 prefix = generatePrefix(namespaceURI);
@@ -698,9 +698,9 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
         if (qnames != null) {
             // we have to store this data until last moment since it is not possible to write any
             // namespace data after writing the charactor data
-            java.lang.StringBuffer stringToWrite = new java.lang.StringBuffer();
-            java.lang.String namespaceURI = null;
-            java.lang.String prefix = null;
+            StringBuffer stringToWrite = new StringBuffer();
+            String namespaceURI = null;
+            String prefix = null;
 
             for (int i = 0; i < qnames.length; i++) {
                 if (i > 0) {
@@ -739,10 +739,10 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
     /**
      * Register a namespace prefix
      */
-    private java.lang.String registerPrefix(
-        javax.xml.stream.XMLStreamWriter xmlWriter, java.lang.String namespace)
+    private String registerPrefix(
+        javax.xml.stream.XMLStreamWriter xmlWriter, String namespace)
         throws javax.xml.stream.XMLStreamException {
-        java.lang.String prefix = xmlWriter.getPrefix(namespace);
+        String prefix = xmlWriter.getPrefix(namespace);
 
         if (prefix == null) {
             prefix = generatePrefix(namespace);
@@ -750,7 +750,7 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
             javax.xml.namespace.NamespaceContext nsContext = xmlWriter.getNamespaceContext();
 
             while (true) {
-                java.lang.String uri = nsContext.getNamespaceURI(prefix);
+                String uri = nsContext.getNamespaceURI(prefix);
 
                 if ((uri == null) || (uri.length() == 0)) {
                     break;
@@ -780,14 +780,14 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
          *                If this object is a complex type, the reader is positioned at the end element of its outer element
          */
         public static OrderInfo parse(javax.xml.stream.XMLStreamReader reader)
-            throws java.lang.Exception {
+            throws Exception {
             OrderInfo object = new OrderInfo();
 
             int event;
             javax.xml.namespace.QName currentQName = null;
-            java.lang.String nillableValue = null;
-            java.lang.String prefix = "";
-            java.lang.String namespaceuri = "";
+            String nillableValue = null;
+            String prefix = "";
+            String namespaceuri = "";
 
             try {
                 while (!reader.isStartElement() && !reader.isEndElement())
@@ -797,11 +797,11 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
 
                 if (reader.getAttributeValue(
                             "http://www.w3.org/2001/XMLSchema-instance", "type") != null) {
-                    java.lang.String fullTypeName = reader.getAttributeValue("http://www.w3.org/2001/XMLSchema-instance",
+                    String fullTypeName = reader.getAttributeValue("http://www.w3.org/2001/XMLSchema-instance",
                             "type");
 
                     if (fullTypeName != null) {
-                        java.lang.String nsPrefix = null;
+                        String nsPrefix = null;
 
                         if (fullTypeName.indexOf(":") > -1) {
                             nsPrefix = fullTypeName.substring(0,
@@ -810,15 +810,15 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
 
                         nsPrefix = (nsPrefix == null) ? "" : nsPrefix;
 
-                        java.lang.String type = fullTypeName.substring(fullTypeName.indexOf(
+                        String type = fullTypeName.substring(fullTypeName.indexOf(
                                     ":") + 1);
 
                         if (!"orderInfo".equals(type)) {
                             //find namespace for the prefix
-                            java.lang.String nsUri = reader.getNamespaceContext()
+                            String nsUri = reader.getNamespaceContext()
                                                            .getNamespaceURI(nsPrefix);
 
-                            return (OrderInfo) merchant.ExtensionMapper.getTypeObject(nsUri,
+                            return (OrderInfo) ExtensionMapper.getTypeObject(nsUri,
                                 type, reader);
                         }
                     }
@@ -829,11 +829,11 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
                 java.util.Vector handledAttributes = new java.util.Vector();
 
                 // handle attribute "ordernumber"
-                java.lang.String tempAttribOrdernumber = reader.getAttributeValue(null,
+                String tempAttribOrdernumber = reader.getAttributeValue(null,
                         "ordernumber");
 
                 if (tempAttribOrdernumber != null) {
-                    java.lang.String content = tempAttribOrdernumber;
+                    String content = tempAttribOrdernumber;
 
                     object.setOrdernumber(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribOrdernumber));
@@ -843,11 +843,11 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
                 handledAttributes.add("ordernumber");
 
                 // handle attribute "amount"
-                java.lang.String tempAttribAmount = reader.getAttributeValue(null,
+                String tempAttribAmount = reader.getAttributeValue(null,
                         "amount");
 
                 if (tempAttribAmount != null) {
-                    java.lang.String content = tempAttribAmount;
+                    String content = tempAttribAmount;
 
                     object.setAmount(org.apache.axis2.databinding.utils.ConverterUtil.convertToLong(
                             tempAttribAmount));
@@ -859,11 +859,11 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
                 handledAttributes.add("amount");
 
                 // handle attribute "approvedAmount"
-                java.lang.String tempAttribApprovedAmount = reader.getAttributeValue(null,
+                String tempAttribApprovedAmount = reader.getAttributeValue(null,
                         "approvedAmount");
 
                 if (tempAttribApprovedAmount != null) {
-                    java.lang.String content = tempAttribApprovedAmount;
+                    String content = tempAttribApprovedAmount;
 
                     object.setApprovedAmount(org.apache.axis2.databinding.utils.ConverterUtil.convertToLong(
                             tempAttribApprovedAmount));
@@ -875,11 +875,11 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
                 handledAttributes.add("approvedAmount");
 
                 // handle attribute "depositedAmount"
-                java.lang.String tempAttribDepositedAmount = reader.getAttributeValue(null,
+                String tempAttribDepositedAmount = reader.getAttributeValue(null,
                         "depositedAmount");
 
                 if (tempAttribDepositedAmount != null) {
-                    java.lang.String content = tempAttribDepositedAmount;
+                    String content = tempAttribDepositedAmount;
 
                     object.setDepositedAmount(org.apache.axis2.databinding.utils.ConverterUtil.convertToLong(
                             tempAttribDepositedAmount));
@@ -891,11 +891,11 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
                 handledAttributes.add("depositedAmount");
 
                 // handle attribute "currencyCode"
-                java.lang.String tempAttribCurrencyCode = reader.getAttributeValue(null,
+                String tempAttribCurrencyCode = reader.getAttributeValue(null,
                         "currencyCode");
 
                 if (tempAttribCurrencyCode != null) {
-                    java.lang.String content = tempAttribCurrencyCode;
+                    String content = tempAttribCurrencyCode;
 
                     object.setCurrencyCode(org.apache.axis2.databinding.utils.ConverterUtil.convertToShort(
                             tempAttribCurrencyCode));
@@ -907,13 +907,13 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
                 handledAttributes.add("currencyCode");
 
                 // handle attribute "state"
-                java.lang.String tempAttribState = reader.getAttributeValue(null,
+                String tempAttribState = reader.getAttributeValue(null,
                         "state");
 
                 if (tempAttribState != null) {
-                    java.lang.String content = tempAttribState;
+                    String content = tempAttribState;
 
-                    object.setState(merchant.TransactionState.Factory.fromString(
+                    object.setState(TransactionState.Factory.fromString(
                             reader, tempAttribState));
                 } else {
                 }
@@ -921,11 +921,11 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
                 handledAttributes.add("state");
 
                 // handle attribute "fraudLevel"
-                java.lang.String tempAttribFraudLevel = reader.getAttributeValue(null,
+                String tempAttribFraudLevel = reader.getAttributeValue(null,
                         "fraudLevel");
 
                 if (tempAttribFraudLevel != null) {
-                    java.lang.String content = tempAttribFraudLevel;
+                    String content = tempAttribFraudLevel;
 
                     object.setFraudLevel(org.apache.axis2.databinding.utils.ConverterUtil.convertToInt(
                             tempAttribFraudLevel));
@@ -937,11 +937,11 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
                 handledAttributes.add("fraudLevel");
 
                 // handle attribute "cardholder"
-                java.lang.String tempAttribCardholder = reader.getAttributeValue(null,
+                String tempAttribCardholder = reader.getAttributeValue(null,
                         "cardholder");
 
                 if (tempAttribCardholder != null) {
-                    java.lang.String content = tempAttribCardholder;
+                    String content = tempAttribCardholder;
 
                     object.setCardholder(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribCardholder));
@@ -951,11 +951,11 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
                 handledAttributes.add("cardholder");
 
                 // handle attribute "panMasked"
-                java.lang.String tempAttribPanMasked = reader.getAttributeValue(null,
+                String tempAttribPanMasked = reader.getAttributeValue(null,
                         "panMasked");
 
                 if (tempAttribPanMasked != null) {
-                    java.lang.String content = tempAttribPanMasked;
+                    String content = tempAttribPanMasked;
 
                     object.setPanMasked(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribPanMasked));
@@ -965,11 +965,11 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
                 handledAttributes.add("panMasked");
 
                 // handle attribute "ip"
-                java.lang.String tempAttribIp = reader.getAttributeValue(null,
+                String tempAttribIp = reader.getAttributeValue(null,
                         "ip");
 
                 if (tempAttribIp != null) {
-                    java.lang.String content = tempAttribIp;
+                    String content = tempAttribIp;
 
                     object.setIp(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribIp));
@@ -979,11 +979,11 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
                 handledAttributes.add("ip");
 
                 // handle attribute "actionCode"
-                java.lang.String tempAttribActionCode = reader.getAttributeValue(null,
+                String tempAttribActionCode = reader.getAttributeValue(null,
                         "actionCode");
 
                 if (tempAttribActionCode != null) {
-                    java.lang.String content = tempAttribActionCode;
+                    String content = tempAttribActionCode;
 
                     object.setActionCode(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribActionCode));
@@ -993,11 +993,11 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
                 handledAttributes.add("actionCode");
 
                 // handle attribute "date"
-                java.lang.String tempAttribDate = reader.getAttributeValue(null,
+                String tempAttribDate = reader.getAttributeValue(null,
                         "date");
 
                 if (tempAttribDate != null) {
-                    java.lang.String content = tempAttribDate;
+                    String content = tempAttribDate;
 
                     object.setDate(org.apache.axis2.databinding.utils.ConverterUtil.convertToDateTime(
                             tempAttribDate));
@@ -1007,11 +1007,11 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
                 handledAttributes.add("date");
 
                 // handle attribute "bankName"
-                java.lang.String tempAttribBankName = reader.getAttributeValue(null,
+                String tempAttribBankName = reader.getAttributeValue(null,
                         "bankName");
 
                 if (tempAttribBankName != null) {
-                    java.lang.String content = tempAttribBankName;
+                    String content = tempAttribBankName;
 
                     object.setBankName(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribBankName));
@@ -1021,11 +1021,11 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
                 handledAttributes.add("bankName");
 
                 // handle attribute "approvalCode"
-                java.lang.String tempAttribApprovalCode = reader.getAttributeValue(null,
+                String tempAttribApprovalCode = reader.getAttributeValue(null,
                         "approvalCode");
 
                 if (tempAttribApprovalCode != null) {
-                    java.lang.String content = tempAttribApprovalCode;
+                    String content = tempAttribApprovalCode;
 
                     object.setApprovalCode(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
                             tempAttribApprovalCode));
@@ -1045,7 +1045,7 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
                         new javax.xml.namespace.QName("", "params").equals(
                             reader.getName())) {
                     // Process the array and step past its final element's end.
-                    list1.add(merchant.ServiceParam.Factory.parse(
+                    list1.add(ServiceParam.Factory.parse(
                             reader));
 
                     //loop until we find a start element that is not part of this array
@@ -1070,7 +1070,7 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
                         } else {
                             if (new javax.xml.namespace.QName("", "params").equals(
                                         reader.getName())) {
-                                list1.add(merchant.ServiceParam.Factory.parse(
+                                list1.add(ServiceParam.Factory.parse(
                                         reader));
                             } else {
                                 loopDone1 = true;
@@ -1079,8 +1079,8 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
                     }
 
                     // call the converter utility  to convert and set the array
-                    object.setParams((merchant.ServiceParam[]) org.apache.axis2.databinding.utils.ConverterUtil.convertToArray(
-                            merchant.ServiceParam.class,
+                    object.setParams((ServiceParam[]) org.apache.axis2.databinding.utils.ConverterUtil.convertToArray(
+                            ServiceParam.class,
                             list1));
                 } // End of if for expected property start element
 
@@ -1096,7 +1096,7 @@ public class OrderInfo implements org.apache.axis2.databinding.ADBBean {
                         "Unexpected subelement " + reader.getName());
                 }
             } catch (javax.xml.stream.XMLStreamException e) {
-                throw new java.lang.Exception(e);
+                throw new Exception(e);
             }
 
             return object;
