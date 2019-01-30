@@ -59,14 +59,14 @@ public class MerchantServiceImplServiceStub extends org.apache.axis2.client.Stub
         org.apache.axis2.context.ConfigurationContext configurationContext)
         throws org.apache.axis2.AxisFault {
         this(configurationContext,
-            "https://web.rbsuat.com/ab/webservices/merchant-ws");
+            "https://3dsec.sberbank.ru/payment/webservices/merchant-ws");
     }
 
     /**
      * Default Constructor
      */
     public MerchantServiceImplServiceStub() throws org.apache.axis2.AxisFault {
-        this("https://web.rbsuat.com/ab/webservices/merchant-ws");
+        this("https://3dsec.sberbank.ru/payment/webservices/merchant-ws");
     }
 
     /**
@@ -9418,7 +9418,7 @@ public class MerchantServiceImplServiceStub extends org.apache.axis2.client.Stub
         return false;
     }
 
-    //https://web.rbsuat.com/ab/webservices/merchant-ws
+    //https://3dsec.sberbank.ru/payment/webservices/merchant-ws
     private org.apache.axiom.om.OMElement toOM(
         GetLastOrdersForMerchants param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
